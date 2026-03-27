@@ -23,24 +23,24 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
 .mast-rule{border:none;border-top:1px solid #3A3630;margin:10px 0}
 
 /* ── Market cards grid ── */
-.mkt-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;
-  padding:12px 24px;background:#111009;border-top:1px solid #1A1814;}
+.mkt-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:5px;
+  padding:7px 24px;background:#111009;border-top:1px solid #1A1814;}
 @media(max-width:900px){.mkt-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:500px){.mkt-grid{grid-template-columns:repeat(2,1fr)}}
-.mkt-card{background:#1C1916;border:1px solid #2A2820;border-radius:3px;padding:10px 12px;
-  display:flex;flex-direction:column;min-height:96px;}
-.mkt-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px;}
+.mkt-card{background:#1C1916;border:1px solid #2A2820;border-radius:3px;padding:6px 10px;
+  display:flex;flex-direction:column;min-height:68px;}
+.mkt-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:2px;}
 .mkt-name{font-family:'IBM Plex Sans',sans-serif;font-size:11px;font-weight:600;
   color:#E8E4DC;line-height:1.2;}
-.mkt-sym{font-family:'IBM Plex Mono',monospace;font-size:9px;color:#4A4540;margin-top:2px;}
+.mkt-sym{font-family:'IBM Plex Mono',monospace;font-size:9px;color:#4A4540;margin-top:1px;}
 .mkt-pct{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;text-align:right;white-space:nowrap;}
-.mkt-spark{flex:1;overflow:hidden;display:flex;align-items:center;margin:3px 0;}
-.mkt-spark svg{width:100%!important;height:36px!important;}
-.mkt-spark-empty{flex:1;min-height:36px;}
-.mkt-bottom{display:flex;justify-content:space-between;align-items:flex-end;margin-top:3px;}
+.mkt-spark{flex:1;overflow:hidden;display:flex;align-items:center;margin:2px 0;}
+.mkt-spark svg{width:100%!important;height:22px!important;}
+.mkt-spark-empty{flex:1;min-height:22px;}
+.mkt-bottom{display:flex;justify-content:space-between;align-items:flex-end;margin-top:2px;}
 .mkt-price{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;color:#F7F5F0;}
 .mkt-status-txt{font-family:'IBM Plex Mono',monospace;font-size:9px;color:#5A5550;}
-.mkt-closed-badge{font-size:8px;background:#2A2820;color:#5A5550;padding:1px 4px;
+.mkt-closed-badge{font-size:8px;background:#2A2820;color:#5A5550;padding:1px 3px;
   border-radius:2px;font-family:'IBM Plex Mono',monospace;margin-left:3px;}
 .mkt-ron{border-color:#1F3020;}
 .mkt-ron-body{flex:1;display:flex;align-items:center;justify-content:center;}
@@ -142,8 +142,8 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
       </div>
       <div class="mast-meta">
         28/03/2026<br>
-        Chạy lúc: 02:25 ICT<br>
-        30 bài · 8 cảnh báo<br>
+        Chạy lúc: 02:46 ICT<br>
+        30 bài · 9 cảnh báo<br>
         Gemini 2.5 Flash-Lite · Miễn phí
       </div>
     </div>
@@ -175,7 +175,7 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
     </div>
     <div class="mkt-pct"><span class="up">+1.11%</span></div>
   </div>
-  <div class="mkt-spark"><svg width="120" height="36" viewBox="0 0 120 36" xmlns="http://www.w3.org/2000/svg" style="display:block"><polygon points="3.0,36 3.0,33.0 8.7,32.1 14.4,20.8 20.1,21.8 25.8,20.3 31.5,16.1 37.2,18.9 42.9,12.8 48.6,19.4 54.3,18.0 60.0,13.3 65.7,10.4 71.4,11.4 77.1,9.6 82.8,7.7 88.5,11.9 94.2,9.1 99.9,4.0 105.6,3.0 111.3,3.8 117.0,5.8 117.0,36" fill="#2ECC71" fill-opacity="0.12"/><polyline points="3.0,33.0 8.7,32.1 14.4,20.8 20.1,21.8 25.8,20.3 31.5,16.1 37.2,18.9 42.9,12.8 48.6,19.4 54.3,18.0 60.0,13.3 65.7,10.4 71.4,11.4 77.1,9.6 82.8,7.7 88.5,11.9 94.2,9.1 99.9,4.0 105.6,3.0 111.3,3.8 117.0,5.8" fill="none" stroke="#2ECC71" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  <div class="mkt-spark"><svg width="120" height="22" viewBox="0 0 120 22" xmlns="http://www.w3.org/2000/svg" style="display:block"><polygon points="3.0,22 3.0,19.0 8.7,18.5 14.4,12.5 20.1,13.0 25.8,12.2 31.5,10.0 37.2,11.5 42.9,8.2 48.6,11.8 54.3,11.0 60.0,8.5 65.7,6.9 71.4,7.5 77.1,6.5 82.8,5.5 88.5,7.8 94.2,6.2 99.9,3.6 105.6,3.0 111.3,3.4 117.0,4.5 117.0,22" fill="#2ECC71" fill-opacity="0.12"/><polyline points="3.0,19.0 8.7,18.5 14.4,12.5 20.1,13.0 25.8,12.2 31.5,10.0 37.2,11.5 42.9,8.2 48.6,11.8 54.3,11.0 60.0,8.5 65.7,6.9 71.4,7.5 77.1,6.5 82.8,5.5 88.5,7.8 94.2,6.2 99.9,3.6 105.6,3.0 111.3,3.4 117.0,4.5" fill="none" stroke="#2ECC71" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
   <div class="mkt-bottom">
     <span class="mkt-status-txt">Rising</span>
     <span class="mkt-price">26,320</span>
@@ -203,12 +203,12 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
       <div class="mkt-name">WTI Crude </div>
       <div class="mkt-sym">CL=F · USD/bbl</div>
     </div>
-    <div class="mkt-pct"><span class="up">+47.97%</span></div>
+    <div class="mkt-pct"><span class="up">+49.81%</span></div>
   </div>
-  <div class="mkt-spark"><svg width="120" height="36" viewBox="0 0 120 36" xmlns="http://www.w3.org/2000/svg" style="display:block"><polygon points="3.0,36 3.0,33.0 8.7,29.1 14.4,26.0 20.1,25.9 25.8,19.9 31.5,10.7 37.2,7.1 42.9,17.7 48.6,14.1 54.3,6.2 60.0,3.4 65.7,8.3 71.4,5.8 77.1,5.7 82.8,5.8 88.5,3.8 94.2,13.3 99.9,9.4 105.6,11.3 111.3,7.4 117.0,3.0 117.0,36" fill="#2ECC71" fill-opacity="0.12"/><polyline points="3.0,33.0 8.7,29.1 14.4,26.0 20.1,25.9 25.8,19.9 31.5,10.7 37.2,7.1 42.9,17.7 48.6,14.1 54.3,6.2 60.0,3.4 65.7,8.3 71.4,5.8 77.1,5.7 82.8,5.8 88.5,3.8 94.2,13.3 99.9,9.4 105.6,11.3 111.3,7.4 117.0,3.0" fill="none" stroke="#2ECC71" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  <div class="mkt-spark"><svg width="120" height="22" viewBox="0 0 120 22" xmlns="http://www.w3.org/2000/svg" style="display:block"><polygon points="3.0,22 3.0,19.0 8.7,17.0 14.4,15.4 20.1,15.3 25.8,12.3 31.5,7.6 37.2,5.7 42.9,11.1 48.6,9.3 54.3,5.2 60.0,3.8 65.7,6.3 71.4,5.0 77.1,5.0 82.8,5.0 88.5,4.0 94.2,8.9 99.9,6.9 105.6,7.8 111.3,5.8 117.0,3.0 117.0,22" fill="#2ECC71" fill-opacity="0.12"/><polyline points="3.0,19.0 8.7,17.0 14.4,15.4 20.1,15.3 25.8,12.3 31.5,7.6 37.2,5.7 42.9,11.1 48.6,9.3 54.3,5.2 60.0,3.8 65.7,6.3 71.4,5.0 77.1,5.0 82.8,5.0 88.5,4.0 94.2,8.9 99.9,6.9 105.6,7.8 111.3,5.8 117.0,3.0" fill="none" stroke="#2ECC71" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
   <div class="mkt-bottom">
     <span class="mkt-status-txt">Rising strongly</span>
-    <span class="mkt-price">99.17</span>
+    <span class="mkt-price">100.40</span>
   </div>
 </div>
   
@@ -218,12 +218,12 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
       <div class="mkt-name">S&amp;P 500 </div>
       <div class="mkt-sym">^GSPC · NYSE</div>
     </div>
-    <div class="mkt-pct"><span class="dn">-7.34%</span></div>
+    <div class="mkt-pct"><span class="dn">-7.56%</span></div>
   </div>
-  <div class="mkt-spark"><svg width="120" height="36" viewBox="0 0 120 36" xmlns="http://www.w3.org/2000/svg" style="display:block"><polygon points="3.0,36 3.0,3.2 8.7,3.0 14.4,6.8 20.1,3.7 25.8,6.0 31.5,11.4 37.2,8.1 42.9,8.9 48.6,9.3 54.3,15.4 60.0,17.7 65.7,13.8 71.4,12.8 77.1,18.2 82.8,19.3 88.5,25.2 94.2,20.8 99.9,22.2 105.6,20.1 111.3,26.9 117.0,33.0 117.0,36" fill="#E74C3C" fill-opacity="0.12"/><polyline points="3.0,3.2 8.7,3.0 14.4,6.8 20.1,3.7 25.8,6.0 31.5,11.4 37.2,8.1 42.9,8.9 48.6,9.3 54.3,15.4 60.0,17.7 65.7,13.8 71.4,12.8 77.1,18.2 82.8,19.3 88.5,25.2 94.2,20.8 99.9,22.2 105.6,20.1 111.3,26.9 117.0,33.0" fill="none" stroke="#E74C3C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  <div class="mkt-spark"><svg width="120" height="22" viewBox="0 0 120 22" xmlns="http://www.w3.org/2000/svg" style="display:block"><polygon points="3.0,22 3.0,3.1 8.7,3.0 14.4,5.0 20.1,3.4 25.8,4.6 31.5,7.3 37.2,5.6 42.9,6.1 48.6,6.2 54.3,9.4 60.0,10.6 65.7,8.6 71.4,8.1 77.1,10.9 82.8,11.4 88.5,14.5 94.2,12.2 99.9,13.0 105.6,11.9 111.3,15.4 117.0,19.0 117.0,22" fill="#E74C3C" fill-opacity="0.12"/><polyline points="3.0,3.1 8.7,3.0 14.4,5.0 20.1,3.4 25.8,4.6 31.5,7.3 37.2,5.6 42.9,6.1 48.6,6.2 54.3,9.4 60.0,10.6 65.7,8.6 71.4,8.1 77.1,10.9 82.8,11.4 88.5,14.5 94.2,12.2 99.9,13.0 105.6,11.9 111.3,15.4 117.0,19.0" fill="none" stroke="#E74C3C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
   <div class="mkt-bottom">
     <span class="mkt-status-txt">Falling sharply</span>
-    <span class="mkt-price">6,374.15</span>
+    <span class="mkt-price">6,359.10</span>
   </div>
 </div>
   
@@ -247,7 +247,7 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
     <div class="stats-inner">
       <div class="stat"><div class="stat-n">30</div><div class="stat-l">Bài phân tích</div></div>
       <div class="stat-div"></div>
-      <div class="stat"><div class="stat-n red">8</div><div class="stat-l">Cảnh báo khẩn</div></div>
+      <div class="stat"><div class="stat-n red">9</div><div class="stat-l">Cảnh báo khẩn</div></div>
       <div class="stat-div"></div>
       <div class="stat"><div class="stat-n">10</div><div class="stat-l">Nguồn tin</div></div>
       <div class="stat-div"></div>
@@ -264,8 +264,8 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
       <div class="critical-inner">
         <div class="crit-dot"></div>
         <div>
-          <div class="crit-label">⚡ 8 SỰ KIỆN QUAN TRỌNG — ĐÃ GỬI TELEGRAM</div>
-          <div class="crit-text"><strong>(1)</strong> Chủ tịch EVN: &#x27;Nếu năm nay không đầu tư thì 5 năm sau sẽ thiếu điện&#x27; &nbsp;·&nbsp; <strong>(2)</strong> Báo cáo Thủ tướng, tập đoàn đầu tư 5 tỷ USD/năm đã sẵn sàng làm “công trình thế  &nbsp;·&nbsp; <strong>(3)</strong> Giảm thuế xăng dầu về 0%: Thêm lực đỡ cho người dân, doanh nghiệp</div>
+          <div class="crit-label">⚡ 9 SỰ KIỆN QUAN TRỌNG — ĐÃ GỬI TELEGRAM</div>
+          <div class="crit-text"><strong>(1)</strong> Báo cáo Thủ tướng, tập đoàn đầu tư 5 tỷ USD/năm đã sẵn sàng làm “công trình thế  &nbsp;·&nbsp; <strong>(2)</strong> VN-Index tăng mạnh nhất thế giới, cổ phiếu midcap bùng nổ &nbsp;·&nbsp; <strong>(3)</strong> Các hãng dầu có thể kiếm tỷ USD trong xung đột Trung Đông</div>
         </div>
       </div>
     </div>
@@ -275,7 +275,7 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
     <div class="filter-bar">
       <span class="filter-label">Lọc:</span>
       <button class="fbtn active" onclick="doFilter('all',this)">Tất cả (30)</button>
-      <button class="fbtn" onclick="doFilter('critical',this)">🔴 Khẩn (8)</button>
+      <button class="fbtn" onclick="doFilter('critical',this)">🔴 Khẩn (9)</button>
       <button class="fbtn" onclick="doFilter('lang-vi',this)">🇻🇳 Việt Nam</button>
       <button class="fbtn" onclick="doFilter('lang-en',this)">🌍 Quốc tế</button>
       <button class="fbtn" onclick="doFilter('Chứng khoán',this)">Chứng khoán</button>
@@ -292,7 +292,7 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
       <span style="background:#C0392B;color:#fff;padding:2px 8px;border-radius:2px;font-size:9px;font-weight:700;letter-spacing:.08em;animation:blink 1.4s infinite;">🔴 KHẨN CẤP</span>
       <span class="badge" style="background:#FFF7ED;color:#9A3412;
         border:1px solid #FED7AA;">Kinh tế vĩ mô</span>
-      <span class="badge source-badge">🇻🇳 CafeF</span>
+      <span class="badge source-badge">🇻🇳 CafeF Vĩ Mô</span>
       <span class="badge time-badge"></span>
     </div>
     <span class="score" style="background:#FEF2F2;color:#C0392B;border:1px solid #FECACA;">
@@ -301,115 +301,29 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
   </div>
   <div class="card-body">
     <h2 class="card-title">
-      <a href="https://cafef.vn/chu-tich-evn-neu-nam-nay-khong-dau-tu-thi-5-nam-sau-se-thieu-dien-188260327225058569.chn" target="_blank" rel="noopener">
-        Chủ tịch EVN: &#x27;Nếu năm nay không đầu tư thì 5 năm sau sẽ thiếu điện&#x27;
-      </a>
-    </h2>
-    <p class="card-summary">Chủ tịch Hội đồng thành viên EVN, ông Đặng Hoàng An, cảnh báo về nguy cơ thiếu điện trong 5 năm tới nếu không có sự đầu tư mạnh mẽ vào hạ tầng điện lực trong năm nay và năm 2025. Ông nhấn mạnh rằng các dự án nguồn điện cần khoảng 5 năm để hoàn thành, do đó, việc trì hoãn đầu tư sẽ dẫn đến hậu quả nghiêm trọng. EVN dự kiến cần đầu tư lần lượt 112.892 tỷ đồng cho năm 2024 và 125.778 tỷ đồng cho năm 2025.</p>
-    <div class="impact-grid">
-      <div class="impact-box short">
-        <div class="impact-label">Ngắn hạn</div>
-        <p>Có thể thúc đẩy các quyết định đầu tư vào ngành điện, tăng cường các dự án năng lượng.</p>
-      </div>
-      <div class="impact-box medium">
-        <div class="impact-label">Trung hạn</div>
-        <p>Đảm bảo an ninh năng lượng quốc gia, hỗ trợ tăng trưởng kinh tế, có thể ảnh hưởng đến giá điện.</p>
-      </div>
-    </div>
-    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">EVN</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Ngành điện Việt Nam</span></div>
-    <div class="rec-section">
-      <div class="rec-row"><span class="rec-icon risk">⚠</span>
-        <span><strong>Rủi ro:</strong> Khó khăn trong việc huy động vốn đầu tư, chậm trễ trong triển khai dự án, biến động giá nhiên liệu.</span></div>
-      <div class="rec-row"><span class="rec-icon watch">👁</span>
-        <span><strong>Theo dõi:</strong> Các kế hoạch đầu tư cụ thể của EVN, tiến độ các dự án điện.</span></div>
-      <div class="rec-row"><span class="rec-icon action">→</span>
-        <span><strong>Lưu ý:</strong> Theo dõi các chính sách và kế hoạch đầu tư vào ngành điện để đảm bảo an ninh năng lượng.</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="8" data-cat="Kinh tế vĩ mô"
-     data-lang="vi" data-critical="yes"
-     style="border-left:3px solid #C0392B;">
-  <div class="card-header">
-    <div class="badges">
-      <span style="background:#C0392B;color:#fff;padding:2px 8px;border-radius:2px;font-size:9px;font-weight:700;letter-spacing:.08em;animation:blink 1.4s infinite;">🔴 KHẨN CẤP</span>
-      <span class="badge" style="background:#FFF7ED;color:#9A3412;
-        border:1px solid #FED7AA;">Kinh tế vĩ mô</span>
-      <span class="badge source-badge">🇻🇳 CafeF</span>
-      <span class="badge time-badge"></span>
-    </div>
-    <span class="score" style="background:#FEF2F2;color:#C0392B;border:1px solid #FECACA;">
-      8<span style="font-size:9px;opacity:.7">/10</span>
-    </span>
-  </div>
-  <div class="card-body">
-    <h2 class="card-title">
-      <a href="https://cafef.vn/bao-cao-thu-tuong-tap-doan-dau-tu-5-ty-usd-nam-da-san-sang-lam-cong-trinh-the-ky-cua-vn-vua-ky-voi-nga-18826032720104613.chn" target="_blank" rel="noopener">
+      <a href="https://cafef.vn/bao-cao-thu-tuong-tap-doan-dau-tu-5-ty-usd-nam-da-san-sang-lam-cong-trinh-the-ky-cua-vn-vua-ky-voi-nga-18826032720104613.html" target="_blank" rel="noopener">
         Báo cáo Thủ tướng, tập đoàn đầu tư 5 tỷ USD/năm đã sẵn sàng làm “công trình thế kỷ&quot; của VN vừa ký với Nga
       </a>
     </h2>
-    <p class="card-summary">Một tập đoàn lớn đã báo cáo Thủ tướng về sự sẵn sàng đầu tư 5 tỷ USD mỗi năm cho các &#x27;công trình thế kỷ&#x27; của Việt Nam, sau khi ký kết thỏa thuận với Nga. Khoản đầu tư khổng lồ này cho thấy cam kết mạnh mẽ trong việc phát triển các dự án hạ tầng quy mô lớn, có ý nghĩa chiến lược đối với sự phát triển kinh tế - xã hội của đất nước. Việc hợp tác với Nga trong các dự án này mở ra nhiều cơ hội mới.</p>
+    <p class="card-summary">Một tập đoàn lớn đã báo cáo Thủ tướng về sự sẵn sàng đầu tư 5 tỷ USD mỗi năm cho các &quot;công trình thế kỷ&quot; của Việt Nam, đặc biệt là các dự án hợp tác vừa ký kết với Nga. Khoản đầu tư khổng lồ này cho thấy tiềm năng hợp tác quốc tế sâu rộng và tham vọng phát triển hạ tầng quy mô lớn của Việt Nam. Việc triển khai các dự án này có thể tạo động lực mạnh mẽ cho tăng trưởng kinh tế và nâng cao năng lực cạnh tranh quốc gia.</p>
     <div class="impact-grid">
       <div class="impact-box short">
         <div class="impact-label">Ngắn hạn</div>
-        <p>Tín hiệu tích cực cho các ngành liên quan đến xây dựng, hạ tầng.</p>
+        <p>Tăng kỳ vọng về các dự án đầu tư lớn, có thể thu hút sự quan tâm của các nhà đầu tư khác.</p>
       </div>
       <div class="impact-box medium">
         <div class="impact-label">Trung hạn</div>
-        <p>Thúc đẩy tăng trưởng kinh tế, tạo việc làm, nâng cao năng lực cạnh tranh của Việt Nam.</p>
+        <p>Thúc đẩy phát triển hạ tầng, tạo việc làm, tăng trưởng kinh tế, củng cố quan hệ hợp tác với Nga.</p>
       </div>
     </div>
-    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Tập đoàn đầu tư</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Nga</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Các dự án hạ tầng lớn</span></div>
+    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Tập đoàn đầu tư</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Nga</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Các công trình thế kỷ của Việt Nam</span></div>
     <div class="rec-section">
       <div class="rec-row"><span class="rec-icon risk">⚠</span>
-        <span><strong>Rủi ro:</strong> Thủ tục pháp lý, tiến độ triển khai dự án, biến động kinh tế toàn cầu.</span></div>
+        <span><strong>Rủi ro:</strong> Khả năng triển khai dự án đúng tiến độ và hiệu quả, các yếu tố địa chính trị ảnh hưởng đến hợp tác quốc tế.</span></div>
       <div class="rec-row"><span class="rec-icon watch">👁</span>
-        <span><strong>Theo dõi:</strong> Chi tiết các &#x27;công trình thế kỷ&#x27;, tiến độ giải ngân vốn đầu tư.</span></div>
+        <span><strong>Theo dõi:</strong> Thông tin chi tiết về các dự án hợp tác, tiến độ giải ngân vốn đầu tư.</span></div>
       <div class="rec-row"><span class="rec-icon action">→</span>
-        <span><strong>Lưu ý:</strong> Theo dõi các dự án hạ tầng lớn và hợp tác quốc tế của Việt Nam.</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="8" data-cat="Kinh tế vĩ mô"
-     data-lang="vi" data-critical="yes"
-     style="border-left:3px solid #C0392B;">
-  <div class="card-header">
-    <div class="badges">
-      <span style="background:#C0392B;color:#fff;padding:2px 8px;border-radius:2px;font-size:9px;font-weight:700;letter-spacing:.08em;animation:blink 1.4s infinite;">🔴 KHẨN CẤP</span>
-      <span class="badge" style="background:#FFF7ED;color:#9A3412;
-        border:1px solid #FED7AA;">Kinh tế vĩ mô</span>
-      <span class="badge source-badge">🇻🇳 CafeF</span>
-      <span class="badge time-badge"></span>
-    </div>
-    <span class="score" style="background:#FEF2F2;color:#C0392B;border:1px solid #FECACA;">
-      8<span style="font-size:9px;opacity:.7">/10</span>
-    </span>
-  </div>
-  <div class="card-body">
-    <h2 class="card-title">
-      <a href="https://cafef.vn/giam-thue-xang-dau-ve-0-them-luc-do-cho-nguoi-dan-doanh-nghiep-188260327160751827.chn" target="_blank" rel="noopener">
-        Giảm thuế xăng dầu về 0%: Thêm lực đỡ cho người dân, doanh nghiệp
-      </a>
-    </h2>
-    <p class="card-summary">Chính phủ đã quyết định giảm ba sắc thuế đối với xăng, dầu về mức 0% từ đêm 26/3, một động thái nhanh chóng và quyết liệt nhằm ứng phó với việc giá dầu thế giới tăng vọt. Biện pháp này được kỳ vọng sẽ giúp giảm giá xăng dầu trong nước, ổn định tâm lý thị trường, đồng thời hỗ trợ đáng kể cho người dân và doanh nghiệp trong bối cảnh chi phí sinh hoạt và sản xuất đang chịu áp lực.</p>
-    <div class="impact-grid">
-      <div class="impact-box short">
-        <div class="impact-label">Ngắn hạn</div>
-        <p>Giá xăng dầu giảm, giảm áp lực chi phí cho người tiêu dùng và doanh nghiệp.</p>
-      </div>
-      <div class="impact-box medium">
-        <div class="impact-label">Trung hạn</div>
-        <p>Góp phần kiềm chế lạm phát, hỗ trợ tăng trưởng kinh tế, cải thiện sức cạnh tranh của doanh nghiệp.</p>
-      </div>
-    </div>
-    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Người dân</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Doanh nghiệp</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Giá xăng dầu</span></div>
-    <div class="rec-section">
-      <div class="rec-row"><span class="rec-icon risk">⚠</span>
-        <span><strong>Rủi ro:</strong> Biến động khó lường của giá dầu thế giới, ảnh hưởng đến ngân sách nhà nước.</span></div>
-      <div class="rec-row"><span class="rec-icon watch">👁</span>
-        <span><strong>Theo dõi:</strong> Diễn biến giá dầu thế giới, các chính sách thuế tiếp theo.</span></div>
-      <div class="rec-row"><span class="rec-icon action">→</span>
-        <span><strong>Lưu ý:</strong> Theo dõi tác động của việc giảm thuế xăng dầu đến lạm phát và chi phí sản xuất.</span></div>
+        <span><strong>Lưu ý:</strong> Theo dõi các dự án hợp tác đầu tư lớn giữa Việt Nam và Nga.</span></div>
     </div>
   </div>
 </div>
@@ -434,25 +348,25 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
         VN-Index tăng mạnh nhất thế giới, cổ phiếu midcap bùng nổ
       </a>
     </h2>
-    <p class="card-summary">Bất chấp những căng thẳng địa chính trị và biến động của thị trường chứng khoán thế giới, VN-Index đã kết thúc tuần ở mức cao nhất ngày, với mức tăng 1,71%, trở thành chỉ số tăng mạnh nhất toàn cầu. Đặc biệt, nhóm cổ phiếu midcap đã có một phiên bùng nổ ấn tượng. Điều này cho thấy sức hút và tiềm năng của thị trường chứng khoán Việt Nam.</p>
+    <p class="card-summary">Bất chấp những căng thẳng địa chính trị và biến động của thị trường chứng khoán thế giới, VN-Index đã kết thúc tuần ở mức cao nhất ngày, với mức tăng 1,71%, trở thành chỉ số tăng mạnh nhất thế giới. Đặc biệt, nhóm cổ phiếu midcap đã có một phiên bùng nổ ấn tượng. Sự tăng trưởng mạnh mẽ này cho thấy sức hút và tiềm năng của thị trường chứng khoán Việt Nam, thu hút sự quan tâm của nhà đầu tư trong và ngoài nước.</p>
     <div class="impact-grid">
       <div class="impact-box short">
         <div class="impact-label">Ngắn hạn</div>
-        <p>Tâm lý tích cực lan tỏa trên thị trường, thu hút dòng tiền đầu tư.</p>
+        <p>Tâm lý hưng phấn trên thị trường, thu hút dòng tiền đầu tư vào cổ phiếu midcap.</p>
       </div>
       <div class="impact-box medium">
         <div class="impact-label">Trung hạn</div>
-        <p>Khuyến khích đầu tư vào cổ phiếu Việt Nam, có thể thúc đẩy tăng trưởng kinh tế.</p>
+        <p>Củng cố đà tăng trưởng của VN-Index, tạo cơ hội đầu tư cho nhà đầu tư.</p>
       </div>
     </div>
-    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">VN-Index</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Cổ phiếu midcap</span></div>
+    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">VN-Index</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Cổ phiếu midcap</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Thị trường chứng khoán Việt Nam</span></div>
     <div class="rec-section">
       <div class="rec-row"><span class="rec-icon risk">⚠</span>
-        <span><strong>Rủi ro:</strong> Rủi ro từ các yếu tố địa chính trị và kinh tế toàn cầu.</span></div>
+        <span><strong>Rủi ro:</strong> Rủi ro từ các yếu tố vĩ mô và địa chính trị có thể ảnh hưởng đến đà tăng trưởng.</span></div>
       <div class="rec-row"><span class="rec-icon watch">👁</span>
-        <span><strong>Theo dõi:</strong> Diễn biến của VN-Index và các cổ phiếu midcap trong các phiên tới.</span></div>
+        <span><strong>Theo dõi:</strong> Diễn biến của VN-Index và các cổ phiếu midcap, các yếu tố tác động đến thị trường toàn cầu.</span></div>
       <div class="rec-row"><span class="rec-icon action">→</span>
-        <span><strong>Lưu ý:</strong> Theo dõi sát sao diễn biến thị trường chứng khoán Việt Nam và các yếu tố ảnh hưởng.</span></div>
+        <span><strong>Lưu ý:</strong> Theo dõi sát sao diễn biến thị trường và cân nhắc các cơ hội đầu tư vào cổ phiếu midcap.</span></div>
     </div>
   </div>
 </div>
@@ -477,68 +391,25 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
         Các hãng dầu có thể kiếm tỷ USD trong xung đột Trung Đông
       </a>
     </h2>
-    <p class="card-summary">Giá dầu Brent đã tăng hơn 30% trong tháng 3, mang lại lợi nhuận khổng lồ cho các tập đoàn dầu khí không có cơ sở hoạt động tại Trung Đông. Xung đột leo thang trong khu vực đã gây gián đoạn nguồn cung, đẩy giá dầu lên cao. Các công ty dầu mỏ lớn, đặc biệt là những công ty có hoạt động khai thác và lọc dầu ở các khu vực ổn định, có thể thu về hàng tỷ USD nhờ biến động giá này.</p>
+    <p class="card-summary">Giá dầu Brent bình quân tháng 3 tăng hơn 30% so với tháng trước, mang lại lợi nhuận khổng lồ cho các hãng dầu không có cơ sở hoạt động tại Trung Đông. Xung đột leo thang tại khu vực này đã gây gián đoạn nguồn cung, đẩy giá dầu lên cao. Các công ty dầu khí lớn có thể thu về hàng tỷ USD nhờ sự biến động này. Tuy nhiên, tình hình địa chính trị bất ổn cũng tiềm ẩn rủi ro cho chuỗi cung ứng toàn cầu và nền kinh tế.</p>
     <div class="impact-grid">
       <div class="impact-box short">
         <div class="impact-label">Ngắn hạn</div>
-        <p>Giá xăng dầu trong nước có thể tiếp tục biến động tăng, ảnh hưởng đến chi phí vận tải và sản xuất.</p>
+        <p>Giá dầu tiếp tục biến động mạnh, ảnh hưởng đến chi phí vận tải và sản xuất.</p>
       </div>
       <div class="impact-box medium">
         <div class="impact-label">Trung hạn</div>
-        <p>Lợi nhuận ngành dầu khí tăng, có thể tác động đến các ngành liên quan như hóa chất, nhựa.</p>
+        <p>Lợi nhuận cao cho các tập đoàn dầu khí, có thể dẫn đến đầu tư mở rộng sản xuất, nhưng cũng tiềm ẩn rủi ro lạm phát.</p>
       </div>
     </div>
-    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Các tập đoàn dầu khí quốc tế</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Giá xăng dầu</span></div>
+    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Các hãng dầu</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Giá dầu Brent</span></div>
     <div class="rec-section">
       <div class="rec-row"><span class="rec-icon risk">⚠</span>
-        <span><strong>Rủi ro:</strong> Rủi ro leo thang xung đột, bất ổn địa chính trị ảnh hưởng đến nguồn cung và giá dầu.</span></div>
+        <span><strong>Rủi ro:</strong> Leo thang xung đột tại Trung Đông, gián đoạn nguồn cung dầu mỏ, biến động giá dầu ảnh hưởng đến lạm phát toàn cầu.</span></div>
       <div class="rec-row"><span class="rec-icon watch">👁</span>
-        <span><strong>Theo dõi:</strong> Diễn biến giá dầu Brent, tình hình địa chính trị Trung Đông.</span></div>
+        <span><strong>Theo dõi:</strong> Diễn biến tình hình chính trị tại Trung Đông, báo cáo lợi nhuận của các tập đoàn dầu khí.</span></div>
       <div class="rec-row"><span class="rec-icon action">→</span>
         <span><strong>Lưu ý:</strong> Theo dõi sát sao biến động giá dầu và các yếu tố địa chính trị ảnh hưởng.</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="7" data-cat="Tài chính quốc tế"
-     data-lang="vi" data-critical="no"
-     style="">
-  <div class="card-header">
-    <div class="badges">
-      
-      <span class="badge" style="background:#EEF2FF;color:#3730A3;
-        border:1px solid #C7D2FE;">Tài chính quốc tế</span>
-      <span class="badge source-badge">🇻🇳 VnExpress Kinh Doanh</span>
-      <span class="badge time-badge"></span>
-    </div>
-    <span class="score" style="background:#FFFBEB;color:#B8620A;border:1px solid #FDE68A;">
-      7<span style="font-size:9px;opacity:.7">/10</span>
-    </span>
-  </div>
-  <div class="card-body">
-    <h2 class="card-title">
-      <a href="https://vnexpress.net/tp-hcm-tang-11-bac-xep-hang-trung-tam-tai-chinh-toan-cau-5055699.html" target="_blank" rel="noopener">
-        TP HCM tăng 11 bậc xếp hạng trung tâm tài chính toàn cầu
-      </a>
-    </h2>
-    <p class="card-summary">Thành phố Hồ Chí Minh đã có sự cải thiện đáng kể về thứ hạng trong bảng xếp hạng các trung tâm tài chính toàn cầu, tăng 11 bậc chỉ sau sáu tháng. Hiện tại, thành phố này đã lọt vào nhóm 3 trung tâm tài chính hàng đầu tại Đông Nam Á. Sự thăng hạng này phản ánh những nỗ lực của Việt Nam trong việc cải thiện môi trường kinh doanh, thu hút đầu tư và phát triển hạ tầng tài chính.</p>
-    <div class="impact-grid">
-      <div class="impact-box short">
-        <div class="impact-label">Ngắn hạn</div>
-        <p>Nâng cao uy tín và hình ảnh của TP.HCM trên trường quốc tế, thu hút sự chú ý của nhà đầu tư.</p>
-      </div>
-      <div class="impact-box medium">
-        <div class="impact-label">Trung hạn</div>
-        <p>Thúc đẩy đầu tư vào các lĩnh vực tài chính, dịch vụ, bất động sản tại TP.HCM.</p>
-      </div>
-    </div>
-    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">TP.HCM</span></div>
-    <div class="rec-section">
-      <div class="rec-row"><span class="rec-icon risk">⚠</span>
-        <span><strong>Rủi ro:</strong> Duy trì đà tăng trưởng và cải thiện hơn nữa các yếu tố cạnh tranh.</span></div>
-      <div class="rec-row"><span class="rec-icon watch">👁</span>
-        <span><strong>Theo dõi:</strong> Các báo cáo xếp hạng trung tâm tài chính tiếp theo, các chính sách hỗ trợ phát triển tài chính của TP.HCM.</span></div>
-      <div class="rec-row"><span class="rec-icon action">→</span>
-        <span><strong>Lưu ý:</strong> Theo dõi sự phát triển của TP.HCM như một trung tâm tài chính khu vực.</span></div>
     </div>
   </div>
 </div>
@@ -563,36 +434,36 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
         CTCK bất ngờ hạ dự báo VN-Index năm 2026 sau căng thẳng Trung Đông
       </a>
     </h2>
-    <p class="card-summary">Một công ty chứng khoán (CTCK) đã bất ngờ điều chỉnh giảm dự báo về chỉ số VN-Index cho năm 2026. Quyết định này được đưa ra sau khi đánh giá tổng thể các yếu tố vĩ mô và tình hình địa chính trị căng thẳng tại Trung Đông. Việc hạ dự báo cho thấy những lo ngại về tác động tiêu cực tiềm ẩn của các yếu tố bên ngoài đến thị trường chứng khoán Việt Nam.</p>
+    <p class="card-summary">Một công ty chứng khoán (CTCK) đã bất ngờ hạ dự báo về chỉ số VN-Index cho năm 2026, sau khi đánh giá tổng thể các yếu tố vĩ mô và địa chính trị, đặc biệt là căng thẳng tại Trung Đông. Việc điều chỉnh dự báo này cho thấy những lo ngại về tác động tiêu cực tiềm ẩn của các sự kiện quốc tế đến thị trường chứng khoán Việt Nam. Điều này có thể ảnh hưởng đến tâm lý nhà đầu tư và định hướng đầu tư trong thời gian tới.</p>
     <div class="impact-grid">
       <div class="impact-box short">
         <div class="impact-label">Ngắn hạn</div>
-        <p>Có thể tạo tâm lý thận trọng cho nhà đầu tư, ảnh hưởng đến tâm lý thị trường chung.</p>
+        <p>Tâm lý thận trọng hơn trên thị trường chứng khoán, có thể ảnh hưởng đến quyết định đầu tư ngắn hạn.</p>
       </div>
       <div class="impact-box medium">
         <div class="impact-label">Trung hạn</div>
-        <p>Cần xem xét lại các chiến lược đầu tư, tập trung vào các ngành ít bị ảnh hưởng bởi yếu tố địa chính trị.</p>
+        <p>Dự báo tăng trưởng chậm lại của VN-Index trong trung hạn, đòi hỏi nhà đầu tư cần cân nhắc kỹ lưỡng hơn trong việc lựa chọn cổ phiếu.</p>
       </div>
     </div>
     <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">VN-Index</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Thị trường chứng khoán Việt Nam</span></div>
     <div class="rec-section">
       <div class="rec-row"><span class="rec-icon risk">⚠</span>
-        <span><strong>Rủi ro:</strong> Căng thẳng địa chính trị leo thang, tác động tiêu cực đến kinh tế toàn cầu và Việt Nam.</span></div>
+        <span><strong>Rủi ro:</strong> Leo thang căng thẳng địa chính trị, tác động tiêu cực đến kinh tế vĩ mô và tâm lý nhà đầu tư.</span></div>
       <div class="rec-row"><span class="rec-icon watch">👁</span>
-        <span><strong>Theo dõi:</strong> Diễn biến tình hình địa chính trị, các báo cáo phân tích từ các CTCK khác.</span></div>
+        <span><strong>Theo dõi:</strong> Diễn biến tình hình địa chính trị, các báo cáo phân tích và dự báo từ các CTCK khác.</span></div>
       <div class="rec-row"><span class="rec-icon action">→</span>
-        <span><strong>Lưu ý:</strong> Theo dõi sát sao các yếu tố địa chính trị và đánh giá lại danh mục đầu tư.</span></div>
+        <span><strong>Lưu ý:</strong> Cần thận trọng và đánh giá lại danh mục đầu tư trong bối cảnh có những dự báo tiêu cực.</span></div>
     </div>
   </div>
 </div>
-<div class="card" data-score="7" data-cat="Doanh nghiệp"
-     data-lang="vi" data-critical="no"
-     style="">
+<div class="card" data-score="7" data-cat="Kinh tế vĩ mô"
+     data-lang="vi" data-critical="yes"
+     style="border-left:3px solid #C0392B;">
   <div class="card-header">
     <div class="badges">
-      
-      <span class="badge" style="background:#F0F9FF;color:#0C4A6E;
-        border:1px solid #BAE6FD;">Doanh nghiệp</span>
+      <span style="background:#C0392B;color:#fff;padding:2px 8px;border-radius:2px;font-size:9px;font-weight:700;letter-spacing:.08em;animation:blink 1.4s infinite;">🔴 KHẨN CẤP</span>
+      <span class="badge" style="background:#FFF7ED;color:#9A3412;
+        border:1px solid #FED7AA;">Kinh tế vĩ mô</span>
       <span class="badge source-badge">🇻🇳 CafeF</span>
       <span class="badge time-badge"></span>
     </div>
@@ -602,29 +473,72 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
   </div>
   <div class="card-body">
     <h2 class="card-title">
-      <a href="https://cafef.vn/tu-6-nhan-su-20-nam-tim-vang-noi-soi-da-den-ga-khong-lo-10-ty-usd-mang-thuong-hieu-viet-den-11-nuoc-188260327161428384.chn" target="_blank" rel="noopener">
-        Từ 6 nhân sự, 20 năm tìm &quot;vàng&quot; nơi sỏi đá đến &quot;gã khổng lồ&quot; 10 tỷ USD mang thương hiệu Việt đến 11 nước
+      <a href="https://cafef.vn/chu-tich-evn-neu-nam-nay-khong-dau-tu-thi-5-nam-sau-se-thieu-dien-188260327225058569.html" target="_blank" rel="noopener">
+        Chủ tịch EVN: &#x27;Nếu năm nay không đầu tư thì 5 năm sau sẽ thiếu điện&#x27;
       </a>
     </h2>
-    <p class="card-summary">Câu chuyện về sự phát triển vượt bậc của một doanh nghiệp Việt Nam, từ khởi đầu chỉ với 6 nhân sự vào năm 2006, nay đã trở thành một &#x27;gã khổng lồ&#x27; trị giá 10 tỷ USD và có mặt tại 11 quốc gia. Hành trình 20 năm đầy nỗ lực, kiên trì và sáng tạo đã giúp doanh nghiệp này khẳng định được thương hiệu Việt trên thị trường quốc tế, minh chứng cho tiềm năng và sức bật của kinh tế Việt Nam.</p>
+    <p class="card-summary">Chủ tịch Hội đồng thành viên EVN Đặng Hoàng An nhấn mạnh tầm quan trọng của việc đầu tư vào ngành điện ngay trong năm nay. Ông cảnh báo rằng nếu không có sự đầu tư kịp thời với tổng số tiền 112.892 tỷ đồng cho năm 2024 và 125.778 tỷ đồng cho năm 2025, Việt Nam có thể đối mặt với tình trạng thiếu điện nghiêm trọng trong vòng 5 năm tới. Lý do là các công trình nguồn điện cần khoảng 5 năm để hoàn thành, đòi hỏi kế hoạch đầu tư dài hạn và quyết liệt.</p>
     <div class="impact-grid">
       <div class="impact-box short">
         <div class="impact-label">Ngắn hạn</div>
-        <p>Truyền cảm hứng cho các doanh nghiệp khởi nghiệp và các nhà đầu tư.</p>
+        <p>Tăng áp lực lên kế hoạch đầu tư công và huy động vốn cho ngành điện.</p>
       </div>
       <div class="impact-box medium">
         <div class="impact-label">Trung hạn</div>
-        <p>Nâng cao hình ảnh và uy tín của doanh nghiệp Việt Nam trên trường quốc tế.</p>
+        <p>Nguy cơ thiếu điện ảnh hưởng đến sản xuất kinh doanh và đời sống, đòi hỏi các giải pháp cấp bách về năng lượng.</p>
       </div>
     </div>
-    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Doanh nghiệp Việt Nam (không nêu tên cụ thể)</span></div>
+    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">EVN</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Ngành điện Việt Nam</span></div>
     <div class="rec-section">
       <div class="rec-row"><span class="rec-icon risk">⚠</span>
-        <span><strong>Rủi ro:</strong> Duy trì đà tăng trưởng, cạnh tranh quốc tế.</span></div>
+        <span><strong>Rủi ro:</strong> Khó khăn trong việc huy động vốn đầu tư, chậm trễ trong triển khai các dự án nguồn điện, nhu cầu tiêu thụ điện tăng cao.</span></div>
       <div class="rec-row"><span class="rec-icon watch">👁</span>
-        <span><strong>Theo dõi:</strong> Các chiến lược mở rộng thị trường và phát triển sản phẩm của doanh nghiệp.</span></div>
+        <span><strong>Theo dõi:</strong> Kế hoạch đầu tư cụ thể của EVN, tiến độ các dự án điện, chính sách năng lượng của Chính phủ.</span></div>
       <div class="rec-row"><span class="rec-icon action">→</span>
-        <span><strong>Lưu ý:</strong> Theo dõi sự phát triển của các doanh nghiệp Việt Nam có tiềm năng vươn ra quốc tế.</span></div>
+        <span><strong>Lưu ý:</strong> Theo dõi sát sao tình hình cung ứng điện và các giải pháp của Chính phủ.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="7" data-cat="Kinh tế vĩ mô"
+     data-lang="vi" data-critical="yes"
+     style="border-left:3px solid #C0392B;">
+  <div class="card-header">
+    <div class="badges">
+      <span style="background:#C0392B;color:#fff;padding:2px 8px;border-radius:2px;font-size:9px;font-weight:700;letter-spacing:.08em;animation:blink 1.4s infinite;">🔴 KHẨN CẤP</span>
+      <span class="badge" style="background:#FFF7ED;color:#9A3412;
+        border:1px solid #FED7AA;">Kinh tế vĩ mô</span>
+      <span class="badge source-badge">🇻🇳 CafeF Vĩ Mô</span>
+      <span class="badge time-badge"></span>
+    </div>
+    <span class="score" style="background:#FFFBEB;color:#B8620A;border:1px solid #FDE68A;">
+      7<span style="font-size:9px;opacity:.7">/10</span>
+    </span>
+  </div>
+  <div class="card-body">
+    <h2 class="card-title">
+      <a href="https://cafef.vn/giam-thue-xang-dau-ve-0-them-luc-do-cho-nguoi-dan-doanh-nghiep-188260327160751827.html" target="_blank" rel="noopener">
+        Giảm thuế xăng dầu về 0%: Thêm lực đỡ cho người dân, doanh nghiệp
+      </a>
+    </h2>
+    <p class="card-summary">Chính phủ đã quyết định giảm ba sắc thuế đối với xăng, dầu về mức 0% từ đêm 26/3, một động thái nhanh chóng và quyết liệt nhằm ứng phó với việc giá dầu thế giới tăng vọt. Quyết định này được kỳ vọng sẽ giúp giá xăng giảm mạnh, ổn định tâm lý thị trường và hỗ trợ đáng kể cho người dân cũng như doanh nghiệp, đặc biệt là các ngành vận tải và sản xuất. Đây là một biện pháp quan trọng để kiềm chế lạm phát và ổn định kinh tế.</p>
+    <div class="impact-grid">
+      <div class="impact-box short">
+        <div class="impact-label">Ngắn hạn</div>
+        <p>Giá xăng dầu giảm, giảm chi phí cho người tiêu dùng và doanh nghiệp vận tải, sản xuất.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Trung hạn</div>
+        <p>Góp phần kiềm chế lạm phát, hỗ trợ phục hồi kinh tế, cải thiện sức cạnh tranh của doanh nghiệp.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Người dân</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Doanh nghiệp</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Giá xăng dầu</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">⚠</span>
+        <span><strong>Rủi ro:</strong> Biến động khó lường của giá dầu thế giới, ảnh hưởng đến hiệu quả của chính sách giảm thuế.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">👁</span>
+        <span><strong>Theo dõi:</strong> Diễn biến giá dầu thế giới, các chính sách điều chỉnh giá xăng dầu tiếp theo.</span></div>
+      <div class="rec-row"><span class="rec-icon action">→</span>
+        <span><strong>Lưu ý:</strong> Theo dõi tác động của việc giảm thuế xăng dầu đến lạm phát và chi phí sản xuất.</span></div>
     </div>
   </div>
 </div>
@@ -649,68 +563,25 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
         Fed lỗ gần 19 tỷ USD trong năm 2025
       </a>
     </h2>
-    <p class="card-summary">Cục Dự trữ Liên bang Mỹ (Fed) đã công bố khoản lỗ hoạt động gần 19 tỷ USD trong năm 2025. Đây là năm thứ ba liên tiếp Fed ghi nhận thua lỗ. Nguyên nhân chính được cho là do chi phí lãi suất tăng cao đối với các khoản dự trữ mà các ngân hàng thương mại gửi tại Fed, trong khi thu nhập từ danh mục tài sản của Fed không theo kịp.</p>
+    <p class="card-summary">Cục Dự trữ Liên bang Mỹ (Fed) đã công bố khoản lỗ hoạt động gần 19 tỷ USD trong năm 2025, đánh dấu năm thứ ba liên tiếp cơ quan này thua lỗ. Khoản lỗ này chủ yếu do chi phí lãi suất tăng cao và các khoản đầu tư vào trái phiếu chính phủ. Tình hình tài chính của Fed có thể ảnh hưởng đến chính sách tiền tệ và niềm tin của thị trường tài chính toàn cầu.</p>
     <div class="impact-grid">
       <div class="impact-box short">
         <div class="impact-label">Ngắn hạn</div>
-        <p>Có thể ảnh hưởng đến tâm lý thị trường tài chính toàn cầu, gây lo ngại về sức khỏe của hệ thống ngân hàng Mỹ.</p>
+        <p>Có thể gây ra sự biến động trên thị trường tài chính toàn cầu, ảnh hưởng đến tâm lý nhà đầu tư.</p>
       </div>
       <div class="impact-box medium">
         <div class="impact-label">Trung hạn</div>
-        <p>Fed có thể cần điều chỉnh chính sách tiền tệ hoặc các biện pháp quản lý tài sản để cải thiện tình hình.</p>
+        <p>Fed có thể cần điều chỉnh chính sách để giảm thiểu thua lỗ, ảnh hưởng đến lãi suất và tăng trưởng kinh tế.</p>
       </div>
     </div>
-    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Fed</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Hệ thống ngân hàng Mỹ</span></div>
+    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Fed</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Thị trường tài chính toàn cầu</span></div>
     <div class="rec-section">
       <div class="rec-row"><span class="rec-icon risk">⚠</span>
-        <span><strong>Rủi ro:</strong> Rủi ro suy thoái kinh tế, lạm phát dai dẳng ảnh hưởng đến chính sách của Fed.</span></div>
+        <span><strong>Rủi ro:</strong> Lãi suất tăng cao kéo dài, các khoản đầu tư rủi ro, ảnh hưởng đến khả năng điều hành chính sách tiền tệ của Fed.</span></div>
       <div class="rec-row"><span class="rec-icon watch">👁</span>
-        <span><strong>Theo dõi:</strong> Các quyết định chính sách tiền tệ của Fed, báo cáo tài chính của Fed.</span></div>
+        <span><strong>Theo dõi:</strong> Các báo cáo tài chính tiếp theo của Fed, các quyết định về lãi suất của Fed.</span></div>
       <div class="rec-row"><span class="rec-icon action">→</span>
         <span><strong>Lưu ý:</strong> Theo dõi sát sao các động thái của Fed và tác động đến thị trường tài chính toàn cầu.</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="7" data-cat="Ngân hàng"
-     data-lang="vi" data-critical="yes"
-     style="border-left:3px solid #C0392B;">
-  <div class="card-header">
-    <div class="badges">
-      <span style="background:#C0392B;color:#fff;padding:2px 8px;border-radius:2px;font-size:9px;font-weight:700;letter-spacing:.08em;animation:blink 1.4s infinite;">🔴 KHẨN CẤP</span>
-      <span class="badge" style="background:#EFF6FF;color:#1E40AF;
-        border:1px solid #BFDBFE;">Ngân hàng</span>
-      <span class="badge source-badge">🇻🇳 VnEconomy Tài Chính</span>
-      <span class="badge time-badge"></span>
-    </div>
-    <span class="score" style="background:#FFFBEB;color:#B8620A;border:1px solid #FDE68A;">
-      7<span style="font-size:9px;opacity:.7">/10</span>
-    </span>
-  </div>
-  <div class="card-body">
-    <h2 class="card-title">
-      <a href="https://vneconomy.vn/dai-dien-big-4-ngan-hang-kien-nghi-duoc-ban-no-xau-thap-hon-gia-tri-so-sach.htm" target="_blank" rel="noopener">
-        Đại diện “big 4” ngân hàng kiến nghị được bán nợ xấu thấp hơn giá trị sổ sách
-      </a>
-    </h2>
-    <p class="card-summary">Ông Lê Ngọc Lâm, Tổng Giám đốc BIDV, đại diện cho nhóm &#x27;big 4&#x27; ngân hàng, đã kiến nghị Chính phủ cho phép bán nợ xấu theo giá thị trường, kể cả thấp hơn giá trị sổ sách. Mục tiêu là giải phóng nguồn lực đang bị tắc nghẽn, đảm bảo tính minh bạch và đồng bộ trong quy trình xử lý nợ xấu, từ đó cải thiện sức khỏe tài chính của hệ thống ngân hàng.</p>
-    <div class="impact-grid">
-      <div class="impact-box short">
-        <div class="impact-label">Ngắn hạn</div>
-        <p>Có thể thúc đẩy quá trình xử lý nợ xấu, cải thiện thanh khoản cho các ngân hàng.</p>
-      </div>
-      <div class="impact-box medium">
-        <div class="impact-label">Trung hạn</div>
-        <p>Nâng cao chất lượng tài sản của hệ thống ngân hàng, giảm thiểu rủi ro hệ thống.</p>
-      </div>
-    </div>
-    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Các ngân hàng &#x27;big 4&#x27;</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Nợ xấu ngân hàng</span></div>
-    <div class="rec-section">
-      <div class="rec-row"><span class="rec-icon risk">⚠</span>
-        <span><strong>Rủi ro:</strong> Rủi ro định giá tài sản, khả năng ảnh hưởng đến lợi nhuận của ngân hàng.</span></div>
-      <div class="rec-row"><span class="rec-icon watch">👁</span>
-        <span><strong>Theo dõi:</strong> Quyết định của Chính phủ về kiến nghị này, diễn biến thị trường mua bán nợ xấu.</span></div>
-      <div class="rec-row"><span class="rec-icon action">→</span>
-        <span><strong>Lưu ý:</strong> Theo dõi các chính sách liên quan đến xử lý nợ xấu của hệ thống ngân hàng.</span></div>
     </div>
   </div>
 </div>
@@ -731,29 +602,29 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
   </div>
   <div class="card-body">
     <h2 class="card-title">
-      <a href="https://vnexpress.net/vpbank-muon-phat-hanh-co-phieu-thanh-ngan-hang-dau-tien-vuot-100-000-ty-von-dieu-le-5055738.html" target="_blank" rel="noopener">
-        VPBank muốn phát hành cổ phiếu, thành ngân hàng đầu tiên vượt 100.000 tỷ vốn điều lệ
+      <a href="https://vnexpress.net/vpbank-muon-thanh-ngan-hang-dau-tien-vuot-100-000-ty-von-dieu-le-5055738.html" target="_blank" rel="noopener">
+        VPBank muốn thành ngân hàng đầu tiên vượt 100.000 tỷ vốn điều lệ
       </a>
     </h2>
-    <p class="card-summary">VPBank dự kiến phát hành cổ phiếu thưởng cho cổ đông với tỷ lệ 26,04%, qua đó nâng vốn điều lệ vượt mốc 100.000 tỷ đồng. Động thái này sẽ đưa VPBank trở thành ngân hàng đầu tiên tại Việt Nam đạt được cột mốc vốn điều lệ này. Việc tăng vốn điều lệ mạnh mẽ cho thấy chiến lược phát triển và tiềm lực tài chính vững chắc của ngân hàng, đồng thời có thể củng cố vị thế trên thị trường.</p>
+    <p class="card-summary">VPBank dự kiến chia thưởng cho cổ đông bằng cổ phiếu với tỷ lệ 26,04%, nhằm mục tiêu trở thành ngân hàng đầu tiên tại Việt Nam có vốn điều lệ vượt mốc 100.000 tỷ đồng. Kế hoạch này cho thấy sự tăng trưởng và tham vọng mở rộng quy mô của ngân hàng, đồng thời phản ánh chiến lược tái cấu trúc vốn để đáp ứng các yêu cầu về an toàn hoạt động và phát triển trong tương lai. Việc tăng vốn điều lệ có thể giúp VPBank nâng cao năng lực cạnh tranh và khả năng cung cấp dịch vụ tài chính.</p>
     <div class="impact-grid">
       <div class="impact-box short">
         <div class="impact-label">Ngắn hạn</div>
-        <p>Tâm lý tích cực cho cổ phiếu VPB, có thể thu hút dòng tiền đầu tư.</p>
+        <p>Tâm lý tích cực ngắn hạn đối với cổ phiếu VPB, có thể thu hút dòng tiền đầu tư.</p>
       </div>
       <div class="impact-box medium">
         <div class="impact-label">Trung hạn</div>
-        <p>Tăng cường năng lực tài chính, mở rộng hoạt động kinh doanh, nâng cao khả năng cạnh tranh.</p>
+        <p>Tăng cường năng lực tài chính cho VPBank, hỗ trợ các hoạt động kinh doanh và mở rộng tín dụng trong trung hạn.</p>
       </div>
     </div>
-    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">VPB</span></div>
+    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">VPBank</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">VPB</span></div>
     <div class="rec-section">
       <div class="rec-row"><span class="rec-icon risk">⚠</span>
-        <span><strong>Rủi ro:</strong> Rủi ro pha loãng cổ phiếu nếu không có sự tăng trưởng tương ứng về lợi nhuận.</span></div>
+        <span><strong>Rủi ro:</strong> Khả năng thực hiện thành công kế hoạch chia thưởng cổ phiếu và phản ứng của thị trường.</span></div>
       <div class="rec-row"><span class="rec-icon watch">👁</span>
-        <span><strong>Theo dõi:</strong> Diễn biến giá cổ phiếu VPB, thông tin chi tiết về kế hoạch phát hành.</span></div>
+        <span><strong>Theo dõi:</strong> Thông báo chính thức về kế hoạch chia thưởng, diễn biến giá cổ phiếu VPB.</span></div>
       <div class="rec-row"><span class="rec-icon action">→</span>
-        <span><strong>Lưu ý:</strong> Theo dõi phản ứng của thị trường đối với thông tin tăng vốn của VPBank.</span></div>
+        <span><strong>Lưu ý:</strong> Theo dõi các thông tin chi tiết về kế hoạch tăng vốn của VPBank.</span></div>
     </div>
   </div>
 </div>
@@ -774,29 +645,29 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
   </div>
   <div class="card-body">
     <h2 class="card-title">
-      <a href="https://vnexpress.net/pho-thu-tuong-de-nghi-doanh-nghiep-my-cung-phat-trien-trung-tam-tai-chinh-tai-viet-nam-5055729.html" target="_blank" rel="noopener">
-        Phó thủ tướng đề nghị doanh nghiệp Mỹ cùng phát triển trung tâm tài chính tại Việt Nam
+      <a href="https://vnexpress.net/tp-hcm-tang-11-bac-xep-hang-trung-tam-tai-chinh-toan-cau-5055699.html" target="_blank" rel="noopener">
+        TP HCM tăng 11 bậc xếp hạng trung tâm tài chính toàn cầu
       </a>
     </h2>
-    <p class="card-summary">Phó Thủ tướng Nguyễn Hòa Bình đã kêu gọi các doanh nghiệp và nhà đầu tư Hoa Kỳ tham gia vào việc xây dựng và vận hành Trung tâm Tài chính Quốc tế tại Việt Nam. Đề xuất này nhấn mạnh mong muốn của Việt Nam trong việc thu hút vốn đầu tư, công nghệ và kinh nghiệm quản lý từ Mỹ để phát triển hạ tầng tài chính, tạo động lực tăng trưởng kinh tế.</p>
+    <p class="card-summary">Thành phố Hồ Chí Minh đã có sự bứt phá ấn tượng khi tăng 11 bậc trong bảng xếp hạng các trung tâm tài chính toàn cầu chỉ sau sáu tháng, lọt vào nhóm dẫn đầu khu vực Đông Nam Á. Sự thăng hạng này phản ánh những nỗ lực của thành phố trong việc cải thiện môi trường kinh doanh, thu hút đầu tư và phát triển các dịch vụ tài chính. Đây là tín hiệu tích cực, khẳng định tiềm năng và vị thế ngày càng tăng của TP.HCM trên bản đồ tài chính quốc tế.</p>
     <div class="impact-grid">
       <div class="impact-box short">
         <div class="impact-label">Ngắn hạn</div>
-        <p>Tín hiệu tích cực cho các dự án tài chính, thu hút sự quan tâm của nhà đầu tư nước ngoài.</p>
+        <p>Nâng cao uy tín và sức hút của TP.HCM đối với các nhà đầu tư và doanh nghiệp tài chính.</p>
       </div>
       <div class="impact-box medium">
         <div class="impact-label">Trung hạn</div>
-        <p>Thúc đẩy phát triển ngành tài chính Việt Nam, nâng cao vị thế trên trường quốc tế.</p>
+        <p>Thúc đẩy sự phát triển của ngành tài chính, dịch vụ tài chính tại TP.HCM, thu hút thêm vốn FDI và nhân tài.</p>
       </div>
     </div>
-    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Doanh nghiệp Mỹ</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Trung tâm Tài chính Quốc tế Việt Nam</span></div>
+    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">TP.HCM</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Trung tâm tài chính toàn cầu</span></div>
     <div class="rec-section">
       <div class="rec-row"><span class="rec-icon risk">⚠</span>
-        <span><strong>Rủi ro:</strong> Khó khăn trong việc thu hút đầu tư lớn, cạnh tranh với các trung tâm tài chính khu vực.</span></div>
+        <span><strong>Rủi ro:</strong> Duy trì đà tăng trưởng và cải thiện hơn nữa các yếu tố ảnh hưởng đến xếp hạng.</span></div>
       <div class="rec-row"><span class="rec-icon watch">👁</span>
-        <span><strong>Theo dõi:</strong> Phản hồi từ các doanh nghiệp Mỹ, tiến độ các dự án trung tâm tài chính.</span></div>
+        <span><strong>Theo dõi:</strong> Các báo cáo xếp hạng trung tâm tài chính tiếp theo, các chính sách hỗ trợ phát triển tài chính của TP.HCM.</span></div>
       <div class="rec-row"><span class="rec-icon action">→</span>
-        <span><strong>Lưu ý:</strong> Theo dõi các động thái hợp tác đầu tư giữa Việt Nam và Mỹ trong lĩnh vực tài chính.</span></div>
+        <span><strong>Lưu ý:</strong> Theo dõi sự phát triển của TP.HCM như một trung tâm tài chính tiềm năng.</span></div>
     </div>
   </div>
 </div>
@@ -808,7 +679,7 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
       
       <span class="badge" style="background:#F0F9FF;color:#0C4A6E;
         border:1px solid #BAE6FD;">Doanh nghiệp</span>
-      <span class="badge source-badge">🇻🇳 VnExpress Kinh Doanh</span>
+      <span class="badge source-badge">🇻🇳 CafeF Vĩ Mô</span>
       <span class="badge time-badge"></span>
     </div>
     <span class="score" style="background:#FFFBEB;color:#B8620A;border:1px solid #FDE68A;">
@@ -817,115 +688,29 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
   </div>
   <div class="card-body">
     <h2 class="card-title">
-      <a href="https://vnexpress.net/cong-ty-cua-bau-duc-dat-ke-hoach-lai-ky-luc-4-200-ty-dong-5055710.html" target="_blank" rel="noopener">
-        Công ty của bầu Đức đặt kế hoạch lãi kỷ lục 4.200 tỷ đồng
+      <a href="https://cafef.vn/tu-6-nhan-su-20-nam-tim-vang-noi-soi-da-den-ga-khong-lo-10-ty-usd-mang-thuong-hieu-viet-den-11-nuoc-188260327161428384.html" target="_blank" rel="noopener">
+        Từ 6 nhân sự, 20 năm tìm &quot;vàng&quot; nơi sỏi đá đến &quot;gã khổng lồ&quot; 10 tỷ USD mang thương hiệu Việt đến 11 nước
       </a>
     </h2>
-    <p class="card-summary">Hoàng Anh Gia Lai (HAGL) đã công bố kế hoạch kinh doanh đầy tham vọng với mục tiêu lợi nhuận sau thuế đạt 4.200 tỷ đồng, gấp đôi so với cùng kỳ năm trước. Thành công này được kỳ vọng đến từ hiệu quả của việc tái cơ cấu hoạt động và sự vào mùa thu hoạch của nhiều loại cây trồng chủ lực. Kế hoạch lợi nhuận kỷ lục cho thấy sự phục hồi và tiềm năng tăng trưởng mạnh mẽ của công ty.</p>
+    <p class="card-summary">Câu chuyện về sự phát triển vượt bậc của một doanh nghiệp Việt Nam, từ vỏn vẹn 6 nhân sự vào năm 2006 đến &quot;gã khổng lồ&quot; trị giá 10 tỷ USD với thương hiệu có mặt tại 11 quốc gia. Hành trình 20 năm &quot;tìm vàng nơi sỏi đá&quot; này là minh chứng cho sự kiên trì, sáng tạo và tầm nhìn chiến lược. Thành công này không chỉ mang lại lợi ích cho doanh nghiệp mà còn góp phần nâng cao vị thế thương hiệu Việt trên thị trường quốc tế.</p>
     <div class="impact-grid">
       <div class="impact-box short">
         <div class="impact-label">Ngắn hạn</div>
-        <p>Tích cực cho cổ phiếu HAG, có thể thu hút sự quan tâm của nhà đầu tư.</p>
+        <p>Truyền cảm hứng và động lực cho các doanh nghiệp khởi nghiệp và phát triển.</p>
       </div>
       <div class="impact-box medium">
         <div class="impact-label">Trung hạn</div>
-        <p>Cải thiện sức khỏe tài chính của HAGL, tạo tiền đề cho các kế hoạch phát triển dài hạn.</p>
+        <p>Khẳng định năng lực cạnh tranh của doanh nghiệp Việt Nam trên thị trường toàn cầu, thu hút đầu tư và nhân tài.</p>
       </div>
     </div>
-    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">HAG</span></div>
+    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Doanh nghiệp Việt Nam</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Thương hiệu Việt</span></div>
     <div class="rec-section">
       <div class="rec-row"><span class="rec-icon risk">⚠</span>
-        <span><strong>Rủi ro:</strong> Rủi ro thời tiết, dịch bệnh ảnh hưởng đến mùa vụ, biến động giá nông sản.</span></div>
+        <span><strong>Rủi ro:</strong> Duy trì đà tăng trưởng và khả năng thích ứng với sự thay đổi của thị trường toàn cầu.</span></div>
       <div class="rec-row"><span class="rec-icon watch">👁</span>
-        <span><strong>Theo dõi:</strong> Kết quả kinh doanh thực tế của HAGL, diễn biến giá các sản phẩm nông nghiệp.</span></div>
+        <span><strong>Theo dõi:</strong> Các chiến lược mở rộng thị trường và phát triển sản phẩm của doanh nghiệp, các chỉ số tài chính.</span></div>
       <div class="rec-row"><span class="rec-icon action">→</span>
-        <span><strong>Lưu ý:</strong> Theo dõi kết quả kinh doanh của HAGL và các yếu tố ảnh hưởng đến ngành nông nghiệp.</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="6" data-cat="Chứng khoán"
-     data-lang="vi" data-critical="no"
-     style="">
-  <div class="card-header">
-    <div class="badges">
-      
-      <span class="badge" style="background:#F0FDF4;color:#166534;
-        border:1px solid #BBF7D0;">Chứng khoán</span>
-      <span class="badge source-badge">🇻🇳 CafeF</span>
-      <span class="badge time-badge"></span>
-    </div>
-    <span class="score" style="background:#FFFBEB;color:#B8620A;border:1px solid #FDE68A;">
-      6<span style="font-size:9px;opacity:.7">/10</span>
-    </span>
-  </div>
-  <div class="card-body">
-    <h2 class="card-title">
-      <a href="https://cafef.vn/co-phieu-gvr-trang-ben-ban-dong-tien-bat-day-kich-hoat-cu-tang-kich-tran-188260327231205772.chn" target="_blank" rel="noopener">
-        Cổ phiếu GVR “trắng bên bán”, dòng tiền &quot;bắt đáy&quot; kích hoạt cú tăng kịch trần
-      </a>
-    </h2>
-    <p class="card-summary">Trong phiên giao dịch cuối tuần, cổ phiếu GVR đã có một phiên tăng trưởng ấn tượng, đạt mức tăng trần 7% và rơi vào trạng thái &#x27;trắng bên bán&#x27;. Sự bứt phá này được cho là nhờ lực cầu bắt đáy mạnh mẽ, cho thấy sự quan tâm trở lại của nhà đầu tư đối với cổ phiếu này. Hiện tượng &#x27;trắng bên bán&#x27; cho thấy cung không đủ cầu, đẩy giá lên cao.</p>
-    <div class="impact-grid">
-      <div class="impact-box short">
-        <div class="impact-label">Ngắn hạn</div>
-        <p>Tâm lý tích cực cho cổ phiếu GVR, có thể thu hút thêm nhà đầu tư ngắn hạn.</p>
-      </div>
-      <div class="impact-box medium">
-        <div class="impact-label">Trung hạn</div>
-        <p>Cần theo dõi xem đà tăng này có bền vững hay chỉ là nhịp hồi phục kỹ thuật.</p>
-      </div>
-    </div>
-    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">GVR</span></div>
-    <div class="rec-section">
-      <div class="rec-row"><span class="rec-icon risk">⚠</span>
-        <span><strong>Rủi ro:</strong> Rủi ro điều chỉnh sau đà tăng mạnh, biến động chung của thị trường.</span></div>
-      <div class="rec-row"><span class="rec-icon watch">👁</span>
-        <span><strong>Theo dõi:</strong> Diễn biến giá cổ phiếu GVR trong các phiên tiếp theo, khối lượng giao dịch.</span></div>
-      <div class="rec-row"><span class="rec-icon action">→</span>
-        <span><strong>Lưu ý:</strong> Quan sát diễn biến của cổ phiếu GVR để đánh giá xu hướng tiếp theo.</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="6" data-cat="Doanh nghiệp"
-     data-lang="vi" data-critical="no"
-     style="">
-  <div class="card-header">
-    <div class="badges">
-      
-      <span class="badge" style="background:#F0F9FF;color:#0C4A6E;
-        border:1px solid #BAE6FD;">Doanh nghiệp</span>
-      <span class="badge source-badge">🇻🇳 CafeF</span>
-      <span class="badge time-badge"></span>
-    </div>
-    <span class="score" style="background:#FFFBEB;color:#B8620A;border:1px solid #FDE68A;">
-      6<span style="font-size:9px;opacity:.7">/10</span>
-    </span>
-  </div>
-  <div class="card-body">
-    <h2 class="card-title">
-      <a href="https://cafef.vn/can-canh-sieu-gian-khoan-hien-dai-nhat-pv-drilling-vua-duoc-dat-ten-tai-tphcm-188260327140646705.chn" target="_blank" rel="noopener">
-        Cận cảnh &quot;siêu giàn khoan&quot; hiện đại nhất PV Drilling vừa được đặt tên tại TPHCM
-      </a>
-    </h2>
-    <p class="card-summary">PV Drilling đã tổ chức lễ đặt tên cho &#x27;siêu giàn khoan&#x27; hiện đại nhất của mình, PV DRILLING IX, tại TP.HCM. Giàn khoan này dự kiến sẽ cung cấp dịch vụ khoan từ tháng 4 năm 2026 và được trang bị các hệ thống công nghệ tiên tiến nhất. Sự kiện này đánh dấu bước tiến quan trọng trong việc nâng cao năng lực khai thác dầu khí của Việt Nam và khẳng định vị thế của PV Drilling trên thị trường.</p>
-    <div class="impact-grid">
-      <div class="impact-box short">
-        <div class="impact-label">Ngắn hạn</div>
-        <p>Tín hiệu tích cực cho PV Drilling, có thể thu hút sự quan tâm của các đối tác trong ngành dầu khí.</p>
-      </div>
-      <div class="impact-box medium">
-        <div class="impact-label">Trung hạn</div>
-        <p>Nâng cao năng lực cạnh tranh của PV Drilling, đóng góp vào hoạt động khai thác dầu khí quốc gia.</p>
-      </div>
-    </div>
-    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">PV Drilling</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">PV DRILLING IX</span></div>
-    <div class="rec-section">
-      <div class="rec-row"><span class="rec-icon risk">⚠</span>
-        <span><strong>Rủi ro:</strong> Biến động giá dầu, rủi ro trong hoạt động khai thác.</span></div>
-      <div class="rec-row"><span class="rec-icon watch">👁</span>
-        <span><strong>Theo dõi:</strong> Hiệu quả hoạt động của giàn khoan PV DRILLING IX, các hợp đồng khoan mới.</span></div>
-      <div class="rec-row"><span class="rec-icon action">→</span>
-        <span><strong>Lưu ý:</strong> Theo dõi hoạt động của PV Drilling và ngành dầu khí Việt Nam.</span></div>
+        <span><strong>Lưu ý:</strong> Tìm hiểu về các doanh nghiệp Việt Nam có tiềm năng phát triển mạnh mẽ.</span></div>
     </div>
   </div>
 </div>
@@ -950,36 +735,36 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
         Dự báo lợi nhuận ngành ngân hàng tăng trưởng chậm lại trong quý 1/2026
       </a>
     </h2>
-    <p class="card-summary">VCBS dự báo lợi nhuận của ngành ngân hàng sẽ tăng trưởng chậm lại trong quý 1/2026. Nguyên nhân chính là áp lực chi phí vốn lên biên lãi ròng (NIM) vẫn hiện hữu, trong khi đó, hạn chế về room tín dụng, đặc biệt là tín dụng bất động sản, vốn là động lực tăng trưởng của nhiều ngân hàng, sẽ ảnh hưởng đến kết quả kinh doanh.</p>
+    <p class="card-summary">VCBS dự báo lợi nhuận của ngành ngân hàng sẽ tăng trưởng chậm lại trong quý 1/2026. Nguyên nhân chính là áp lực chi phí vốn lên biên lãi ròng (NIM) vẫn hiện hữu, trong khi room tín dụng bị hạn chế, đặc biệt là tín dụng cho lĩnh vực bất động sản, vốn là động lực tăng trưởng của nhiều ngân hàng. Dự báo này cho thấy những thách thức mà ngành ngân hàng có thể đối mặt trong thời gian tới.</p>
     <div class="impact-grid">
       <div class="impact-box short">
         <div class="impact-label">Ngắn hạn</div>
-        <p>Có thể tạo tâm lý thận trọng cho nhà đầu tư vào cổ phiếu ngân hàng.</p>
+        <p>Có thể ảnh hưởng đến tâm lý nhà đầu tư đối với cổ phiếu ngân hàng.</p>
       </div>
       <div class="impact-box medium">
         <div class="impact-label">Trung hạn</div>
-        <p>Các ngân hàng cần tìm kiếm các nguồn thu nhập mới và quản lý chi phí hiệu quả hơn.</p>
+        <p>Ngành ngân hàng cần tìm kiếm các động lực tăng trưởng mới, đa dạng hóa nguồn thu và quản lý rủi ro hiệu quả hơn.</p>
       </div>
     </div>
-    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Ngành ngân hàng Việt Nam</span></div>
+    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Ngành ngân hàng</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">VCBS</span></div>
     <div class="rec-section">
       <div class="rec-row"><span class="rec-icon risk">⚠</span>
-        <span><strong>Rủi ro:</strong> Rủi ro tín dụng bất động sản, áp lực cạnh tranh lãi suất.</span></div>
+        <span><strong>Rủi ro:</strong> Sự phục hồi chậm của thị trường bất động sản, áp lực cạnh tranh về lãi suất, các quy định mới về tín dụng.</span></div>
       <div class="rec-row"><span class="rec-icon watch">👁</span>
-        <span><strong>Theo dõi:</strong> Kết quả kinh doanh quý 1/2026 của các ngân hàng, diễn biến room tín dụng.</span></div>
+        <span><strong>Theo dõi:</strong> Báo cáo tài chính quý 1/2026 của các ngân hàng, các chính sách điều hành của Ngân hàng Nhà nước.</span></div>
       <div class="rec-row"><span class="rec-icon action">→</span>
-        <span><strong>Lưu ý:</strong> Theo dõi các ngân hàng có mô hình kinh doanh đa dạng và quản trị rủi ro tốt.</span></div>
+        <span><strong>Lưu ý:</strong> Theo dõi sát sao diễn biến lợi nhuận của ngành ngân hàng và các yếu tố ảnh hưởng.</span></div>
     </div>
   </div>
 </div>
-<div class="card" data-score="6" data-cat="Kinh tế vĩ mô"
+<div class="card" data-score="6" data-cat="Ngân hàng"
      data-lang="vi" data-critical="no"
      style="">
   <div class="card-header">
     <div class="badges">
       
-      <span class="badge" style="background:#FFF7ED;color:#9A3412;
-        border:1px solid #FED7AA;">Kinh tế vĩ mô</span>
+      <span class="badge" style="background:#EFF6FF;color:#1E40AF;
+        border:1px solid #BFDBFE;">Ngân hàng</span>
       <span class="badge source-badge">🇻🇳 VnEconomy Tài Chính</span>
       <span class="badge time-badge"></span>
     </div>
@@ -989,38 +774,38 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
   </div>
   <div class="card-body">
     <h2 class="card-title">
-      <a href="https://vneconomy.vn/toan-quoc-hoan-tat-dang-ky-kiem-ke-tai-san-cong-truoc-thoi-han.htm" target="_blank" rel="noopener">
-        Toàn quốc hoàn tất đăng ký kiểm kê tài sản công trước thời hạn
+      <a href="https://vneconomy.vn/dai-dien-big-4-ngan-hang-kien-nghi-duoc-ban-no-xau-thap-hon-gia-tri-so-sach.htm" target="_blank" rel="noopener">
+        Đại diện “big 4” ngân hàng kiến nghị được bán nợ xấu thấp hơn giá trị sổ sách
       </a>
     </h2>
-    <p class="card-summary">Công tác đăng ký kiểm kê tài sản công trên toàn quốc đã hoàn thành trước thời hạn, với sự tham gia của 100% các đơn vị liên quan. Việc hoàn thành sớm này tạo tiền đề quan trọng để các bộ, ngành và địa phương đẩy nhanh tiến độ các bước tiếp theo, đặc biệt là việc gửi và phê duyệt báo cáo trong giai đoạn nước rút. Điều này cho thấy sự quyết tâm và hiệu quả trong công tác quản lý tài sản công.</p>
+    <p class="card-summary">Ông Lê Ngọc Lâm, Tổng giám đốc BIDV, đại diện cho nhóm &quot;big 4&quot; ngân hàng, đã đề xuất Chính phủ cho phép bán nợ xấu theo giá thị trường, kể cả thấp hơn giá trị sổ sách. Mục đích của đề xuất này là nhằm giải phóng nguồn lực đang bị &quot;ách tắc&quot; trong các khoản nợ xấu, đảm bảo tính minh bạch và đồng bộ quy trình xử lý nợ. Việc này có thể giúp các ngân hàng cải thiện chất lượng tài sản và tăng cường khả năng cho vay.</p>
     <div class="impact-grid">
       <div class="impact-box short">
         <div class="impact-label">Ngắn hạn</div>
-        <p>Tạo đà cho các bước tiếp theo trong quản lý tài sản công.</p>
+        <p>Có thể tạo ra một thị trường mua bán nợ xấu sôi động hơn, ảnh hưởng đến giá trị tài sản của các ngân hàng.</p>
       </div>
       <div class="impact-box medium">
         <div class="impact-label">Trung hạn</div>
-        <p>Nâng cao hiệu quả sử dụng tài sản công, minh bạch hóa công tác quản lý tài sản nhà nước.</p>
+        <p>Giúp các ngân hàng xử lý nợ xấu hiệu quả hơn, giải phóng vốn cho vay mới, thúc đẩy tăng trưởng tín dụng.</p>
       </div>
     </div>
-    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Tài sản công</span></div>
+    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">BIDV</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Big 4 ngân hàng</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Nợ xấu</span></div>
     <div class="rec-section">
       <div class="rec-row"><span class="rec-icon risk">⚠</span>
-        <span><strong>Rủi ro:</strong> Rủi ro trong quá trình phê duyệt báo cáo, chậm trễ trong việc triển khai các biện pháp quản lý sau kiểm kê.</span></div>
+        <span><strong>Rủi ro:</strong> Rủi ro định giá nợ xấu, khả năng minh bạch hóa quy trình bán nợ, tác động đến lợi nhuận của ngân hàng.</span></div>
       <div class="rec-row"><span class="rec-icon watch">👁</span>
-        <span><strong>Theo dõi:</strong> Các báo cáo phê duyệt, các biện pháp quản lý tài sản công được đề xuất.</span></div>
+        <span><strong>Theo dõi:</strong> Quyết định của Chính phủ về đề xuất này, diễn biến thị trường mua bán nợ xấu.</span></div>
       <div class="rec-row"><span class="rec-icon action">→</span>
-        <span><strong>Lưu ý:</strong> Theo dõi tiến độ quản lý và sử dụng tài sản công.</span></div>
+        <span><strong>Lưu ý:</strong> Theo dõi các chính sách liên quan đến xử lý nợ xấu của hệ thống ngân hàng.</span></div>
     </div>
   </div>
 </div>
 <div class="card" data-score="6" data-cat="Hàng hóa"
-     data-lang="vi" data-critical="no"
-     style="">
+     data-lang="vi" data-critical="yes"
+     style="border-left:3px solid #C0392B;">
   <div class="card-header">
     <div class="badges">
-      
+      <span style="background:#C0392B;color:#fff;padding:2px 8px;border-radius:2px;font-size:9px;font-weight:700;letter-spacing:.08em;animation:blink 1.4s infinite;">🔴 KHẨN CẤP</span>
       <span class="badge" style="background:#FFFBEB;color:#92400E;
         border:1px solid #FDE68A;">Hàng hóa</span>
       <span class="badge source-badge">🇻🇳 VnEconomy Tài Chính</span>
@@ -1036,25 +821,154 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
         Giá vàng miếng SJC giảm 2 phiên liên tiếp
       </a>
     </h2>
-    <p class="card-summary">Trong hai phiên giao dịch ngày 26 và 27/3, giá vàng miếng SJC đã giảm tổng cộng 2,9 triệu đồng/lượng, với mức giá bán phổ biến là 170,6 triệu đồng/lượng. Sự sụt giảm này diễn ra bất chấp xu hướng tăng giá của vàng thế giới. Điều này cho thấy sự chênh lệch giữa giá vàng trong nước và thế giới đang có xu hướng thu hẹp.</p>
+    <p class="card-summary">Trong hai phiên giao dịch ngày 26 và 27/3, giá vàng miếng SJC đã giảm tổng cộng 2,9 triệu đồng/lượng, với giá bán phổ biến ở mức 170,6 triệu đồng/lượng. Sự sụt giảm này diễn ra bất chấp xu hướng tăng của giá vàng thế giới. Sự chênh lệch giữa giá vàng trong nước và thế giới, cùng với biến động giá SJC, cho thấy thị trường vàng trong nước đang có những yếu tố điều chỉnh riêng.</p>
     <div class="impact-grid">
       <div class="impact-box short">
         <div class="impact-label">Ngắn hạn</div>
-        <p>Người mua vàng SJC có thể có lợi hơn, nhưng cần theo dõi biến động tiếp theo.</p>
+        <p>Giảm giá vàng miếng SJC, có thể ảnh hưởng đến tâm lý nhà đầu tư vàng trong nước.</p>
       </div>
       <div class="impact-box medium">
         <div class="impact-label">Trung hạn</div>
-        <p>Có thể ảnh hưởng đến tâm lý nhà đầu tư vàng, cần theo dõi chính sách quản lý thị trường vàng của Nhà nước.</p>
+        <p>Cần theo dõi xem liệu xu hướng giảm giá này có tiếp diễn hay không, và liệu có sự thu hẹp khoảng cách với giá vàng thế giới.</p>
       </div>
     </div>
-    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Vàng miếng SJC</span></div>
+    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Vàng miếng SJC</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Giá vàng thế giới</span></div>
     <div class="rec-section">
       <div class="rec-row"><span class="rec-icon risk">⚠</span>
-        <span><strong>Rủi ro:</strong> Biến động khó lường của giá vàng thế giới, chính sách quản lý thị trường vàng trong nước.</span></div>
+        <span><strong>Rủi ro:</strong> Biến động khó lường của giá vàng thế giới, các yếu tố cung cầu trên thị trường vàng trong nước.</span></div>
       <div class="rec-row"><span class="rec-icon watch">👁</span>
-        <span><strong>Theo dõi:</strong> Diễn biến giá vàng SJC và vàng thế giới, các thông tin từ Ngân hàng Nhà nước.</span></div>
+        <span><strong>Theo dõi:</strong> Diễn biến giá vàng thế giới, các chính sách quản lý thị trường vàng của Việt Nam.</span></div>
       <div class="rec-row"><span class="rec-icon action">→</span>
-        <span><strong>Lưu ý:</strong> Theo dõi sát sao biến động giá vàng trong nước và thế giới.</span></div>
+        <span><strong>Lưu ý:</strong> Theo dõi sát sao biến động giá vàng SJC và các yếu tố ảnh hưởng.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="6" data-cat="Kinh tế vĩ mô"
+     data-lang="en" data-critical="yes"
+     style="border-left:3px solid #C0392B;">
+  <div class="card-header">
+    <div class="badges">
+      <span style="background:#C0392B;color:#fff;padding:2px 8px;border-radius:2px;font-size:9px;font-weight:700;letter-spacing:.08em;animation:blink 1.4s infinite;">🔴 KHẨN CẤP</span>
+      <span class="badge" style="background:#FFF7ED;color:#9A3412;
+        border:1px solid #FED7AA;">Kinh tế vĩ mô</span>
+      <span class="badge source-badge">🌍 Yahoo Finance</span>
+      <span class="badge time-badge"></span>
+    </div>
+    <span class="score" style="background:#FFFBEB;color:#B8620A;border:1px solid #FDE68A;">
+      6<span style="font-size:9px;opacity:.7">/10</span>
+    </span>
+  </div>
+  <div class="card-body">
+    <h2 class="card-title">
+      <a href="https://finance.yahoo.com/personal-finance/taxes/article/nearly-half-of-americans-are-claiming-tax-benefits-in-the-obbb-202713647.html" target="_blank" rel="noopener">
+        Nearly half of Americans are claiming tax benefits in the OBBB
+      </a>
+    </h2>
+    <p class="card-summary">This article reports that nearly half of Americans are claiming tax benefits under the OBBB (likely referring to a specific legislative act or program). This indicates a significant uptake of available tax incentives, suggesting that these benefits are impactful for a large portion of the population. The widespread claiming of these benefits could have implications for government revenue, consumer spending, and economic activity.</p>
+    <div class="impact-grid">
+      <div class="impact-box short">
+        <div class="impact-label">Ngắn hạn</div>
+        <p>May influence consumer spending patterns and tax planning for individuals.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Trung hạn</div>
+        <p>Could affect government tax revenue projections and potentially influence future tax policy decisions.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Americans</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Tax benefits</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">OBBB</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">⚠</span>
+        <span><strong>Rủi ro:</strong> The specific details and long-term effectiveness of the OBBB tax benefits.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">👁</span>
+        <span><strong>Theo dõi:</strong> The total amount of tax benefits claimed, any official statements or analyses of the OBBB&#x27;s economic impact.</span></div>
+      <div class="rec-row"><span class="rec-icon action">→</span>
+        <span><strong>Lưu ý:</strong> Monitor the economic implications of widespread tax benefit claims.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="5" data-cat="Tài chính quốc tế"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#EEF2FF;color:#3730A3;
+        border:1px solid #C7D2FE;">Tài chính quốc tế</span>
+      <span class="badge source-badge">🇻🇳 VnExpress Kinh Doanh</span>
+      <span class="badge time-badge"></span>
+    </div>
+    <span class="score" style="background:#F0FDF4;color:#1A7A4A;border:1px solid #BBF7D0;">
+      5<span style="font-size:9px;opacity:.7">/10</span>
+    </span>
+  </div>
+  <div class="card-body">
+    <h2 class="card-title">
+      <a href="https://vnexpress.net/pho-thu-tuong-de-nghi-doanh-nghiep-my-cung-phat-trien-trung-tam-tai-chinh-tai-viet-nam-5055729.html" target="_blank" rel="noopener">
+        Phó thủ tướng đề nghị doanh nghiệp Mỹ cùng phát triển trung tâm tài chính tại Việt Nam
+      </a>
+    </h2>
+    <p class="card-summary">Phó thủ tướng Nguyễn Hòa Bình đã đề nghị các doanh nghiệp và nhà đầu tư Hoa Kỳ cùng tham gia vào việc xây dựng và vận hành Trung tâm tài chính quốc tế tại Việt Nam. Động thái này thể hiện mong muốn thu hút vốn đầu tư và kinh nghiệm quốc tế để phát triển hạ tầng tài chính của Việt Nam, nâng cao vị thế trên trường quốc tế. Sự hợp tác này có thể mở ra nhiều cơ hội cho cả hai bên, thúc đẩy tăng trưởng kinh tế và hội nhập tài chính.</p>
+    <div class="impact-grid">
+      <div class="impact-box short">
+        <div class="impact-label">Ngắn hạn</div>
+        <p>Tăng cường sự quan tâm của các nhà đầu tư Mỹ đến thị trường Việt Nam.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Trung hạn</div>
+        <p>Thúc đẩy phát triển hạ tầng tài chính, thu hút vốn FDI, nâng cao năng lực cạnh tranh của Việt Nam trong lĩnh vực tài chính.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Doanh nghiệp Mỹ</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Trung tâm tài chính quốc tế Việt Nam</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">⚠</span>
+        <span><strong>Rủi ro:</strong> Khả năng thu hút đầu tư thực tế, sự cạnh tranh từ các trung tâm tài chính khác trong khu vực.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">👁</span>
+        <span><strong>Theo dõi:</strong> Các cam kết đầu tư cụ thể từ phía Mỹ, tiến độ xây dựng trung tâm tài chính.</span></div>
+      <div class="rec-row"><span class="rec-icon action">→</span>
+        <span><strong>Lưu ý:</strong> Theo dõi các thông tin về hợp tác đầu tư tài chính giữa Việt Nam và Mỹ.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="5" data-cat="Chứng khoán"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#F0FDF4;color:#166534;
+        border:1px solid #BBF7D0;">Chứng khoán</span>
+      <span class="badge source-badge">🇻🇳 CafeF</span>
+      <span class="badge time-badge"></span>
+    </div>
+    <span class="score" style="background:#F0FDF4;color:#1A7A4A;border:1px solid #BBF7D0;">
+      5<span style="font-size:9px;opacity:.7">/10</span>
+    </span>
+  </div>
+  <div class="card-body">
+    <h2 class="card-title">
+      <a href="https://cafef.vn/co-phieu-gvr-trang-ben-ban-dong-tien-bat-day-kich-hoat-cu-tang-kich-tran-188260327231205772.chn" target="_blank" rel="noopener">
+        Cổ phiếu GVR “trắng bên bán”, dòng tiền &quot;bắt đáy&quot; kích hoạt cú tăng kịch trần
+      </a>
+    </h2>
+    <p class="card-summary">Trong phiên giao dịch ngày 27/3, cổ phiếu GVR đã có một phiên tăng trưởng ấn tượng, đạt mức tăng trần 7% và rơi vào trạng thái &quot;trắng bên bán&quot;. Sự bứt phá này được cho là nhờ lực cầu &quot;bắt đáy&quot; tăng vọt, cho thấy tâm lý nhà đầu tư đang có sự quan tâm trở lại đối với cổ phiếu này. Hiện tượng &quot;trắng bên bán&quot; thường báo hiệu một đợt tăng giá mạnh mẽ, thu hút sự chú ý của thị trường.</p>
+    <div class="impact-grid">
+      <div class="impact-box short">
+        <div class="impact-label">Ngắn hạn</div>
+        <p>Tăng giá đột biến của cổ phiếu GVR, thu hút sự chú ý của nhà đầu tư.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Trung hạn</div>
+        <p>Có thể tạo hiệu ứng lan tỏa tích cực đến các cổ phiếu cùng ngành hoặc nhóm cổ phiếu cao su.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">GVR</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">⚠</span>
+        <span><strong>Rủi ro:</strong> Khả năng duy trì đà tăng trưởng, các yếu tố cơ bản của doanh nghiệp.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">👁</span>
+        <span><strong>Theo dõi:</strong> Diễn biến giao dịch của GVR trong các phiên tiếp theo, báo cáo kết quả kinh doanh của công ty.</span></div>
+      <div class="rec-row"><span class="rec-icon action">→</span>
+        <span><strong>Lưu ý:</strong> Theo dõi diễn biến cổ phiếu GVR và các yếu tố ảnh hưởng đến giá.</span></div>
     </div>
   </div>
 </div>
@@ -1079,25 +993,25 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
         “Vũ khí” mạnh nhất đưa Thế Giới Di Động trở thành “đế chế” bán lẻ số 1 Đông Nam Á
       </a>
     </h2>
-    <p class="card-summary">Chủ tịch Hội đồng Quản trị Thế Giới Di Động (MWG), ông Nguyễn Đức Tài, cho rằng nguồn lực quý giá nhất và là &#x27;vũ khí&#x27; mạnh nhất giúp công ty trở thành đế chế bán lẻ số 1 Đông Nam Á chính là hàng chục nghìn nhân viên. Sự cống hiến, chuyên môn và tinh thần đồng đội của đội ngũ nhân sự được xem là yếu tố then chốt tạo nên thành công và sự phát triển bền vững của MWG.</p>
+    <p class="card-summary">Theo Chủ tịch HĐQT Nguyễn Đức Tài, nguồn lực quý giá nhất và &quot;vũ khí&quot; mạnh nhất giúp Thế Giới Di Động (TGDĐ) trở thành đế chế bán lẻ số 1 Đông Nam Á chính là hàng chục nghìn nhân viên. Sự cống hiến, chuyên nghiệp và tinh thần đồng đội của đội ngũ nhân sự được xem là yếu tố then chốt tạo nên thành công và lợi thế cạnh tranh bền vững cho TGDĐ. Điều này nhấn mạnh tầm quan trọng của yếu tố con người trong chiến lược phát triển doanh nghiệp.</p>
     <div class="impact-grid">
       <div class="impact-box short">
         <div class="impact-label">Ngắn hạn</div>
-        <p>Tăng cường tinh thần và động lực cho nhân viên MWG.</p>
+        <p>Tăng cường tinh thần và động lực cho nhân viên TGDĐ, củng cố hình ảnh thương hiệu.</p>
       </div>
       <div class="impact-box medium">
         <div class="impact-label">Trung hạn</div>
-        <p>Củng cố văn hóa doanh nghiệp, thu hút và giữ chân nhân tài, thúc đẩy tăng trưởng dài hạn.</p>
+        <p>Tiếp tục duy trì vị thế dẫn đầu của TGDĐ trong ngành bán lẻ, thúc đẩy sự phát triển và mở rộng của công ty.</p>
       </div>
     </div>
-    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">MWG</span></div>
+    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Thế Giới Di Động</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">MWG</span></div>
     <div class="rec-section">
       <div class="rec-row"><span class="rec-icon risk">⚠</span>
-        <span><strong>Rủi ro:</strong> Rủi ro cạnh tranh nhân sự, biến động thị trường bán lẻ.</span></div>
+        <span><strong>Rủi ro:</strong> Khả năng giữ chân và phát triển nguồn nhân lực chất lượng cao, sự cạnh tranh ngày càng gay gắt trên thị trường bán lẻ.</span></div>
       <div class="rec-row"><span class="rec-icon watch">👁</span>
-        <span><strong>Theo dõi:</strong> Các chiến lược nhân sự của MWG, kết quả kinh doanh của công ty.</span></div>
+        <span><strong>Theo dõi:</strong> Các báo cáo tài chính và chiến lược phát triển của TGDĐ, các động thái của đối thủ cạnh tranh.</span></div>
       <div class="rec-row"><span class="rec-icon action">→</span>
-        <span><strong>Lưu ý:</strong> Theo dõi cách MWG tiếp tục phát huy sức mạnh đội ngũ nhân viên.</span></div>
+        <span><strong>Lưu ý:</strong> Theo dõi sự phát triển của TGDĐ và các yếu tố tạo nên thành công của họ.</span></div>
     </div>
   </div>
 </div>
@@ -1109,7 +1023,7 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
       
       <span class="badge" style="background:#F0F9FF;color:#0C4A6E;
         border:1px solid #BAE6FD;">Doanh nghiệp</span>
-      <span class="badge source-badge">🇻🇳 CafeF</span>
+      <span class="badge source-badge">🇻🇳 CafeF Vĩ Mô</span>
       <span class="badge time-badge"></span>
     </div>
     <span class="score" style="background:#F0FDF4;color:#1A7A4A;border:1px solid #BBF7D0;">
@@ -1118,72 +1032,29 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
   </div>
   <div class="card-body">
     <h2 class="card-title">
-      <a href="https://cafef.vn/ubcknn-xu-phat-2-cong-ty-ho-dau-khi-vi-vi-pham-cong-bo-thong-tin-188260327231402086.chn" target="_blank" rel="noopener">
-        UBCKNN xử phạt 2 công ty “họ” dầu khí vì vi phạm công bố thông tin
+      <a href="https://cafef.vn/can-canh-sieu-gian-khoan-hien-dai-nhat-pv-drilling-vua-duoc-dat-ten-tai-tphcm-188260327140646705.html" target="_blank" rel="noopener">
+        Cận cảnh &quot;siêu giàn khoan&quot; hiện đại nhất PV Drilling vừa được đặt tên tại TPHCM
       </a>
     </h2>
-    <p class="card-summary">Ủy ban Chứng khoán Nhà nước (UBCKNN) đã ra quyết định xử phạt vi phạm hành chính đối với hai công ty thuộc &#x27;họ&#x27; dầu khí là CTCP Đầu tư và Xây lắp Dầu khí Sài Gòn và CTCP Đầu tư Tài chính Bảo hiểm Dầu khí. Tổng số tiền phạt lên tới hàng trăm triệu đồng do các công ty này đã vi phạm quy định về công bố thông tin. Hành động này nhấn mạnh tầm quan trọng của việc tuân thủ các quy định về minh bạch thông tin trên thị trường chứng khoán.</p>
+    <p class="card-summary">PV Drilling vừa tổ chức lễ đặt tên cho &quot;siêu giàn khoan&quot; hiện đại nhất của mình tại TP.HCM. Giàn khoan PV DRILLING IX được trang bị các hệ thống công nghệ tiên tiến và dự kiến sẽ cung cấp dịch vụ khoan từ tháng 4 năm 2026. Sự kiện này đánh dấu bước tiến quan trọng trong việc nâng cao năng lực khai thác dầu khí của Việt Nam, đồng thời khẳng định vị thế của PV Drilling trong ngành công nghiệp dầu khí.</p>
     <div class="impact-grid">
       <div class="impact-box short">
         <div class="impact-label">Ngắn hạn</div>
-        <p>Tăng cường sự thận trọng trong công bố thông tin của các doanh nghiệp niêm yết.</p>
+        <p>Tăng cường hình ảnh và uy tín của PV Drilling, thu hút sự chú ý của các đối tác trong ngành.</p>
       </div>
       <div class="impact-box medium">
         <div class="impact-label">Trung hạn</div>
-        <p>Nâng cao tính minh bạch và chuyên nghiệp của thị trường chứng khoán Việt Nam.</p>
+        <p>Nâng cao năng lực cạnh tranh và khả năng cung cấp dịch vụ của PV Drilling, đóng góp vào hoạt động khai thác dầu khí quốc gia.</p>
       </div>
     </div>
-    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">CTCP Đầu tư và Xây lắp Dầu khí Sài Gòn</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">CTCP Đầu tư Tài chính Bảo hiểm Dầu khí</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">UBCKNN</span></div>
+    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">PV Drilling</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">PV DRILLING IX</span></div>
     <div class="rec-section">
       <div class="rec-row"><span class="rec-icon risk">⚠</span>
-        <span><strong>Rủi ro:</strong> Rủi ro pháp lý đối với các doanh nghiệp không tuân thủ quy định.</span></div>
+        <span><strong>Rủi ro:</strong> Biến động giá dầu ảnh hưởng đến nhu cầu dịch vụ khoan, cạnh tranh từ các nhà cung cấp dịch vụ khác.</span></div>
       <div class="rec-row"><span class="rec-icon watch">👁</span>
-        <span><strong>Theo dõi:</strong> Các đợt xử phạt tiếp theo của UBCKNN, sự tuân thủ của các doanh nghiệp.</span></div>
+        <span><strong>Theo dõi:</strong> Hiệu quả hoạt động của giàn khoan PV DRILLING IX, các hợp đồng khoan mới của PV Drilling.</span></div>
       <div class="rec-row"><span class="rec-icon action">→</span>
-        <span><strong>Lưu ý:</strong> Theo dõi các biện pháp quản lý của UBCKNN để đảm bảo thị trường minh bạch.</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="5" data-cat="Kinh tế vĩ mô"
-     data-lang="vi" data-critical="no"
-     style="">
-  <div class="card-header">
-    <div class="badges">
-      
-      <span class="badge" style="background:#FFF7ED;color:#9A3412;
-        border:1px solid #FED7AA;">Kinh tế vĩ mô</span>
-      <span class="badge source-badge">🇻🇳 CafeF</span>
-      <span class="badge time-badge"></span>
-    </div>
-    <span class="score" style="background:#F0FDF4;color:#1A7A4A;border:1px solid #BBF7D0;">
-      5<span style="font-size:9px;opacity:.7">/10</span>
-    </span>
-  </div>
-  <div class="card-body">
-    <h2 class="card-title">
-      <a href="https://cafef.vn/bo-nghi-dinh-100-muc-phat-vi-pham-giao-thong-duong-bo-co-thay-doi-188260327161539202.chn" target="_blank" rel="noopener">
-        Bỏ Nghị định 100, mức phạt vi phạm giao thông đường bộ có thay đổi?
-      </a>
-    </h2>
-    <p class="card-summary">Đại diện Cục Cảnh sát Giao thông đã lên tiếng làm rõ những băn khoăn của người dân về việc liệu mức phạt vi phạm giao thông đường bộ có thay đổi sau khi Nghị định 100/2019 bị bãi bỏ hay không. Thông tin này nhằm cung cấp sự minh bạch và giúp người dân nắm rõ các quy định pháp luật mới liên quan đến an toàn giao thông.</p>
-    <div class="impact-grid">
-      <div class="impact-box short">
-        <div class="impact-label">Ngắn hạn</div>
-        <p>Cần làm rõ quy định mới để người dân tuân thủ, tránh vi phạm.</p>
-      </div>
-      <div class="impact-box medium">
-        <div class="impact-label">Trung hạn</div>
-        <p>Góp phần nâng cao ý thức chấp hành pháp luật giao thông, giảm thiểu tai nạn.</p>
-      </div>
-    </div>
-    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Người tham gia giao thông</span></div>
-    <div class="rec-section">
-      <div class="rec-row"><span class="rec-icon risk">⚠</span>
-        <span><strong>Rủi ro:</strong> Sự nhầm lẫn hoặc thiếu thông tin về quy định mới.</span></div>
-      <div class="rec-row"><span class="rec-icon watch">👁</span>
-        <span><strong>Theo dõi:</strong> Thông báo chính thức về các quy định xử phạt mới, các chiến dịch tuyên truyền.</span></div>
-      <div class="rec-row"><span class="rec-icon action">→</span>
-        <span><strong>Lưu ý:</strong> Theo dõi các thông tin chính thức về quy định xử phạt giao thông mới.</span></div>
+        <span><strong>Lưu ý:</strong> Theo dõi hoạt động của PV Drilling và ngành dầu khí Việt Nam.</span></div>
     </div>
   </div>
 </div>
@@ -1208,79 +1079,36 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
         Blog chứng khoán: Tự tin nâng giá mua
       </a>
     </h2>
-    <p class="card-summary">Bài viết phân tích thị trường chứng khoán cho rằng những đợt chốt lời nhỏ không đủ sức cản xu hướng tăng. VN-Index đã giành lại ngưỡng MA200 ngày, không chỉ nhờ các cổ phiếu trụ mà còn nhờ số lượng lớn cổ phiếu tăng giá. Điều này cho thấy sự tự tin đang trở lại với nhà đầu tư, khuyến khích việc nâng giá mua.</p>
+    <p class="card-summary">Bài viết blog chứng khoán cho thấy tâm lý lạc quan khi nhận định rằng những đợt chốt lời nhỏ không đủ sức cản xu hướng tăng giá. VN-Index đã giành lại ngưỡng MA200 ngày, không chỉ nhờ các cổ phiếu trụ mà còn nhờ số lượng lớn cổ phiếu tăng giá. Điều này cho thấy thị trường đang có sự phục hồi và nhà đầu tư có thể tự tin hơn trong việc nâng giá mua.</p>
     <div class="impact-grid">
       <div class="impact-box short">
         <div class="impact-label">Ngắn hạn</div>
-        <p>Tâm lý lạc quan hơn trên thị trường chứng khoán, có thể khuyến khích hoạt động mua vào.</p>
+        <p>Tâm lý tích cực trên thị trường chứng khoán, khuyến khích hoạt động mua vào.</p>
       </div>
       <div class="impact-box medium">
         <div class="impact-label">Trung hạn</div>
-        <p>Xu hướng tăng có thể tiếp tục nếu các yếu tố hỗ trợ được duy trì.</p>
+        <p>Có thể thúc đẩy đà tăng trưởng của VN-Index và các cổ phiếu trong danh mục.</p>
       </div>
     </div>
-    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">VN-Index</span></div>
+    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">VN-Index</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Thị trường chứng khoán Việt Nam</span></div>
     <div class="rec-section">
       <div class="rec-row"><span class="rec-icon risk">⚠</span>
-        <span><strong>Rủi ro:</strong> Rủi ro điều chỉnh bất ngờ nếu có tin tức tiêu cực, biến động thị trường chung.</span></div>
+        <span><strong>Rủi ro:</strong> Các yếu tố bất ngờ có thể làm thay đổi xu hướng thị trường, rủi ro từ các cổ phiếu riêng lẻ.</span></div>
       <div class="rec-row"><span class="rec-icon watch">👁</span>
-        <span><strong>Theo dõi:</strong> Diễn biến của VN-Index, các cổ phiếu trụ và cổ phiếu midcap.</span></div>
+        <span><strong>Theo dõi:</strong> Diễn biến của VN-Index, các chỉ báo kỹ thuật, tin tức vĩ mô và doanh nghiệp.</span></div>
       <div class="rec-row"><span class="rec-icon action">→</span>
-        <span><strong>Lưu ý:</strong> Theo dõi xu hướng thị trường và các tín hiệu kỹ thuật.</span></div>
+        <span><strong>Lưu ý:</strong> Theo dõi diễn biến thị trường và cân nhắc các cơ hội đầu tư.</span></div>
     </div>
   </div>
 </div>
-<div class="card" data-score="5" data-cat="Chứng khoán"
+<div class="card" data-score="5" data-cat="Kinh tế vĩ mô"
      data-lang="vi" data-critical="no"
      style="">
   <div class="card-header">
     <div class="badges">
       
-      <span class="badge" style="background:#F0FDF4;color:#166534;
-        border:1px solid #BBF7D0;">Chứng khoán</span>
-      <span class="badge source-badge">🇻🇳 VnEconomy</span>
-      <span class="badge time-badge"></span>
-    </div>
-    <span class="score" style="background:#F0FDF4;color:#1A7A4A;border:1px solid #BBF7D0;">
-      5<span style="font-size:9px;opacity:.7">/10</span>
-    </span>
-  </div>
-  <div class="card-body">
-    <h2 class="card-title">
-      <a href="https://vneconomy.vn/shs-huong-toi-top-10-cong-ty-chung-khoan-ve-hieu-qua-hoat-dong.htm" target="_blank" rel="noopener">
-        SHS: Hướng tới Top 10 công ty chứng khoán về hiệu quả hoạt động
-      </a>
-    </h2>
-    <p class="card-summary">Công ty Cổ phần Chứng khoán Sài Gòn – Hà Nội (SHS) đã công bố tài liệu Đại hội đồng cổ đông thường niên năm 2026, trong đó đề ra mục tiêu phấn đấu lọt vào Top 10 công ty chứng khoán có hiệu quả hoạt động tốt nhất. Kế hoạch kinh doanh và định hướng phát triển trong giai đoạn tới sẽ tập trung vào việc nâng cao hiệu quả hoạt động và tối ưu hóa lợi nhuận.</p>
-    <div class="impact-grid">
-      <div class="impact-box short">
-        <div class="impact-label">Ngắn hạn</div>
-        <p>Tín hiệu tích cực cho cổ phiếu SHS, có thể thu hút sự quan tâm của nhà đầu tư.</p>
-      </div>
-      <div class="impact-box medium">
-        <div class="impact-label">Trung hạn</div>
-        <p>Cải thiện vị thế cạnh tranh của SHS trên thị trường chứng khoán.</p>
-      </div>
-    </div>
-    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">SHS</span></div>
-    <div class="rec-section">
-      <div class="rec-row"><span class="rec-icon risk">⚠</span>
-        <span><strong>Rủi ro:</strong> Biến động thị trường chứng khoán, cạnh tranh gay gắt trong ngành.</span></div>
-      <div class="rec-row"><span class="rec-icon watch">👁</span>
-        <span><strong>Theo dõi:</strong> Kết quả kinh doanh của SHS, các chiến lược triển khai để đạt mục tiêu.</span></div>
-      <div class="rec-row"><span class="rec-icon action">→</span>
-        <span><strong>Lưu ý:</strong> Theo dõi sự phát triển của SHS và các công ty chứng khoán khác.</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="5" data-cat="Ngân hàng"
-     data-lang="vi" data-critical="no"
-     style="">
-  <div class="card-header">
-    <div class="badges">
-      
-      <span class="badge" style="background:#EFF6FF;color:#1E40AF;
-        border:1px solid #BFDBFE;">Ngân hàng</span>
+      <span class="badge" style="background:#FFF7ED;color:#9A3412;
+        border:1px solid #FED7AA;">Kinh tế vĩ mô</span>
       <span class="badge source-badge">🇻🇳 VnEconomy Tài Chính</span>
       <span class="badge time-badge"></span>
     </div>
@@ -1290,115 +1118,29 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
   </div>
   <div class="card-body">
     <h2 class="card-title">
-      <a href="https://vneconomy.vn/pvcombank-hop-tac-voi-cuc-thue-ho-tro-ho-kinh-doanh-ke-khai-thue.htm" target="_blank" rel="noopener">
-        PVcomBank hợp tác với Cục Thuế hỗ trợ hộ kinh doanh kê khai thuế
+      <a href="https://vneconomy.vn/toan-quoc-hoan-tat-dang-ky-kiem-ke-tai-san-cong-truoc-thoi-han.htm" target="_blank" rel="noopener">
+        Toàn quốc hoàn tất đăng ký kiểm kê tài sản công trước thời hạn
       </a>
     </h2>
-    <p class="card-summary">PVcomBank đã ký kết hợp tác với Cục Thuế để hỗ trợ các hộ kinh doanh trong việc kê khai thuế điện tử và thanh toán không dùng tiền mặt, tuân thủ theo Nghị định 68/2026/NĐ-CP. Sự hợp tác này nhằm thúc đẩy chuyển đổi số trong lĩnh vực thuế, tạo điều kiện thuận lợi cho người nộp thuế và nâng cao hiệu quả quản lý thuế.</p>
+    <p class="card-summary">Công tác đăng ký kiểm kê tài sản công trên phạm vi toàn quốc đã hoàn thành trước thời hạn, với sự tham gia của 100% các đơn vị liên quan. Đây là một tiền đề quan trọng để các bộ, ngành và địa phương đẩy nhanh tiến độ triển khai các bước tiếp theo, đặc biệt là việc gửi và phê duyệt báo cáo trong giai đoạn nước rút. Việc hoàn thành sớm cho thấy sự quyết tâm và hiệu quả trong công tác quản lý tài sản công.</p>
     <div class="impact-grid">
       <div class="impact-box short">
         <div class="impact-label">Ngắn hạn</div>
-        <p>Giúp các hộ kinh doanh tiếp cận dễ dàng hơn với các dịch vụ thuế điện tử.</p>
+        <p>Tạo đà cho các bước tiếp theo trong quản lý tài sản công, có thể dẫn đến các quyết định phân bổ nguồn lực hiệu quả hơn.</p>
       </div>
       <div class="impact-box medium">
         <div class="impact-label">Trung hạn</div>
-        <p>Thúc đẩy thanh toán không dùng tiền mặt, cải thiện hiệu quả quản lý thuế, giảm thiểu chi phí hành chính.</p>
+        <p>Nâng cao hiệu quả quản lý, sử dụng tài sản công, góp phần vào sự phát triển kinh tế - xã hội.</p>
       </div>
     </div>
-    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">PVcomBank</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Cục Thuế</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Hộ kinh doanh</span></div>
+    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Tài sản công</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Các bộ, ngành, địa phương</span></div>
     <div class="rec-section">
       <div class="rec-row"><span class="rec-icon risk">⚠</span>
-        <span><strong>Rủi ro:</strong> Khả năng tiếp cận công nghệ của các hộ kinh doanh nhỏ lẻ.</span></div>
+        <span><strong>Rủi ro:</strong> Khả năng phê duyệt báo cáo đúng tiến độ, việc sử dụng tài sản công có hiệu quả hay không.</span></div>
       <div class="rec-row"><span class="rec-icon watch">👁</span>
-        <span><strong>Theo dõi:</strong> Mức độ tham gia của các hộ kinh doanh, hiệu quả của các giải pháp hỗ trợ.</span></div>
+        <span><strong>Theo dõi:</strong> Tiến độ phê duyệt báo cáo kiểm kê tài sản công, các kế hoạch sử dụng tài sản công.</span></div>
       <div class="rec-row"><span class="rec-icon action">→</span>
-        <span><strong>Lưu ý:</strong> Theo dõi các sáng kiến hợp tác giữa ngân hàng và cơ quan thuế.</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="5" data-cat="Doanh nghiệp"
-     data-lang="vi" data-critical="no"
-     style="">
-  <div class="card-header">
-    <div class="badges">
-      
-      <span class="badge" style="background:#F0F9FF;color:#0C4A6E;
-        border:1px solid #BAE6FD;">Doanh nghiệp</span>
-      <span class="badge source-badge">🇻🇳 VnEconomy Tài Chính</span>
-      <span class="badge time-badge"></span>
-    </div>
-    <span class="score" style="background:#F0FDF4;color:#1A7A4A;border:1px solid #BBF7D0;">
-      5<span style="font-size:9px;opacity:.7">/10</span>
-    </span>
-  </div>
-  <div class="card-body">
-    <h2 class="card-title">
-      <a href="https://vneconomy.vn/tan-dung-du-lieu-giao-dich-chuyen-khoan-lam-can-cu-lap-hoa-don-tong-cuoi-ngay.htm" target="_blank" rel="noopener">
-        Tận dụng dữ liệu giao dịch chuyển khoản làm căn cứ lập hóa đơn tổng cuối ngày
-      </a>
-    </h2>
-    <p class="card-summary">Trước áp lực từ quy định xuất hóa đơn điện tử cho từng giao dịch nhỏ lẻ, nhiều doanh nghiệp và hộ kinh doanh đang mong muốn có cơ chế linh hoạt hơn. Một số ý kiến đề xuất tận dụng dữ liệu giao dịch chuyển khoản ngân hàng làm căn cứ để lập hóa đơn tổng vào cuối ngày. Điều này nhằm giảm bớt gánh nặng hành chính và tạo thuận lợi cho hoạt động kinh doanh.</p>
-    <div class="impact-grid">
-      <div class="impact-box short">
-        <div class="impact-label">Ngắn hạn</div>
-        <p>Giúp doanh nghiệp và hộ kinh doanh giảm bớt thủ tục hành chính liên quan đến hóa đơn.</p>
-      </div>
-      <div class="impact-box medium">
-        <div class="impact-label">Trung hạn</div>
-        <p>Thúc đẩy việc áp dụng hóa đơn điện tử một cách hiệu quả hơn, giảm thiểu gian lận thuế.</p>
-      </div>
-    </div>
-    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Doanh nghiệp</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Hộ kinh doanh</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Hóa đơn điện tử</span></div>
-    <div class="rec-section">
-      <div class="rec-row"><span class="rec-icon risk">⚠</span>
-        <span><strong>Rủi ro:</strong> Rủi ro về tính chính xác của dữ liệu giao dịch, khả năng gian lận.</span></div>
-      <div class="rec-row"><span class="rec-icon watch">👁</span>
-        <span><strong>Theo dõi:</strong> Phản hồi từ cơ quan thuế về đề xuất này, các quy định mới về hóa đơn điện tử.</span></div>
-      <div class="rec-row"><span class="rec-icon action">→</span>
-        <span><strong>Lưu ý:</strong> Theo dõi các quy định mới về hóa đơn điện tử và các giải pháp hỗ trợ doanh nghiệp.</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="5" data-cat="Chứng khoán"
-     data-lang="en" data-critical="no"
-     style="">
-  <div class="card-header">
-    <div class="badges">
-      
-      <span class="badge" style="background:#F0FDF4;color:#166534;
-        border:1px solid #BBF7D0;">Chứng khoán</span>
-      <span class="badge source-badge">🌍 Yahoo Finance</span>
-      <span class="badge time-badge"></span>
-    </div>
-    <span class="score" style="background:#F0FDF4;color:#1A7A4A;border:1px solid #BBF7D0;">
-      5<span style="font-size:9px;opacity:.7">/10</span>
-    </span>
-  </div>
-  <div class="card-body">
-    <h2 class="card-title">
-      <a href="https://finance.yahoo.com/research/reports/ARGUS_46561_MarketSummary_1774608222000?yptr=yahoo&amp;ncid=yahooproperties_plusresear_nm5q6ze1cei" target="_blank" rel="noopener">
-        Market Digest: CPB, PAYX, PRGO, DAL, META, BRSL
-      </a>
-    </h2>
-    <p class="card-summary">This market digest provides a summary of key information related to several companies: CPB (Campbell&#x27;s Company), PAYX (Paychex Inc), PRGO (Pergo), DAL (Delta Air Lines), META (Meta Platforms), and BRSL (BrightSphere Investment Group). It likely includes recent news, stock performance, and potentially analyst ratings or key financial metrics for these entities, offering a snapshot of their current market standing.</p>
-    <div class="impact-grid">
-      <div class="impact-box short">
-        <div class="impact-label">Ngắn hạn</div>
-        <p>May influence short-term trading decisions for the mentioned stocks.</p>
-      </div>
-      <div class="impact-box medium">
-        <div class="impact-label">Trung hạn</div>
-        <p>Provides a quick overview for investors tracking these specific companies.</p>
-      </div>
-    </div>
-    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">CPB</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">PAYX</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">PRGO</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">DAL</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">META</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">BRSL</span></div>
-    <div class="rec-section">
-      <div class="rec-row"><span class="rec-icon risk">⚠</span>
-        <span><strong>Rủi ro:</strong> General market volatility, sector-specific risks for each company.</span></div>
-      <div class="rec-row"><span class="rec-icon watch">👁</span>
-        <span><strong>Theo dõi:</strong> Individual company news and stock price movements for CPB, PAYX, PRGO, DAL, META, BRSL.</span></div>
-      <div class="rec-row"><span class="rec-icon action">→</span>
-        <span><strong>Lưu ý:</strong> Review the digest for any significant updates on these companies.</span></div>
+        <span><strong>Lưu ý:</strong> Theo dõi các thông tin về quản lý và sử dụng tài sản công.</span></div>
     </div>
   </div>
 </div>
@@ -1423,72 +1165,330 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
         Daily – Vickers Top Buyers &amp; Sellers for 03/27/2026
       </a>
     </h2>
-    <p class="card-summary">This report details the top buyers and sellers identified by Vickers for March 27, 2026. It likely highlights significant trading activity and potential insider movements within specific companies. Understanding these top participants can offer insights into market sentiment and potential shifts in stock ownership, which may be valuable for traders and investors.</p>
+    <p class="card-summary">This report from Vickers details the top buyers and sellers for March 27, 2026. It provides insights into significant trading activity, highlighting which stocks are experiencing the most buying and selling pressure. This information can be valuable for traders and investors looking to understand market sentiment and identify potential trends or reversals based on the actions of major market participants.</p>
     <div class="impact-grid">
       <div class="impact-box short">
         <div class="impact-label">Ngắn hạn</div>
-        <p>Could provide short-term trading signals based on identified buyer/seller activity.</p>
+        <p>Can influence short-term trading strategies and stock price movements for the identified top buyers and sellers.</p>
       </div>
       <div class="impact-box medium">
         <div class="impact-label">Trung hạn</div>
-        <p>May offer clues about institutional interest or potential future price movements.</p>
+        <p>May provide clues about market momentum and investor confidence in specific stocks or sectors over the medium term.</p>
       </div>
     </div>
-    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Various publicly traded companies</span></div>
+    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Top buyers</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Top sellers</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Stock market participants</span></div>
     <div class="rec-section">
       <div class="rec-row"><span class="rec-icon risk">⚠</span>
-        <span><strong>Rủi ro:</strong> Insider trading regulations, the possibility of misinterpreting trading patterns.</span></div>
+        <span><strong>Rủi ro:</strong> The report only shows volume, not necessarily the conviction behind the trades; insider activity might not always predict future performance.</span></div>
       <div class="rec-row"><span class="rec-icon watch">👁</span>
-        <span><strong>Theo dõi:</strong> The specific companies listed as top buyers and sellers, any accompanying commentary on their activity.</span></div>
+        <span><strong>Theo dõi:</strong> The specific stocks appearing consistently on the top buyers or sellers lists.</span></div>
       <div class="rec-row"><span class="rec-icon action">→</span>
-        <span><strong>Lưu ý:</strong> Analyze the list of top buyers and sellers for potential trading opportunities.</span></div>
+        <span><strong>Lưu ý:</strong> Use this data to identify stocks with high trading volume and investigate the underlying reasons.</span></div>
     </div>
   </div>
 </div>
-<div class="card" data-score="5" data-cat="Tài chính quốc tế"
+<div class="card" data-score="4" data-cat="Kinh tế vĩ mô"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#FFF7ED;color:#9A3412;
+        border:1px solid #FED7AA;">Kinh tế vĩ mô</span>
+      <span class="badge source-badge">🇻🇳 VnExpress Kinh Doanh</span>
+      <span class="badge time-badge"></span>
+    </div>
+    <span class="score" style="background:#F0FDF4;color:#1A7A4A;border:1px solid #BBF7D0;">
+      4<span style="font-size:9px;opacity:.7">/10</span>
+    </span>
+  </div>
+  <div class="card-body">
+    <h2 class="card-title">
+      <a href="https://vnexpress.net/xu-huong-xay-dung-chong-chiu-duoc-bao-lu-ngap-lut-5055723.html" target="_blank" rel="noopener">
+        Xu hướng xây dựng chống chịu được bão lũ, ngập lụt
+      </a>
+    </h2>
+    <p class="card-summary">Sau những thiệt hại nặng nề do bão lũ và ngập lụt, khả năng chống chịu đã trở thành tiêu chí ưu tiên hàng đầu trong các công trình xây dựng tại Việt Nam. Theo Hội đồng Công trình Xanh Việt Nam, xu hướng này đòi hỏi sự thay đổi trong thiết kế, vật liệu và quy trình thi công để đảm bảo an toàn cho người dân và tài sản. Việc đầu tư vào các công trình có khả năng chống chịu tốt hơn không chỉ giảm thiểu thiệt hại do thiên tai mà còn góp phần vào sự phát triển bền vững của đất nước.</p>
+    <div class="impact-grid">
+      <div class="impact-box short">
+        <div class="impact-label">Ngắn hạn</div>
+        <p>Tăng nhu cầu về vật liệu xây dựng chuyên dụng và dịch vụ tư vấn thiết kế chống chịu thiên tai.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Trung hạn</div>
+        <p>Định hình lại ngành xây dựng, thúc đẩy đổi mới công nghệ và tiêu chuẩn xây dựng, giảm thiểu rủi ro kinh tế do thiên tai.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Ngành xây dựng</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Doanh nghiệp vật liệu xây dựng</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">⚠</span>
+        <span><strong>Rủi ro:</strong> Chi phí ban đầu cao hơn cho các công trình chống chịu, sự chậm trễ trong việc áp dụng các tiêu chuẩn mới.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">👁</span>
+        <span><strong>Theo dõi:</strong> Các dự án xây dựng mới áp dụng tiêu chuẩn chống chịu, chính sách hỗ trợ của nhà nước.</span></div>
+      <div class="rec-row"><span class="rec-icon action">→</span>
+        <span><strong>Lưu ý:</strong> Quan tâm đến các doanh nghiệp trong ngành xây dựng và vật liệu xây dựng có định hướng phát triển bền vững.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="4" data-cat="Doanh nghiệp"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#F0F9FF;color:#0C4A6E;
+        border:1px solid #BAE6FD;">Doanh nghiệp</span>
+      <span class="badge source-badge">🇻🇳 CafeF</span>
+      <span class="badge time-badge"></span>
+    </div>
+    <span class="score" style="background:#F0FDF4;color:#1A7A4A;border:1px solid #BBF7D0;">
+      4<span style="font-size:9px;opacity:.7">/10</span>
+    </span>
+  </div>
+  <div class="card-body">
+    <h2 class="card-title">
+      <a href="https://cafef.vn/ubcknn-xu-phat-2-cong-ty-ho-dau-khi-vi-vi-pham-cong-bo-thong-tin-188260327231402086.chn" target="_blank" rel="noopener">
+        UBCKNN xử phạt 2 công ty “họ” dầu khí vì vi phạm công bố thông tin
+      </a>
+    </h2>
+    <p class="card-summary">Ủy ban Chứng khoán Nhà nước (UBCKNN) đã ra quyết định xử phạt hành chính đối với hai công ty thuộc &quot;họ&quot; dầu khí là CTCP Đầu tư và Xây lắp dầu khí Sài Gòn và CTCP Đầu tư Tài chính Bảo hiểm Dầu khí. Nguyên nhân của việc xử phạt là do các công ty này đã vi phạm quy định về công bố thông tin, với tổng số tiền phạt lên tới hàng trăm triệu đồng. Hành động này nhấn mạnh tầm quan trọng của việc tuân thủ các quy định về minh bạch thông tin trên thị trường chứng khoán.</p>
+    <div class="impact-grid">
+      <div class="impact-box short">
+        <div class="impact-label">Ngắn hạn</div>
+        <p>Ảnh hưởng tiêu cực đến uy tín của hai công ty bị xử phạt, có thể gây tâm lý e ngại cho nhà đầu tư.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Trung hạn</div>
+        <p>Tăng cường sự giám sát và tuân thủ quy định về công bố thông tin trong ngành dầu khí và trên thị trường chứng khoán nói chung.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">CTCP Đầu tư và Xây lắp dầu khí Sài Gòn</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">CTCP Đầu tư Tài chính Bảo hiểm Dầu khí</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">UBCKNN</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">⚠</span>
+        <span><strong>Rủi ro:</strong> Việc tái diễn các hành vi vi phạm công bố thông tin, ảnh hưởng đến niềm tin của nhà đầu tư.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">👁</span>
+        <span><strong>Theo dõi:</strong> Các biện pháp chấn chỉnh của các công ty bị xử phạt, các đợt thanh tra và xử phạt tiếp theo của UBCKNN.</span></div>
+      <div class="rec-row"><span class="rec-icon action">→</span>
+        <span><strong>Lưu ý:</strong> Nhà đầu tư cần chú ý đến các công ty có lịch sử vi phạm công bố thông tin.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="4" data-cat="Chứng khoán"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#F0FDF4;color:#166534;
+        border:1px solid #BBF7D0;">Chứng khoán</span>
+      <span class="badge source-badge">🇻🇳 VnEconomy</span>
+      <span class="badge time-badge"></span>
+    </div>
+    <span class="score" style="background:#F0FDF4;color:#1A7A4A;border:1px solid #BBF7D0;">
+      4<span style="font-size:9px;opacity:.7">/10</span>
+    </span>
+  </div>
+  <div class="card-body">
+    <h2 class="card-title">
+      <a href="https://vneconomy.vn/shs-huong-toi-top-10-cong-ty-chung-khoan-ve-hieu-qua-hoat-dong.htm" target="_blank" rel="noopener">
+        SHS: Hướng tới Top 10 công ty chứng khoán về hiệu quả hoạt động
+      </a>
+    </h2>
+    <p class="card-summary">Công ty Cổ phần Chứng khoán Sài Gòn – Hà Nội (SHS) đã công bố tài liệu Đại hội đồng cổ đông thường niên năm 2026, trong đó đề ra mục tiêu hướng tới Top 10 công ty chứng khoán về hiệu quả hoạt động. Kế hoạch kinh doanh và định hướng phát triển trong giai đoạn tới được trình bày chi tiết, bao gồm cả phương án phân phối lợi nhuận. Mục tiêu này cho thấy tham vọng của SHS trong việc nâng cao năng lực cạnh tranh và vị thế trên thị trường.</p>
+    <div class="impact-grid">
+      <div class="impact-box short">
+        <div class="impact-label">Ngắn hạn</div>
+        <p>Tăng sự quan tâm của nhà đầu tư đối với cổ phiếu SHS, có thể thúc đẩy giá cổ phiếu.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Trung hạn</div>
+        <p>Nếu đạt được mục tiêu, SHS sẽ củng cố vị thế và thu hút thêm khách hàng, đối tác.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">SHS</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Công ty chứng khoán</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">⚠</span>
+        <span><strong>Rủi ro:</strong> Khả năng cạnh tranh trên thị trường chứng khoán, biến động của thị trường chung.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">👁</span>
+        <span><strong>Theo dõi:</strong> Kết quả kinh doanh của SHS, các chiến lược triển khai để đạt mục tiêu.</span></div>
+      <div class="rec-row"><span class="rec-icon action">→</span>
+        <span><strong>Lưu ý:</strong> Theo dõi hoạt động và kế hoạch phát triển của SHS.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="4" data-cat="Ngân hàng"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#EFF6FF;color:#1E40AF;
+        border:1px solid #BFDBFE;">Ngân hàng</span>
+      <span class="badge source-badge">🇻🇳 VnEconomy Tài Chính</span>
+      <span class="badge time-badge"></span>
+    </div>
+    <span class="score" style="background:#F0FDF4;color:#1A7A4A;border:1px solid #BBF7D0;">
+      4<span style="font-size:9px;opacity:.7">/10</span>
+    </span>
+  </div>
+  <div class="card-body">
+    <h2 class="card-title">
+      <a href="https://vneconomy.vn/pvcombank-hop-tac-voi-cuc-thue-ho-tro-ho-kinh-doanh-ke-khai-thue.htm" target="_blank" rel="noopener">
+        PVcomBank hợp tác với Cục Thuế hỗ trợ hộ kinh doanh kê khai thuế
+      </a>
+    </h2>
+    <p class="card-summary">Ngân hàng TMCP Đại Chúng Việt Nam (PVcomBank) đã ký kết hợp tác với Cục Thuế (Bộ Tài chính) và cơ quan thuế tại 22 địa phương để hỗ trợ hộ kinh doanh kê khai thuế điện tử và thanh toán không dùng tiền mặt. Sáng kiến này nhằm thúc đẩy việc tuân thủ quy định mới của Chính phủ (Nghị định 68/2026/NĐ-CP) và tạo điều kiện thuận lợi cho các hộ kinh doanh trong việc thực hiện nghĩa vụ thuế.</p>
+    <div class="impact-grid">
+      <div class="impact-box short">
+        <div class="impact-label">Ngắn hạn</div>
+        <p>Giúp các hộ kinh doanh tiếp cận dễ dàng hơn với các dịch vụ kê khai và nộp thuế điện tử.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Trung hạn</div>
+        <p>Thúc đẩy chuyển đổi số trong lĩnh vực thuế, tăng cường hiệu quả quản lý thuế, giảm thiểu chi phí cho cả cơ quan thuế và người nộp thuế.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">PVcomBank</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Cục Thuế</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Hộ kinh doanh</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">⚠</span>
+        <span><strong>Rủi ro:</strong> Sự sẵn sàng của các hộ kinh doanh trong việc áp dụng công nghệ mới, khả năng tích hợp hệ thống giữa ngân hàng và cơ quan thuế.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">👁</span>
+        <span><strong>Theo dõi:</strong> Tỷ lệ hộ kinh doanh tham gia kê khai thuế điện tử, hiệu quả của chương trình hợp tác.</span></div>
+      <div class="rec-row"><span class="rec-icon action">→</span>
+        <span><strong>Lưu ý:</strong> Theo dõi các giải pháp hỗ trợ doanh nghiệp nhỏ và vừa trong việc tuân thủ quy định pháp luật.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="4" data-cat="Doanh nghiệp"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#F0F9FF;color:#0C4A6E;
+        border:1px solid #BAE6FD;">Doanh nghiệp</span>
+      <span class="badge source-badge">🇻🇳 VnEconomy Tài Chính</span>
+      <span class="badge time-badge"></span>
+    </div>
+    <span class="score" style="background:#F0FDF4;color:#1A7A4A;border:1px solid #BBF7D0;">
+      4<span style="font-size:9px;opacity:.7">/10</span>
+    </span>
+  </div>
+  <div class="card-body">
+    <h2 class="card-title">
+      <a href="https://vneconomy.vn/tan-dung-du-lieu-giao-dich-chuyen-khoan-lam-can-cu-lap-hoa-don-tong-cuoi-ngay.htm" target="_blank" rel="noopener">
+        Tận dụng dữ liệu giao dịch chuyển khoản làm căn cứ lập hóa đơn tổng cuối ngày
+      </a>
+    </h2>
+    <p class="card-summary">Trước áp lực từ quy định xuất hóa đơn điện tử cho từng giao dịch nhỏ lẻ, nhiều doanh nghiệp và hộ kinh doanh đang mong muốn có cơ chế linh hoạt hơn. Một số ý kiến đề xuất tận dụng dữ liệu giao dịch chuyển khoản ngân hàng làm căn cứ để lập hóa đơn tổng vào cuối ngày. Giải pháp này nếu được áp dụng có thể giảm bớt gánh nặng hành chính cho doanh nghiệp và hộ kinh doanh, đồng thời vẫn đảm bảo tính minh bạch và tuân thủ quy định.</p>
+    <div class="impact-grid">
+      <div class="impact-box short">
+        <div class="impact-label">Ngắn hạn</div>
+        <p>Giảm bớt gánh nặng hành chính cho doanh nghiệp và hộ kinh doanh trong việc xuất hóa đơn.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Trung hạn</div>
+        <p>Thúc đẩy sự linh hoạt trong quản lý hóa đơn, có thể cần điều chỉnh quy định pháp lý để phù hợp.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Doanh nghiệp</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Hộ kinh doanh</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Hóa đơn điện tử</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">⚠</span>
+        <span><strong>Rủi ro:</strong> Khả năng tích hợp dữ liệu giữa ngân hàng và hệ thống hóa đơn điện tử, sự chấp thuận của cơ quan thuế.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">👁</span>
+        <span><strong>Theo dõi:</strong> Các đề xuất chính sách liên quan đến hóa đơn điện tử, phản hồi từ cơ quan thuế.</span></div>
+      <div class="rec-row"><span class="rec-icon action">→</span>
+        <span><strong>Lưu ý:</strong> Theo dõi các thay đổi trong quy định về hóa đơn điện tử.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="4" data-cat="Chứng khoán"
      data-lang="en" data-critical="no"
      style="">
   <div class="card-header">
     <div class="badges">
       
-      <span class="badge" style="background:#EEF2FF;color:#3730A3;
-        border:1px solid #C7D2FE;">Tài chính quốc tế</span>
+      <span class="badge" style="background:#F0FDF4;color:#166534;
+        border:1px solid #BBF7D0;">Chứng khoán</span>
       <span class="badge source-badge">🌍 Yahoo Finance</span>
       <span class="badge time-badge"></span>
     </div>
     <span class="score" style="background:#F0FDF4;color:#1A7A4A;border:1px solid #BBF7D0;">
-      5<span style="font-size:9px;opacity:.7">/10</span>
+      4<span style="font-size:9px;opacity:.7">/10</span>
     </span>
   </div>
   <div class="card-body">
     <h2 class="card-title">
-      <a href="https://finance.yahoo.com/personal-finance/investing/article/gold-ira-fees-192928034.html" target="_blank" rel="noopener">
-        Gold IRA fees explained: What you&#x27;ll actually pay
+      <a href="https://finance.yahoo.com/research/reports/ARGUS_46561_MarketSummary_1774608222000?yptr=yahoo&amp;ncid=yahooproperties_plusresear_nm5q6ze1cei" target="_blank" rel="noopener">
+        Market Digest: CPB, PAYX, PRGO, DAL, META, BRSL
       </a>
     </h2>
-    <p class="card-summary">This article provides a clear explanation of the fees associated with Gold IRAs (Individual Retirement Accounts). It aims to inform individuals about the actual costs they can expect when investing in gold through an IRA, covering aspects like setup fees, storage costs, administrative charges, and potential markups on the gold itself. Understanding these fees is crucial for making informed investment decisions.</p>
+    <p class="card-summary">This market digest provides a summary of key information related to several companies: CPB, PAYX, PRGO, DAL, META, and BRSL. It likely includes recent news, stock performance updates, and potentially analyst ratings or significant market movements for these entities. Such digests are useful for investors tracking a portfolio of stocks or looking for potential investment opportunities across different sectors.</p>
     <div class="impact-grid">
       <div class="impact-box short">
         <div class="impact-label">Ngắn hạn</div>
-        <p>Helps individuals planning to invest in Gold IRAs understand the associated costs.</p>
+        <p>May cause immediate reactions in the stock prices of the mentioned companies.</p>
       </div>
       <div class="impact-box medium">
         <div class="impact-label">Trung hạn</div>
-        <p>Can influence the decision-making process for retirement planning and investment allocation.</p>
+        <p>Could inform short-to-medium term trading decisions for investors interested in these specific stocks.</p>
       </div>
     </div>
-    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Gold IRAs</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Investors</span></div>
+    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">CPB</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">PAYX</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">PRGO</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">DAL</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">META</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">BRSL</span></div>
     <div class="rec-section">
       <div class="rec-row"><span class="rec-icon risk">⚠</span>
-        <span><strong>Rủi ro:</strong> Hidden fees, misrepresentation of costs by providers, market volatility of gold prices.</span></div>
+        <span><strong>Rủi ro:</strong> The digest may not capture all relevant market-moving information; individual company news could override general trends.</span></div>
       <div class="rec-row"><span class="rec-icon watch">👁</span>
-        <span><strong>Theo dõi:</strong> The breakdown of different fee types and their typical ranges, advice on choosing a Gold IRA provider.</span></div>
+        <span><strong>Theo dõi:</strong> Specific price movements and news headlines for each company listed.</span></div>
       <div class="rec-row"><span class="rec-icon action">→</span>
-        <span><strong>Lưu ý:</strong> Carefully review all fee structures before investing in a Gold IRA.</span></div>
+        <span><strong>Lưu ý:</strong> Review the digest for quick updates on these companies and conduct further research if interested.</span></div>
     </div>
   </div>
 </div>
-<div class="card" data-score="4" data-cat="Doanh nghiệp"
+<div class="card" data-score="3" data-cat="Kinh tế vĩ mô"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#FFF7ED;color:#9A3412;
+        border:1px solid #FED7AA;">Kinh tế vĩ mô</span>
+      <span class="badge source-badge">🇻🇳 CafeF Vĩ Mô</span>
+      <span class="badge time-badge"></span>
+    </div>
+    <span class="score" style="background:#F0FDF4;color:#1A7A4A;border:1px solid #BBF7D0;">
+      3<span style="font-size:9px;opacity:.7">/10</span>
+    </span>
+  </div>
+  <div class="card-body">
+    <h2 class="card-title">
+      <a href="https://cafef.vn/bo-nghi-dinh-100-muc-phat-vi-pham-giao-thong-duong-bo-co-thay-doi-188260327161539202.html" target="_blank" rel="noopener">
+        Bỏ Nghị định 100, mức phạt vi phạm giao thông đường bộ có thay đổi?
+      </a>
+    </h2>
+    <p class="card-summary">Đại diện Cục Cảnh sát Giao thông đã lên tiếng làm rõ những băn khoăn của người dân về việc liệu mức xử phạt vi phạm giao thông đường bộ có thay đổi sau khi Nghị định 100/2019 bị bãi bỏ hay không. Thông tin này quan trọng đối với người tham gia giao thông, giúp họ nắm rõ các quy định pháp luật hiện hành và tránh vi phạm. Việc làm rõ các quy định pháp lý góp phần đảm bảo trật tự an toàn giao thông.</p>
+    <div class="impact-grid">
+      <div class="impact-box short">
+        <div class="impact-label">Ngắn hạn</div>
+        <p>Giải đáp thắc mắc của người dân, có thể ảnh hưởng đến hành vi lái xe ngắn hạn.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Trung hạn</div>
+        <p>Cần có văn bản pháp lý mới thay thế hoặc điều chỉnh để đảm bảo tính liên tục và rõ ràng của quy định xử phạt.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Người tham gia giao thông</span><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Cục CSGT</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">⚠</span>
+        <span><strong>Rủi ro:</strong> Sự thiếu rõ ràng trong quy định có thể dẫn đến nhầm lẫn hoặc vi phạm.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">👁</span>
+        <span><strong>Theo dõi:</strong> Thông báo chính thức về các quy định xử phạt mới, các văn bản hướng dẫn thi hành.</span></div>
+      <div class="rec-row"><span class="rec-icon action">→</span>
+        <span><strong>Lưu ý:</strong> Theo dõi các thông tin chính thức về quy định xử phạt giao thông.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="3" data-cat="Doanh nghiệp"
      data-lang="en" data-critical="no"
      style="">
   <div class="card-header">
@@ -1500,7 +1500,7 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
       <span class="badge time-badge"></span>
     </div>
     <span class="score" style="background:#F0FDF4;color:#1A7A4A;border:1px solid #BBF7D0;">
-      4<span style="font-size:9px;opacity:.7">/10</span>
+      3<span style="font-size:9px;opacity:.7">/10</span>
     </span>
   </div>
   <div class="card-body">
@@ -1509,29 +1509,29 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
         Analyst Report: Paychex Inc
       </a>
     </h2>
-    <p class="card-summary">This is an analyst report on Paychex Inc. The report likely contains an analysis of the company&#x27;s financial performance, market position, and future outlook. It may include recommendations for investors regarding buying, selling, or holding the stock. Specific details about the company&#x27;s operations, industry trends, and competitive landscape are expected to be covered.</p>
+    <p class="card-summary">This article is an analyst report on Paychex Inc. It likely provides an in-depth analysis of the company&#x27;s financial performance, market position, and future outlook. Such reports are typically used by investors to make informed decisions about buying, selling, or holding the company&#x27;s stock. The report may cover key financial metrics, industry trends, competitive landscape, and management&#x27;s strategy.</p>
     <div class="impact-grid">
       <div class="impact-box short">
         <div class="impact-label">Ngắn hạn</div>
-        <p>May influence investor sentiment towards PAYX stock in the short term.</p>
+        <p>May influence investor sentiment towards Paychex Inc. stock in the short term.</p>
       </div>
       <div class="impact-box medium">
         <div class="impact-label">Trung hạn</div>
-        <p>Could affect Paychex&#x27;s stock performance and strategic decisions based on analyst recommendations.</p>
+        <p>Could impact Paychex Inc.&#x27;s stock performance and strategic decisions in the medium term based on the analyst&#x27;s recommendations.</p>
       </div>
     </div>
-    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Paychex Inc (PAYX)</span></div>
+    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">Paychex Inc.</span></div>
     <div class="rec-section">
       <div class="rec-row"><span class="rec-icon risk">⚠</span>
-        <span><strong>Rủi ro:</strong> General market risks, company-specific operational challenges, changes in the HR services industry.</span></div>
+        <span><strong>Rủi ro:</strong> The accuracy of the analyst&#x27;s projections and the overall market conditions affecting the company.</span></div>
       <div class="rec-row"><span class="rec-icon watch">👁</span>
-        <span><strong>Theo dõi:</strong> Analyst&#x27;s rating and price target for PAYX, company&#x27;s upcoming earnings reports.</span></div>
+        <span><strong>Theo dõi:</strong> The specific recommendations and price targets provided in the report, subsequent analyst updates.</span></div>
       <div class="rec-row"><span class="rec-icon action">→</span>
-        <span><strong>Lưu ý:</strong> Review the full analyst report for detailed insights and recommendations.</span></div>
+        <span><strong>Lưu ý:</strong> Review the full analyst report for detailed insights into Paychex Inc.</span></div>
     </div>
   </div>
 </div>
-<div class="card" data-score="4" data-cat="Doanh nghiệp"
+<div class="card" data-score="3" data-cat="Doanh nghiệp"
      data-lang="en" data-critical="no"
      style="">
   <div class="card-header">
@@ -1543,7 +1543,7 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
       <span class="badge time-badge"></span>
     </div>
     <span class="score" style="background:#F0FDF4;color:#1A7A4A;border:1px solid #BBF7D0;">
-      4<span style="font-size:9px;opacity:.7">/10</span>
+      3<span style="font-size:9px;opacity:.7">/10</span>
     </span>
   </div>
   <div class="card-body">
@@ -1552,25 +1552,25 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
         Analyst Report: Campbell&#x27;s Company/The
       </a>
     </h2>
-    <p class="card-summary">This analyst report focuses on The Campbell&#x27;s Company. It is expected to provide a comprehensive evaluation of the company&#x27;s business, including its product portfolio, market share, financial health, and growth prospects. Investors can expect insights into the food and beverage industry trends and how Campbell&#x27;s is positioned to navigate them. The report may offer investment advice.</p>
+    <p class="card-summary">This article presents an analyst report focusing on The Campbell&#x27;s Company. It is expected to offer a comprehensive evaluation of the company&#x27;s business operations, financial health, and growth prospects. Investors and market participants would typically consult such reports to understand the company&#x27;s strengths, weaknesses, opportunities, and threats. The analysis may delve into product performance, brand strength, competitive positioning, and potential future developments.</p>
     <div class="impact-grid">
       <div class="impact-box short">
         <div class="impact-label">Ngắn hạn</div>
-        <p>Could impact investor perception and trading of CPB stock.</p>
+        <p>Could lead to short-term fluctuations in The Campbell&#x27;s Company stock price based on the report&#x27;s findings.</p>
       </div>
       <div class="impact-box medium">
         <div class="impact-label">Trung hạn</div>
-        <p>May influence the company&#x27;s stock valuation and strategic planning.</p>
+        <p>May influence investment strategies and the company&#x27;s stock trajectory over the next few months.</p>
       </div>
     </div>
-    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">The Campbell&#x27;s Company (CPB)</span></div>
+    <div class="entity-tags"><span style="font-size:11px;padding:2px 7px;background:#F1F5F9;color:#475569;border-radius:2px;margin:2px;">The Campbell&#x27;s Company</span></div>
     <div class="rec-section">
       <div class="rec-row"><span class="rec-icon risk">⚠</span>
-        <span><strong>Rủi ro:</strong> Consumer spending shifts, competition in the food industry, supply chain disruptions, changing dietary preferences.</span></div>
+        <span><strong>Rủi ro:</strong> The report&#x27;s assumptions about consumer behavior, food industry trends, and competitive pressures.</span></div>
       <div class="rec-row"><span class="rec-icon watch">👁</span>
-        <span><strong>Theo dõi:</strong> Analyst&#x27;s rating and price target for CPB, company&#x27;s performance in key product categories.</span></div>
+        <span><strong>Theo dõi:</strong> The analyst&#x27;s rating (buy, sell, hold) and price target for Campbell&#x27;s stock, any management commentary following the report.</span></div>
       <div class="rec-row"><span class="rec-icon action">→</span>
-        <span><strong>Lưu ý:</strong> Consult the full report for a detailed understanding of the analyst&#x27;s view on CPB.</span></div>
+        <span><strong>Lưu ý:</strong> Consult the full analyst report for a detailed understanding of The Campbell&#x27;s Company&#x27;s outlook.</span></div>
     </div>
   </div>
 </div>
@@ -1584,40 +1584,16 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
           <div class="top-num">1</div>
           <div>
             <div class="top-text">
-              Chủ tịch EVN: &#x27;Nếu năm nay không đầu tư thì 5 năm sau sẽ thiếu điện&#x27;
+              Báo cáo Thủ tướng, tập đoàn đầu tư 5 tỷ USD/năm đã sẵn sàng làm “công trình thế …
             </div>
             <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;
               color:#C0392B;margin-top:3px;">
-              Score: 8 · CafeF
+              Score: 8 · CafeF Vĩ Mô
             </div>
           </div>
         </div>
         <div class="top-story">
           <div class="top-num">2</div>
-          <div>
-            <div class="top-text">
-              Báo cáo Thủ tướng, tập đoàn đầu tư 5 tỷ USD/năm đã sẵn sàng làm “công trình thế …
-            </div>
-            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;
-              color:#C0392B;margin-top:3px;">
-              Score: 8 · CafeF
-            </div>
-          </div>
-        </div>
-        <div class="top-story">
-          <div class="top-num">3</div>
-          <div>
-            <div class="top-text">
-              Giảm thuế xăng dầu về 0%: Thêm lực đỡ cho người dân, doanh nghiệp
-            </div>
-            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;
-              color:#C0392B;margin-top:3px;">
-              Score: 8 · CafeF
-            </div>
-          </div>
-        </div>
-        <div class="top-story">
-          <div class="top-num">4</div>
           <div>
             <div class="top-text">
               VN-Index tăng mạnh nhất thế giới, cổ phiếu midcap bùng nổ
@@ -1629,7 +1605,7 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
           </div>
         </div>
         <div class="top-story">
-          <div class="top-num">5</div>
+          <div class="top-num">3</div>
           <div>
             <div class="top-text">
               Các hãng dầu có thể kiếm tỷ USD trong xung đột Trung Đông
@@ -1640,49 +1616,80 @@ body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-seri
             </div>
           </div>
         </div>
+        <div class="top-story">
+          <div class="top-num">4</div>
+          <div>
+            <div class="top-text">
+              CTCK bất ngờ hạ dự báo VN-Index năm 2026 sau căng thẳng Trung Đông
+            </div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;
+              color:#B8620A;margin-top:3px;">
+              Score: 7 · CafeF
+            </div>
+          </div>
+        </div>
+        <div class="top-story">
+          <div class="top-num">5</div>
+          <div>
+            <div class="top-text">
+              Chủ tịch EVN: &#x27;Nếu năm nay không đầu tư thì 5 năm sau sẽ thiếu điện&#x27;
+            </div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;
+              color:#B8620A;margin-top:3px;">
+              Score: 7 · CafeF
+            </div>
+          </div>
+        </div>
     </div>
     <div class="sidebar-section">
       <div class="sidebar-title">Nguồn tin hôm nay</div>
       
         <div class="source-row">
           <div>
-            <div style="font-weight:500;font-size:12px">CafeF</div>
+            <div style="font-weight:500;font-size:12px">CafeF Vĩ Mô</div>
             <div class="src-bar-wrap"><div class="src-bar" style="width:100%"></div></div>
           </div>
-          <span class="src-count">10</span>
+          <span class="src-count">5</span>
         </div>
         <div class="source-row">
           <div>
             <div style="font-weight:500;font-size:12px">VnEconomy</div>
-            <div class="src-bar-wrap"><div class="src-bar" style="width:50%"></div></div>
+            <div class="src-bar-wrap"><div class="src-bar" style="width:100%"></div></div>
           </div>
           <span class="src-count">5</span>
         </div>
         <div class="source-row">
           <div>
             <div style="font-weight:500;font-size:12px">VnExpress Kinh Doanh</div>
-            <div class="src-bar-wrap"><div class="src-bar" style="width:50%"></div></div>
+            <div class="src-bar-wrap"><div class="src-bar" style="width:100%"></div></div>
+          </div>
+          <span class="src-count">5</span>
+        </div>
+        <div class="source-row">
+          <div>
+            <div style="font-weight:500;font-size:12px">CafeF</div>
+            <div class="src-bar-wrap"><div class="src-bar" style="width:100%"></div></div>
           </div>
           <span class="src-count">5</span>
         </div>
         <div class="source-row">
           <div>
             <div style="font-weight:500;font-size:12px">VnEconomy Tài Chính</div>
-            <div class="src-bar-wrap"><div class="src-bar" style="width:50%"></div></div>
+            <div class="src-bar-wrap"><div class="src-bar" style="width:100%"></div></div>
           </div>
           <span class="src-count">5</span>
         </div>
         <div class="source-row">
           <div>
             <div style="font-weight:500;font-size:12px">Yahoo Finance</div>
-            <div class="src-bar-wrap"><div class="src-bar" style="width:50%"></div></div>
+            <div class="src-bar-wrap"><div class="src-bar" style="width:100%"></div></div>
           </div>
           <span class="src-count">5</span>
         </div>
     </div>
     <div class="sidebar-section">
       <div class="sidebar-title">Phân bổ lĩnh vực</div>
-      <div class="cat-row"><span>Doanh nghiệp</span><span class="cat-count">8</span></div><div class="cat-row"><span>Chứng khoán</span><span class="cat-count">7</span></div><div class="cat-row"><span>Kinh tế vĩ mô</span><span class="cat-count">5</span></div><div class="cat-row"><span>Tài chính quốc tế</span><span class="cat-count">4</span></div><div class="cat-row"><span>Ngân hàng</span><span class="cat-count">4</span></div><div class="cat-row"><span>Hàng hóa</span><span class="cat-count">2</span></div>
+      <div class="cat-row"><span>Kinh tế vĩ mô</span><span class="cat-count">7</span></div><div class="cat-row"><span>Chứng khoán</span><span class="cat-count">7</span></div><div class="cat-row"><span>Doanh nghiệp</span><span class="cat-count">7</span></div><div class="cat-row"><span>Ngân hàng</span><span class="cat-count">4</span></div><div class="cat-row"><span>Tài chính quốc tế</span><span class="cat-count">3</span></div><div class="cat-row"><span>Hàng hóa</span><span class="cat-count">2</span></div>
     </div>
     <div class="sidebar-section">
       <div class="sidebar-title">Lưu trữ báo cáo</div>
