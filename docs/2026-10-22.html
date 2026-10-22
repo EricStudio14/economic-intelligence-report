@@ -1,0 +1,1785 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Báo Cáo Kinh Tế 22/10/2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F7F5F0;--bg2:#EEEAE2;--ink:#1A1814;--ink2:#4A4640;--ink3:#8A857E;
+  --rule:#D8D2C8;--red:#C0392B;--blue:#1B4F8A;--amber:#B8620A;--fg:#F7F5F0;
+  --gauge-bg:#1C1916;--card-bg:#fff;--max-w:1240px;}
+html.dark{--bg:#111111;--bg2:#1E1E1E;--ink:#E8E4DC;--ink2:#B0ACA4;--ink3:#6A6560;
+  --rule:#333;--card-bg:#1A1A1A;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-serif;
+  font-size:16px;line-height:1.65;transition:background .3s,color .3s}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.dark-toggle{background:none;border:1px solid #3A3630;color:#6A6560;cursor:pointer;
+  font-size:16px;padding:4px 8px;border-radius:4px;line-height:1}
+.dark-toggle:hover{border-color:#6A6560}
+.masthead{background:var(--ink);color:#F7F5F0;border-bottom:3px solid var(--red)}
+html.dark .masthead{background:#0A0A0A}
+.mast-inner{max-width:var(--max-w);margin:0 auto;padding:14px 28px 10px}
+.mast-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.mast-left{display:flex;align-items:center;gap:18px}
+.pub-name{font-family:'Playfair Display',serif;font-size:32px;line-height:1}
+.pub-name span{color:var(--red)}
+.mast-tagline{font-family:'IBM Plex Mono',monospace;font-size:10px;color:#7A7570;margin-top:4px;letter-spacing:.06em;}
+.mast-right{display:flex;align-items:center;gap:12px}
+.mast-meta{font-family:'IBM Plex Mono',monospace;font-size:11px;color:#6A6560;line-height:1.8;text-align:right}
+.mast-rule{border:none;border-top:1px solid #3A3630;margin:8px 0 0}
+.mkt-wrapper-outer{background:#111009;border-top:1px solid #1A1814;padding:8px 0;}
+html.dark .mkt-wrapper-outer{background:#080808}
+.mkt-all-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;max-width:var(--max-w);margin:0 auto;padding:0 28px;align-items:stretch;}
+@media(max-width:960px){.mkt-all-grid{grid-template-columns:repeat(3,1fr);}}
+@media(max-width:560px){.mkt-all-grid{grid-template-columns:repeat(2,1fr);}}
+.mkt-chart-card{background:#1C1916;border:1px solid #2A2820;border-radius:4px;padding:7px 10px 6px;display:flex;flex-direction:column;}
+.mkt-cpt-card{background:#1C1916;border:1px solid #2A2820;border-radius:4px;padding:7px 10px;display:flex;flex-direction:column;justify-content:space-between;}
+.mkt-ch{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:3px;}
+.mkt-cn{font-family:'IBM Plex Sans',sans-serif;font-size:11px;font-weight:700;color:#E8E4DC;letter-spacing:.02em;}
+.mkt-cs{font-family:'IBM Plex Mono',monospace;font-size:8px;color:#7A7570;margin-top:1px;}
+.mkt-cp{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:700;text-align:right;white-space:nowrap;}
+.mkt-cb{margin:2px 0 3px;overflow:hidden;}
+.mkt-cf{display:flex;justify-content:space-between;align-items:center;margin-top:3px;gap:4px;flex-wrap:wrap;font-family:'IBM Plex Mono',monospace;font-size:10px;}
+.mkt-cc{font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:600;}
+.mkt-cv{font-family:'IBM Plex Mono',monospace;font-size:9px;color:#9A9590;}
+.mkt-cv-price{font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:700;color:#F7F5F0;white-space:nowrap;}
+.mkt-closed-badge{font-size:8px;background:#2A2820;color:#E07060;padding:1px 4px;border-radius:2px;font-family:'IBM Plex Mono',monospace;margin-left:4px;border:1px solid #3A1A18;vertical-align:middle;}
+.mkt-ron{border-color:#1F3020;}
+.up{color:#2ECC71}.dn{color:#E74C3C}.neu{color:#9A9590}
+.stats-bar{background:var(--ink);border-top:1px solid #2A2820}
+html.dark .stats-bar{background:#0A0A0A}
+.stats-inner{max-width:var(--max-w);margin:0 auto;padding:10px 28px;display:flex;gap:28px;align-items:center;flex-wrap:wrap}
+.stat{display:flex;flex-direction:column;align-items:center}
+.stat-n{font-family:'Playfair Display',serif;font-size:26px;color:#F7F5F0;line-height:1}
+.stat-n.red{color:var(--red)}
+.stat-l{font-size:9px;color:#8A857E;font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.08em;margin-top:2px}
+.stat-div{width:1px;height:32px;background:#3A3630}
+.stat-desc{flex:1;font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8A857E;line-height:1.7}
+.critical-banner{background:#2D0A08;border-left:4px solid var(--red)}
+.critical-inner{max-width:var(--max-w);margin:0 auto;padding:12px 28px;display:flex;align-items:center;gap:14px}
+.crit-dot{width:9px;height:9px;border-radius:50%;background:var(--red);flex-shrink:0;animation:blink 1.4s infinite}
+.crit-label{font-family:'IBM Plex Mono',monospace;font-size:10px;color:#E07060;text-transform:uppercase;letter-spacing:.1em}
+.main{max-width:var(--max-w);margin:0 auto;padding:28px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+@media(max-width:900px){.main{grid-template-columns:1fr;padding:16px}.sidebar{display:block!important;margin-top:24px}}
+.filter-bar{display:flex;gap:7px;margin-bottom:22px;flex-wrap:wrap;align-items:center}
+.filter-label{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--ink3);text-transform:uppercase;letter-spacing:.1em;margin-right:4px}
+.fbtn{font-family:'IBM Plex Mono',monospace;font-size:11px;padding:5px 13px;border:1px solid var(--rule);background:transparent;color:var(--ink2);cursor:pointer;border-radius:2px;transition:all .15s}
+.fbtn:hover,.fbtn.active{background:var(--ink);color:#F7F5F0;border-color:var(--ink)}
+.card{background:var(--card-bg);border:1px solid var(--rule);margin-bottom:18px;border-radius:2px;transition:box-shadow .2s}
+.card:hover{box-shadow:0 4px 20px rgba(0,0,0,.08)}
+.card-header{padding:13px 18px 0;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.badges{display:flex;gap:5px;flex-wrap:wrap;align-items:center;flex:1}
+.badge{font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;padding:3px 8px;border-radius:2px;text-transform:uppercase;letter-spacing:.05em}
+.source-badge{background:var(--bg2);color:var(--ink3)}
+.time-badge{background:transparent;color:var(--ink3);border:1px solid var(--rule)}
+.card-body{padding:14px 18px 16px}
+.card-title-row{display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid var(--bg2);}
+.card-title{font-family:'Playfair Display',serif;font-size:20px;line-height:1.35;flex:1}
+.card-title a{color:var(--ink);text-decoration:none}
+.card-title a:hover{text-decoration:underline;text-decoration-color:var(--red)}
+.card-score-badge{font-family:'Playfair Display',serif;font-size:22px;padding:2px 10px;border-radius:2px;flex-shrink:0;line-height:1.2;align-self:flex-start;margin-top:1px;}
+.card-summary{font-size:15px;color:var(--ink2);line-height:1.8;margin-bottom:14px}
+.expand-btn{color:var(--blue);cursor:pointer;font-size:13px;font-weight:500;text-decoration:none}
+.expand-btn:hover{text-decoration:underline}
+.impact-toggle{display:flex;align-items:center;gap:8px;cursor:pointer;font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--ink3);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;user-select:none;}
+.impact-toggle:hover{color:var(--ink2)}
+.impact-arrow{transition:transform .2s;display:inline-block;font-size:9px;}
+.impact-arrow.open{transform:rotate(90deg)}
+.impact-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px;overflow:hidden;transition:max-height .25s ease,opacity .2s ease;max-height:0;opacity:0;}
+.impact-grid.expanded{max-height:300px;opacity:1;}
+.impact-box{padding:10px 12px;border-radius:2px}
+.impact-box.short{background:#FFF8F0;border-left:2px solid var(--amber)}
+.impact-box.medium{background:#F0F4FF;border-left:2px solid var(--blue)}
+html.dark .impact-box.short{background:#1A1510}
+html.dark .impact-box.medium{background:#101420}
+.impact-label{font-family:'IBM Plex Mono',monospace;font-size:9px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+.impact-box.short .impact-label{color:var(--amber)}
+.impact-box.medium .impact-label{color:var(--blue)}
+.impact-box p{font-size:13px;color:var(--ink2);line-height:1.6}
+.entity-tags{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:12px;min-height:4px}
+.entity-tag{font-size:12px;padding:3px 9px;background:#F1F5F9;color:#475569;border-radius:2px;cursor:pointer;transition:all .15s;user-select:none;}
+.entity-tag:hover{background:#E2E8F0;color:#1E293B;transform:translateY(-1px);box-shadow:0 2px 6px rgba(0,0,0,.08)}
+.entity-tag.entity-active{background:var(--ink);color:#F7F5F0;}
+html.dark .entity-tag{background:#1A1A1A;color:#9A9590}
+html.dark .entity-tag:hover{background:#2A2A2A;color:#E8E4DC}
+html.dark .entity-tag.entity-active{background:#F7F5F0;color:#1A1814}
+.entity-filter-bar{display:none;background:#1E3A5F;color:#fff;padding:8px 28px;font-family:'IBM Plex Mono',monospace;font-size:11px;align-items:center;gap:12px;}
+.entity-filter-bar.visible{display:flex;}
+.entity-filter-clear{cursor:pointer;background:rgba(255,255,255,.15);border:none;color:#fff;padding:3px 10px;border-radius:2px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;}
+.entity-filter-clear:hover{background:rgba(255,255,255,.25)}
+.rec-section{padding-top:10px;border-top:1px solid var(--bg2);display:flex;flex-direction:column;gap:7px}
+.rec-row{display:flex;gap:9px;font-size:14px;color:var(--ink2);line-height:1.55}
+.rec-icon{flex-shrink:0;width:16px;text-align:center;margin-top:1px}
+.rec-icon.risk{color:#C0392B}.rec-icon.watch{color:var(--amber)}.rec-icon.action{color:#1A7A4A}
+.sidebar-section{margin-bottom:26px}
+.sidebar-title{font-family:'IBM Plex Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--ink3);padding-bottom:7px;border-bottom:2px solid var(--ink);margin-bottom:12px}
+.top-story{padding:10px 0;border-bottom:1px solid var(--rule);display:flex;gap:10px;align-items:flex-start}
+.top-num{font-family:'Playfair Display',serif;font-size:22px;color:var(--rule);line-height:1;flex-shrink:0;width:24px}
+.top-text{font-size:14px;color:var(--ink2);line-height:1.45}
+.source-row{display:flex;justify-content:space-between;align-items:flex-end;padding:6px 0;border-bottom:1px dashed var(--rule)}
+.src-bar-wrap{height:3px;background:var(--bg2);border-radius:2px;margin-top:3px;width:160px}
+.src-bar{height:3px;border-radius:2px;background:var(--blue)}
+.src-count{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink3)}
+.cat-row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px dashed var(--rule);font-size:13px}
+.cat-count{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink3)}
+.footer{background:var(--ink);color:#6A6560;text-align:center;padding:20px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.04em;border-top:3px solid var(--red)}
+html.dark .footer{background:#0A0A0A}
+.footer a{color:#6A8FBF}
+.hidden{display:none!important}
+@media(max-width:560px){.card-title{font-size:17px}.card-summary{font-size:14px}.impact-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="masthead">
+  <div class="mast-inner">
+    <div class="mast-top">
+      <div class="mast-left">
+        <div>
+          <div class="pub-name">Economic<span>.</span>Intelligence</div>
+          <div class="mast-tagline">BÁO CÁO KINH TẾ TÀI CHÍNH · VIỆT NAM & QUỐC TẾ · TỰ ĐỘNG</div>
+        </div>
+      </div>
+      <div class="mast-right">
+        <button class="dark-toggle" onclick="toggleDark()" title="Dark/Light mode">🌓</button>
+        <svg width="130" height="75" viewBox="0 0 130 75" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle"><path d="M8.00 67.00 A57.00 57.00 0 0 0 24.69 26.69 L44.04 46.04 A29.64 29.64 0 0 1 35.36 67.00Z" fill="#E88080"/><path d="M24.69 26.69 A57.00 57.00 0 0 0 56.08 10.70 L60.36 37.72 A29.64 29.64 0 0 1 44.04 46.04Z" fill="#F5A623"/><path d="M56.08 10.70 A57.00 57.00 0 0 0 73.92 10.70 L69.64 37.72 A29.64 29.64 0 0 1 60.36 37.72Z" fill="#E8D44D"/><path d="M73.92 10.70 A57.00 57.00 0 0 0 105.31 26.69 L85.96 46.04 A29.64 29.64 0 0 1 69.64 37.72Z" fill="#8DC86A"/><path d="M105.31 26.69 A57.00 57.00 0 0 0 122.00 67.00 L94.64 67.00 A29.64 29.64 0 0 1 85.96 46.04Z" fill="#3DB54A"/><line x1="65" y1="67" x2="23.96" y2="67.00" stroke="var(--fg,#F7F5F0)" stroke-width="2.2" stroke-linecap="round"/><circle cx="65" cy="67" r="5" fill="var(--gauge-bg,#1C1916)"/><circle cx="65" cy="67" r="3" fill="var(--fg,#F7F5F0)"/><text x="65" y="56.7" text-anchor="middle" font-family="monospace" font-size="17" fill="#E88080" font-weight="700">0</text><text x="65" y="74" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#E88080">Rất Sợ Hãi</text></svg>
+        <div class="mast-meta">
+          22/10/2026 · Chạy lúc: 07:19 ICT<br>
+          25 bài · 1 cảnh báo · 10 nguồn<br>
+          Gemini 2.5 Flash · Miễn phí
+        </div>
+      </div>
+    </div>
+    <hr class="mast-rule">
+  </div>
+  
+<div class="mkt-wrapper-outer">
+  <div style="text-align:right;font-family:monospace;font-size:8px;color:#5A5550;padding:2px 28px 0;max-width:var(--max-w);margin:0 auto;">Cập nhật: 21:48 21/10/2026</div>
+  <div class="mkt-all-grid">
+    
+<div class="mkt-chart-card">
+  <div class="mkt-ch">
+    <div><span class="mkt-cn">VN-Index <span class="mkt-closed-badge">CLOSED</span></span>
+         <div class="mkt-cs">VNINDEX · HOSE</div></div>
+  </div>
+  <div class="mkt-cb"><div style="min-height:60px"></div></div>
+  <div class="mkt-cf">
+    <div style="flex:1"></div>
+    <span class="mkt-cv-price">—</span>
+  </div>
+</div>
+    
+<div class="mkt-chart-card">
+  <div class="mkt-ch">
+    <div><span class="mkt-cn">USD / VND </span>
+         <div class="mkt-cs">USDVND · Forex</div></div>
+  </div>
+  <div class="mkt-cb"><svg viewBox="0 0 200 90" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="display:block;width:100%;height:90px"><defs><clipPath id="ga64614"><rect x="0" y="0" width="200" height="4.0"/></clipPath><clipPath id="ra64614"><rect x="0" y="4.0" width="200" height="90"/></clipPath></defs><polygon points="4.0,90 4.0,4.0 13.1,7.1 22.3,16.0 31.4,24.4 40.6,27.0 49.7,26.5 58.9,32.2 68.0,21.8 77.1,19.1 86.3,15.5 95.4,16.5 104.6,23.8 113.7,68.8 122.9,68.8 132.0,45.3 141.1,56.2 150.3,66.2 159.4,77.6 168.6,68.8 177.7,67.2 186.9,77.6 196.0,86.0 196.0,90" fill="#E74C3C" fill-opacity="0.13" clip-path="url(#ra64614)"/><polyline points="4.0,4.0 13.1,7.1 22.3,16.0 31.4,24.4 40.6,27.0 49.7,26.5 58.9,32.2 68.0,21.8 77.1,19.1 86.3,15.5 95.4,16.5 104.6,23.8 113.7,68.8 122.9,68.8 132.0,45.3 141.1,56.2 150.3,66.2 159.4,77.6 168.6,68.8 177.7,67.2 186.9,77.6 196.0,86.0" fill="none" stroke="#E74C3C" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#ra64614)"/><polygon points="4.0,90 4.0,4.0 13.1,7.1 22.3,16.0 31.4,24.4 40.6,27.0 49.7,26.5 58.9,32.2 68.0,21.8 77.1,19.1 86.3,15.5 95.4,16.5 104.6,23.8 113.7,68.8 122.9,68.8 132.0,45.3 141.1,56.2 150.3,66.2 159.4,77.6 168.6,68.8 177.7,67.2 186.9,77.6 196.0,86.0 196.0,90" fill="#2ECC71" fill-opacity="0.13" clip-path="url(#ga64614)"/><polyline points="4.0,4.0 13.1,7.1 22.3,16.0 31.4,24.4 40.6,27.0 49.7,26.5 58.9,32.2 68.0,21.8 77.1,19.1 86.3,15.5 95.4,16.5 104.6,23.8 113.7,68.8 122.9,68.8 132.0,45.3 141.1,56.2 150.3,66.2 159.4,77.6 168.6,68.8 177.7,67.2 186.9,77.6 196.0,86.0" fill="none" stroke="#2ECC71" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#ga64614)"/><line x1="4" y1="4.0" x2="196" y2="4.0" stroke="#888" stroke-dasharray="4,3" stroke-width="0.7" opacity="0.6"/><circle cx="196.0" cy="86.0" r="3" fill="#E74C3C"/><line x1="4" y1="86.0" x2="140" y2="86.0" stroke="#E74C3C" stroke-dasharray="3,2" stroke-width="0.8" opacity="0.5"/><rect x="142" y="78.0" width="56" height="16" rx="2" fill="#E74C3C" fill-opacity="0.2" stroke="#E74C3C" stroke-opacity="0.5" stroke-width="0.6"/><text x="170" y="90.0" text-anchor="middle" font-family="monospace" font-size="9.5" fill="#E74C3C" font-weight="700">25,856.00</text></svg></div>
+  <div class="mkt-cf">
+    <div style="flex:1"><span class="dn" style="font-weight:700">▼ -164.00 (-0.63%)</span></div>
+    <span class="mkt-cv-price">25,856</span>
+  </div>
+</div>
+    
+<div class="mkt-chart-card">
+  <div class="mkt-ch">
+    <div><span class="mkt-cn">S&amp;P 500 </span>
+         <div class="mkt-cs">^GSPC · NYSE</div></div>
+  </div>
+  <div class="mkt-cb"><svg viewBox="0 0 200 90" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="display:block;width:100%;height:90px"><defs><clipPath id="ga76189"><rect x="0" y="0" width="200" height="24.8"/></clipPath><clipPath id="ra76189"><rect x="0" y="24.8" width="200" height="72"/></clipPath></defs><polygon points="4.0,72 4.0,24.8 13.1,47.2 22.3,47.9 31.4,32.9 40.6,55.7 49.7,60.6 58.9,68.0 68.0,62.3 77.1,40.8 86.3,21.2 95.4,4.0 104.6,10.6 113.7,24.5 122.9,6.8 132.0,8.5 141.1,9.2 150.3,42.2 159.4,32.6 168.6,65.0 177.7,53.0 186.9,44.7 196.0,27.6 196.0,72" fill="#E74C3C" fill-opacity="0.13" clip-path="url(#ra76189)"/><polyline points="4.0,24.8 13.1,47.2 22.3,47.9 31.4,32.9 40.6,55.7 49.7,60.6 58.9,68.0 68.0,62.3 77.1,40.8 86.3,21.2 95.4,4.0 104.6,10.6 113.7,24.5 122.9,6.8 132.0,8.5 141.1,9.2 150.3,42.2 159.4,32.6 168.6,65.0 177.7,53.0 186.9,44.7 196.0,27.6" fill="none" stroke="#E74C3C" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#ra76189)"/><polygon points="4.0,72 4.0,24.8 13.1,47.2 22.3,47.9 31.4,32.9 40.6,55.7 49.7,60.6 58.9,68.0 68.0,62.3 77.1,40.8 86.3,21.2 95.4,4.0 104.6,10.6 113.7,24.5 122.9,6.8 132.0,8.5 141.1,9.2 150.3,42.2 159.4,32.6 168.6,65.0 177.7,53.0 186.9,44.7 196.0,27.6 196.0,72" fill="#2ECC71" fill-opacity="0.13" clip-path="url(#ga76189)"/><polyline points="4.0,24.8 13.1,47.2 22.3,47.9 31.4,32.9 40.6,55.7 49.7,60.6 58.9,68.0 68.0,62.3 77.1,40.8 86.3,21.2 95.4,4.0 104.6,10.6 113.7,24.5 122.9,6.8 132.0,8.5 141.1,9.2 150.3,42.2 159.4,32.6 168.6,65.0 177.7,53.0 186.9,44.7 196.0,27.6" fill="none" stroke="#2ECC71" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#ga76189)"/><line x1="4" y1="24.8" x2="196" y2="24.8" stroke="#888" stroke-dasharray="4,3" stroke-width="0.7" opacity="0.6"/><circle cx="196.0" cy="27.6" r="3" fill="#E74C3C"/><line x1="4" y1="27.6" x2="140" y2="27.6" stroke="#E74C3C" stroke-dasharray="3,2" stroke-width="0.8" opacity="0.5"/><rect x="142" y="19.6" width="56" height="16" rx="2" fill="#E74C3C" fill-opacity="0.2" stroke="#E74C3C" stroke-opacity="0.5" stroke-width="0.6"/><text x="170" y="31.6" text-anchor="middle" font-family="monospace" font-size="9.5" fill="#E74C3C" font-weight="700">7,757.17</text><rect x="4.0" y="79.6" width="7.9" height="10.4" fill="#2ECC71" fill-opacity="0.45" rx="0.5"/><rect x="12.7" y="79.9" width="7.9" height="10.1" fill="#E74C3C" fill-opacity="0.45" rx="0.5"/><rect x="21.5" y="79.5" width="7.9" height="10.5" fill="#E74C3C" fill-opacity="0.45" rx="0.5"/><rect x="30.2" y="81.1" width="7.9" height="8.9" fill="#2ECC71" fill-opacity="0.45" rx="0.5"/><rect x="38.9" y="79.9" width="7.9" height="10.1" fill="#E74C3C" fill-opacity="0.45" rx="0.5"/><rect x="47.6" y="80.1" width="7.9" height="9.9" fill="#E74C3C" fill-opacity="0.45" rx="0.5"/><rect x="56.4" y="81.6" width="7.9" height="8.4" fill="#E74C3C" fill-opacity="0.45" rx="0.5"/><rect x="65.1" y="78.6" width="7.9" height="11.4" fill="#2ECC71" fill-opacity="0.45" rx="0.5"/><rect x="73.8" y="79.6" width="7.9" height="10.4" fill="#2ECC71" fill-opacity="0.45" rx="0.5"/><rect x="82.5" y="78.5" width="7.9" height="11.5" fill="#2ECC71" fill-opacity="0.45" rx="0.5"/><rect x="91.3" y="80.1" width="7.9" height="9.9" fill="#2ECC71" fill-opacity="0.45" rx="0.5"/><rect x="100.0" y="79.9" width="7.9" height="10.1" fill="#E74C3C" fill-opacity="0.45" rx="0.5"/><rect x="108.7" y="78.0" width="7.9" height="12.0" fill="#E74C3C" fill-opacity="0.45" rx="0.5"/><rect x="117.5" y="80.6" width="7.9" height="9.4" fill="#2ECC71" fill-opacity="0.45" rx="0.5"/><rect x="126.2" y="81.8" width="7.9" height="8.2" fill="#E74C3C" fill-opacity="0.45" rx="0.5"/><rect x="134.9" y="80.4" width="7.9" height="9.6" fill="#E74C3C" fill-opacity="0.45" rx="0.5"/><rect x="143.6" y="78.2" width="7.9" height="11.8" fill="#E74C3C" fill-opacity="0.45" rx="0.5"/><rect x="152.4" y="78.1" width="7.9" height="11.9" fill="#2ECC71" fill-opacity="0.45" rx="0.5"/><rect x="161.1" y="79.2" width="7.9" height="10.8" fill="#E74C3C" fill-opacity="0.45" rx="0.5"/><rect x="169.8" y="80.9" width="7.9" height="9.1" fill="#2ECC71" fill-opacity="0.45" rx="0.5"/><rect x="178.5" y="80.1" width="7.9" height="9.9" fill="#2ECC71" fill-opacity="0.45" rx="0.5"/><rect x="187.3" y="84.3" width="7.9" height="5.7" fill="#2ECC71" fill-opacity="0.45" rx="0.5"/></svg></div>
+  <div class="mkt-cf">
+    <div style="flex:1"><span class="dn" style="font-weight:700">▼ -7.53 (-0.10%)</span></div>
+    <span class="mkt-cv-price">7,757.17</span>
+  </div>
+</div>
+    
+<div class="mkt-cpt-card">
+  <div class="mkt-ch"><div><span class="mkt-cn">🥇 SJC Gold</span>
+       <div class="mkt-cs">VÀNG SJC · 1 Lượng</div></div>
+    <div class="mkt-cp"><span class="neu">—</span></div></div>
+  
+  <div style="margin-top:auto">
+    <div class="mkt-cf" style="margin-top:4px"><span class="mkt-cs">Mua vào</span><span class="mkt-cv-price" style="color:#86EFAC;font-weight:700">139.3M VND</span></div>
+    <div class="mkt-cf" style="margin-top:4px">
+      <span class="mkt-cs">Bán ra</span>
+      <span class="mkt-cv-price" style="color:#FCD34D;font-weight:700">142.3M VND</span>
+    </div>
+  </div>
+</div>
+    
+<div class="mkt-cpt-card">
+  <div class="mkt-ch"><div><span class="mkt-cn">WTI Crude</span>
+       <div class="mkt-cs">CL=F · USD/bbl</div></div>
+    <div class="mkt-cp"><span class="up">+2.28%</span></div></div>
+  <div class="mkt-cc up" style="margin:4px 0;font-size:10px">▲ +2.18</div>
+  <div class="mkt-cf" style="margin-top:auto">
+    <span class="mkt-cs">Rising strongly</span>
+    <span class="mkt-cv-price">97.96</span>
+  </div>
+</div>
+    
+<div class="mkt-cpt-card mkt-ron">
+  <div class="mkt-ch"><div><span class="mkt-cn" style="color:#86EFAC">⛽ RON 95-III</span>
+       <div class="mkt-cs">Petrolimex · Retail</div></div></div>
+  
+  <div class="mkt-cf" style="margin-top:auto">
+    <span class="mkt-cs">Retail</span>
+    <span class="mkt-cv-price" style="color:#86EFAC">27.250 VND/L</span>
+  </div>
+</div>
+  </div>
+</div>
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat"><div class="stat-n">25</div><div class="stat-l">Bài phân tích</div></div>
+      <div class="stat-div"></div>
+      <div class="stat"><div class="stat-n red">1</div><div class="stat-l">Cảnh báo khẩn</div></div>
+      <div class="stat-div"></div>
+      <div class="stat"><div class="stat-n">10</div><div class="stat-l">Nguồn tin</div></div>
+      <div class="stat-div"></div>
+      <div class="stat-desc">
+        Số liệu cập nhật mỗi lần workflow chạy · Phân tích bởi AI
+        · <a href="https://ericstudio14.github.io/economic-intelligence-report" style="color:#6A8FBF">Xem trực tuyến</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="critical-banner">
+      <div class="critical-inner">
+        <div class="crit-dot"></div>
+        <div class="crit-label">⚡ 1 CẢNH BÁO KHẨN</div>
+      </div>
+    </div>
+
+<div class="entity-filter-bar" id="entity-filter-bar">
+  <span>🏷 Lọc theo:</span>
+  <strong id="entity-filter-label" style="color:#93C5FD"></strong>
+  <span style="color:#94A3B8;font-size:10px">— <span id="entity-match-count">0</span> bài liên quan</span>
+  <button class="entity-filter-clear" onclick="clearEntityFilter()">✕ Xóa bộ lọc &nbsp;·&nbsp; Ctrl+Click để lọc &nbsp;·&nbsp; Click để Google</button>
+</div>
+
+<div class="main">
+  <div>
+    <div class="filter-bar">
+      <span class="filter-label">Lọc:</span>
+      <button class="fbtn active" onclick="doFilter('all',this)">Tất cả (25)</button>
+      <button class="fbtn" onclick="doFilter('critical',this)">🔴 Khẩn (1)</button>
+      <button class="fbtn" onclick="doFilter('lang-vi',this)">🇻🇳 Việt Nam (25)</button>
+      <button class="fbtn" onclick="doFilter('lang-en',this)">🌍 Quốc tế (0)</button>
+      <button class="fbtn" onclick="doFilter('Chứng khoán',this)">Chứng khoán (8)</button>
+      <button class="fbtn" onclick="doFilter('Ngân hàng',this)">Ngân hàng (5)</button>
+      <button class="fbtn" onclick="doFilter('Kinh tế vĩ mô',this)">Vĩ mô (4)</button>
+      <button class="fbtn" onclick="doFilter('Địa chính trị',this)">Địa chính trị (1)</button>
+    </div>
+    
+<div class="card" data-score="8" data-cat="Doanh nghiệp"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#F0F9FF;color:#0C4A6E;
+        border:1px solid #BAE6FD;">Doanh nghiệp</span>
+      <span class="badge source-badge">🇻🇳 VnExpress Kinh Doanh</span>
+      <span class="badge time-badge"></span>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-title-row">
+      <h2 class="card-title">
+        <a href="https://vnexpress.net/chuyen-gi-xay-ra-neu-spacex-va-tesla-sap-nhap-5135170.html" target="_blank" rel="noopener">
+          Chuyện gì xảy ra nếu SpaceX và Tesla sáp nhập?
+        </a>
+      </h2>
+      <span class="card-score-badge"
+        style="background:#FEF2F2;color:#C0392B;border:1px solid #FECACA;">
+        8<span style="font-size:11px;opacity:.6">/10</span>
+      </span>
+    </div>
+    <p class="card-summary"><span>Trong bối cảnh các tập đoàn công nghệ lớn đang tìm cách mở rộng hệ sinh thái và củng cố vị thế trên thị trường, ý tưởng về việc sáp nhập giữa SpaceX và Tesla, hai đế chế do Elon Musk sáng lập, là một kịch bản đầy tham vọng và có thể tạo ra một siêu tập đoàn trị giá 3.500 tỷ USD. Sự kiện này, nếu xảy ra, sẽ không chỉ củng cố quyền lực của Musk mà còn tạo ra một thực thể có khả năng định hình lại nhiều ngành công nghiệp, từ ô tô điện,</span><span class="summary-rest" id="rest-c0" style="display:none"> năng lượng tái tạo đến hàng không vũ trụ và viễn thông vệ tinh. Chuỗi tác động sẽ rất sâu rộng: Tesla có thể hưởng lợi từ công nghệ vật liệu và kỹ thuật sản xuất tiên tiến của SpaceX, trong khi SpaceX có thể tiếp cận nguồn vốn và năng lực sản xuất quy mô lớn của Tesla. Tuy nhiên, rủi ro cũng không nhỏ, bao gồm thách thức về quản trị một tổ chức khổng lồ với các lĩnh vực kinh doanh rất khác biệt, khả năng pha loãng giá trị cho các cổ đông hiện hữu, và sự giám sát chặt chẽ hơn từ các cơ quan quản lý chống độc quyền. Đây là một kịch bản mang tính giả định cao nhưng phản ánh xu hướng hội tụ công nghệ và tham vọng của các nhà lãnh đạo doanh nghiệp trong việc tạo ra những đột phá mới.</span> <a class="expand-btn" onclick="toggleSummary('c0')" id="btn-c0">Đọc thêm ▸</a></p>
+    <div class="impact-toggle" onclick="toggleImpact('c0')">
+      <span class="impact-arrow" id="arr-c0">&#9658;</span>
+      &nbsp;Short &amp; Medium-term Impact
+    </div>
+    <div class="impact-grid" id="imp-c0">
+      <div class="impact-box short">
+        <div class="impact-label">Short-term</div>
+        <p>Nếu thông tin sáp nhập được xác nhận, giá cổ phiếu Tesla có thể biến động mạnh do kỳ vọng về tiềm năng tăng trưởng nhưng cũng đi kèm với lo ngại về phức tạp quản trị và pha loãng.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Medium-term</div>
+        <p>Một thực thể sáp nhập sẽ có khả năng huy động vốn lớn hơn, đẩy nhanh tốc độ đổi mới và mở rộng thị trường. Tuy nhiên, quá trình tích hợp có thể kéo dài và gặp nhiều trở ngại về văn hóa, công nghệ và pháp lý.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span class="entity-tag" data-entity="Tesla" onclick="handleEntityTag(event, this)">Tesla</span><span class="entity-tag" data-entity="SpaceX" onclick="handleEntityTag(event, this)">SpaceX</span><span class="entity-tag" data-entity="Các đối thủ cạnh tranh trong ngành ô tô điện" onclick="handleEntityTag(event, this)">Các đối thủ cạnh tranh trong ngành ô tô điện</span><span class="entity-tag" data-entity="Các đối thủ cạnh tranh trong ngành hàng không vũ trụ" onclick="handleEntityTag(event, this)">Các đối thủ cạnh tranh trong ngành hàng không vũ trụ</span><span class="entity-tag" data-entity="Các nhà đầu tư của Tesla" onclick="handleEntityTag(event, this)">Các nhà đầu tư của Tesla</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">&#9888;</span>
+        <span><strong>Risk:</strong> Thách thức về quản trị và tích hợp hai công ty có văn hóa và lĩnh vực kinh doanh khác biệt. Rủi ro về sự giám sát chống độc quyền và khả năng pha loãng giá trị cho cổ đông.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">&#128065;</span>
+        <span><strong>Watch:</strong> Các tuyên bố chính thức từ Elon Musk hoặc ban lãnh đạo của Tesla và SpaceX, cũng như phản ứng của thị trường và các cơ quan quản lý.</span></div>
+      <div class="rec-row"><span class="rec-icon action">&#8594;</span>
+        <span><strong>Note:</strong> Nhà đầu tư cần đánh giá kỹ lưỡng các yếu tố cơ bản và rủi ro tiềm ẩn nếu kịch bản sáp nhập này trở thành hiện thực, tránh hành động theo tin đồn.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="8" data-cat="Chứng khoán"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#F0FDF4;color:#166534;
+        border:1px solid #BBF7D0;">Chứng khoán</span>
+      <span class="badge source-badge">🇻🇳 CafeF</span>
+      <span class="badge time-badge"></span>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-title-row">
+      <h2 class="card-title">
+        <a href="https://cafef.vn/chung-khoan-sau-nang-hang-ipo-tang-toc-giao-dich-xuyen-trua-co-kha-thi-18826102120575641.chn" target="_blank" rel="noopener">
+          Chứng khoán sau nâng hạng: IPO tăng tốc, giao dịch xuyên trưa có khả thi?
+        </a>
+      </h2>
+      <span class="card-score-badge"
+        style="background:#FEF2F2;color:#C0392B;border:1px solid #FECACA;">
+        8<span style="font-size:11px;opacity:.6">/10</span>
+      </span>
+    </div>
+    <p class="card-summary"><span>Trong bối cảnh thị trường chứng khoán Việt Nam đang nỗ lực hướng tới mục tiêu nâng hạng từ thị trường cận biên lên thị trường mới nổi, các vấn đề về cải thiện hạ tầng giao dịch, bổ sung hàng hóa chất lượng và thúc đẩy IPO trở nên cấp thiết. Mục tiêu huy động 5,4 triệu tỷ đồng vốn trung, dài hạn trong giai đoạn 2026-2030 đặt ra áp lực lớn cho việc đổi mới để thị trường trở thành kênh dẫn vốn hiệu quả hơn cho nền kinh tế. Việc nâng hạng sẽ mở ra cánh cửa</span><span class="summary-rest" id="rest-c1" style="display:none"> thu hút dòng vốn đầu tư nước ngoài lớn hơn, nhưng đòi hỏi những cải cách sâu rộng về quy định, công nghệ và sản phẩm. Giao dịch xuyên trưa, một trong những cải tiến được mong đợi, sẽ giúp tăng thanh khoản và hiệu quả giao dịch. Tuy nhiên, việc triển khai cần cân nhắc kỹ lưỡng về hạ tầng kỹ thuật và sự sẵn sàng của các thành viên thị trường. Sự kiện này phản ánh quyết tâm của Chính phủ và các cơ quan quản lý trong việc phát triển thị trường chứng khoán, biến nó thành một trụ cột quan trọng cho tăng trưởng kinh tế, đồng thời tạo ra nhiều cơ hội và thách thức cho các doanh nghiệp niêm yết và nhà đầu tư.</span> <a class="expand-btn" onclick="toggleSummary('c1')" id="btn-c1">Đọc thêm ▸</a></p>
+    <div class="impact-toggle" onclick="toggleImpact('c1')">
+      <span class="impact-arrow" id="arr-c1">&#9658;</span>
+      &nbsp;Short &amp; Medium-term Impact
+    </div>
+    <div class="impact-grid" id="imp-c1">
+      <div class="impact-box short">
+        <div class="impact-label">Short-term</div>
+        <p>Các công ty chứng khoán và cơ quan quản lý sẽ đẩy nhanh quá trình chuẩn bị hạ tầng và quy định cho việc nâng hạng. Có thể có các thông báo về lộ trình triển khai giao dịch xuyên trưa và các sản phẩm mới.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Medium-term</div>
+        <p>Nếu nâng hạng thành công, dòng vốn ngoại sẽ tăng mạnh, thúc đẩy thanh khoản và giá trị thị trường. Các doanh nghiệp sẽ có cơ hội huy động vốn dễ dàng hơn thông qua IPO. Tuy nhiên, cạnh tranh cũng sẽ gia tăng.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span class="entity-tag" data-entity="Thị trường chứng khoán Việt Nam" onclick="handleEntityTag(event, this)">Thị trường chứng khoán Việt Nam</span><span class="entity-tag" data-entity="Các công ty chứng khoán" onclick="handleEntityTag(event, this)">Các công ty chứng khoán</span><span class="entity-tag" data-entity="Các doanh nghiệp niêm yết" onclick="handleEntityTag(event, this)">Các doanh nghiệp niêm yết</span><span class="entity-tag" data-entity="Các nhà đầu tư trong và ngoài nước" onclick="handleEntityTag(event, this)">Các nhà đầu tư trong và ngoài nước</span><span class="entity-tag" data-entity="Sở Giao dịch Chứng khoán Việt Nam (VNX)" onclick="handleEntityTag(event, this)">Sở Giao dịch Chứng khoán Việt Nam (VNX)</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">&#9888;</span>
+        <span><strong>Risk:</strong> Rủi ro về việc chậm trễ trong việc cải thiện hạ tầng và quy định, ảnh hưởng đến tiến độ nâng hạng. Rủi ro về sự biến động của thị trường nếu các cải cách không được thực hiện hiệu quả.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">&#128065;</span>
+        <span><strong>Watch:</strong> Các thông báo chính thức từ Ủy ban Chứng khoán Nhà nước (SSC) và Sở Giao dịch Chứng khoán Việt Nam (VNX) về lộ trình nâng hạng, triển khai giao dịch xuyên trưa, và các sản phẩm mới.</span></div>
+      <div class="rec-row"><span class="rec-icon action">&#8594;</span>
+        <span><strong>Note:</strong> Nhà đầu tư nên theo dõi sát sao các thông tin về nâng hạng và cải cách thị trường để nắm bắt cơ hội và điều chỉnh chiến lược đầu tư phù hợp.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="8" data-cat="Kinh tế vĩ mô"
+     data-lang="vi" data-critical="yes"
+     style="border-left:3px solid #C0392B;">
+  <div class="card-header">
+    <div class="badges">
+      <span style="background:#C0392B;color:#fff;padding:2px 8px;border-radius:2px;font-size:9px;font-weight:700;letter-spacing:.08em;animation:blink 1.4s infinite;">🔴 KHẨN CẤP</span>
+      <span class="badge" style="background:#FFF7ED;color:#9A3412;
+        border:1px solid #FED7AA;">Kinh tế vĩ mô</span>
+      <span class="badge source-badge">🇻🇳 CafeF Vĩ Mô</span>
+      <span class="badge time-badge"></span>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-title-row">
+      <h2 class="card-title">
+        <a href="https://cafef.vn/se-trinh-trung-uong-nghi-quyet-moi-ve-chinh-sach-tien-luong-188261021230950174.chn" target="_blank" rel="noopener">
+          Sẽ trình Trung ương nghị quyết mới về chính sách tiền lương
+        </a>
+      </h2>
+      <span class="card-score-badge"
+        style="background:#FEF2F2;color:#C0392B;border:1px solid #FECACA;">
+        8<span style="font-size:11px;opacity:.6">/10</span>
+      </span>
+    </div>
+    <p class="card-summary"><span>Trong bối cảnh nền kinh tế Việt Nam đang nỗ lực phục hồi và phát triển, việc Chính phủ xây dựng đề án và dự kiến trình Ban Chấp hành Trung ương ban hành nghị quyết mới về chính sách tiền lương và bảo hiểm xã hội là một sự kiện kinh tế vĩ mô có tầm quan trọng đặc biệt. Nghị quyết này sẽ thay thế Nghị quyết số 27-NQ/TW và Nghị quyết số 28-NQ/TW, cho thấy một sự thay đổi toàn diện và sâu rộng trong cách tiếp cận chính sách tiền lương và an sinh xã hội.</span><span class="summary-rest" id="rest-c2" style="display:none"> Chuỗi tác động sẽ rất lớn: đối với người lao động, việc cải cách tiền lương có thể giúp cải thiện đời sống, tăng sức mua và kích thích tiêu dùng. Đối với doanh nghiệp, nó có thể ảnh hưởng đến chi phí lao động và chiến lược quản lý nhân sự. Đối với ngân sách nhà nước, việc điều chỉnh tiền lương sẽ đòi hỏi nguồn lực tài chính đáng kể. Sự kiện này cũng phản ánh nỗ lực của Chính phủ trong việc đảm bảo công bằng xã hội, nâng cao năng suất lao động và tạo động lực cho sự phát triển bền vững của nền kinh tế. Đây là một bước đi quan trọng nhằm hiện đại hóa chính sách tiền lương, phù hợp với bối cảnh kinh tế - xã hội mới.</span> <a class="expand-btn" onclick="toggleSummary('c2')" id="btn-c2">Đọc thêm ▸</a></p>
+    <div class="impact-toggle" onclick="toggleImpact('c2')">
+      <span class="impact-arrow" id="arr-c2">&#9658;</span>
+      &nbsp;Short &amp; Medium-term Impact
+    </div>
+    <div class="impact-grid" id="imp-c2">
+      <div class="impact-box short">
+        <div class="impact-label">Short-term</div>
+        <p>Tạo ra kỳ vọng về việc tăng lương cho người lao động, đặc biệt là trong khu vực công. Các doanh nghiệp sẽ bắt đầu đánh giá tác động tiềm năng đến chi phí lao động và kế hoạch kinh doanh.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Medium-term</div>
+        <p>Nếu nghị quyết được thông qua và triển khai, sẽ có sự điều chỉnh đáng kể trong cơ cấu tiền lương và chế độ bảo hiểm xã hội. Điều này có thể thúc đẩy tiêu dùng, cải thiện đời sống người dân, nhưng cũng đặt ra thách thức về cân đối ngân sách và khả năng cạnh tranh của doanh nghiệp.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span class="entity-tag" data-entity="Người lao động trên toàn quốc" onclick="handleEntityTag(event, this)">Người lao động trên toàn quốc</span><span class="entity-tag" data-entity="Các doanh nghiệp (đặc biệt là doanh nghiệp nhà nước)" onclick="handleEntityTag(event, this)">Các doanh nghiệp (đặc biệt là doanh nghiệp nhà nước)</span><span class="entity-tag" data-entity="Ngân sách nhà nước" onclick="handleEntityTag(event, this)">Ngân sách nhà nước</span><span class="entity-tag" data-entity="Hệ thống bảo hiểm xã hội" onclick="handleEntityTag(event, this)">Hệ thống bảo hiểm xã hội</span><span class="entity-tag" data-entity="Các cơ quan quản lý nhà nước" onclick="handleEntityTag(event, this)">Các cơ quan quản lý nhà nước</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">&#9888;</span>
+        <span><strong>Risk:</strong> Rủi ro về áp lực lên ngân sách nhà nước nếu việc tăng lương không đi kèm với tăng năng suất lao động. Rủi ro về việc tăng chi phí lao động có thể ảnh hưởng đến khả năng cạnh tranh của doanh nghiệp, đặc biệt là các doanh nghiệp nhỏ và vừa.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">&#128065;</span>
+        <span><strong>Watch:</strong> Nội dung chi tiết của nghị quyết mới về chính sách tiền lương và bảo hiểm xã hội, lộ trình triển khai, và các văn bản hướng dẫn từ Chính phủ.</span></div>
+      <div class="rec-row"><span class="rec-icon action">&#8594;</span>
+        <span><strong>Note:</strong> Các doanh nghiệp và người lao động cần theo dõi sát sao các thông tin liên quan để chuẩn bị và điều chỉnh kế hoạch phù hợp với chính sách mới.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="8" data-cat="Hàng hóa"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#FFFBEB;color:#92400E;
+        border:1px solid #FDE68A;">Hàng hóa</span>
+      <span class="badge source-badge">🇻🇳 VnEconomy</span>
+      <span class="badge time-badge"></span>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-title-row">
+      <h2 class="card-title">
+        <a href="https://vneconomy.vn/cuoc-van-tai-tang-vot-cac-nha-may-loc-dau-chau-a-va-chau-au-roi-vao-canh-thua-lo.htm" target="_blank" rel="noopener">
+          Cước vận tải tăng vọt, các nhà máy lọc dầu châu Á và châu Âu rơi vào cảnh thua lỗ
+        </a>
+      </h2>
+      <span class="card-score-badge"
+        style="background:#FEF2F2;color:#C0392B;border:1px solid #FECACA;">
+        8<span style="font-size:11px;opacity:.6">/10</span>
+      </span>
+    </div>
+    <p class="card-summary"><span>Trong bối cảnh kinh tế toàn cầu đang đối mặt với nhiều thách thức, việc cước vận tải dầu thô tăng vọt đã đẩy các nhà máy lọc dầu ở châu Á và châu Âu vào tình trạng thua lỗ, bất chấp giá nhiên liệu vẫn ở mức cao. Sự kiện này phản ánh một chuỗi tác động phức tạp, bắt nguồn từ các yếu tố địa chính trị, gián đoạn chuỗi cung ứng và sự mất cân đối cung cầu trong ngành vận tải biển. Chi phí vận chuyển tăng cao làm xói mòn biên lợi nhuận của các</span><span class="summary-rest" id="rest-c3" style="display:none"> nhà máy lọc dầu, vốn đã phải đối mặt với chi phí đầu vào biến động và nhu cầu tiêu thụ không ổn định. Điều này có thể dẫn đến việc cắt giảm sản lượng, ảnh hưởng đến nguồn cung nhiên liệu toàn cầu và đẩy giá bán lẻ lên cao hơn, gây áp lực lạm phát. Trong quá khứ, những cú sốc về chi phí vận tải thường gây ra hiệu ứng domino, tác động tiêu cực đến nhiều ngành công nghiệp khác. Rủi ro hiện tại là tình trạng này có thể kéo dài, làm suy yếu khả năng phục hồi kinh tế và gây ra những biến động lớn trên thị trường năng lượng. Các chính phủ và doanh nghiệp cần tìm kiếm giải pháp để ổn định chuỗi cung ứng và giảm thiểu tác động của chi phí vận tải.</span> <a class="expand-btn" onclick="toggleSummary('c3')" id="btn-c3">Đọc thêm ▸</a></p>
+    <div class="impact-toggle" onclick="toggleImpact('c3')">
+      <span class="impact-arrow" id="arr-c3">&#9658;</span>
+      &nbsp;Short &amp; Medium-term Impact
+    </div>
+    <div class="impact-grid" id="imp-c3">
+      <div class="impact-box short">
+        <div class="impact-label">Short-term</div>
+        <p>Các nhà máy lọc dầu có thể tiếp tục cắt giảm sản lượng hoặc hoạt động dưới công suất, gây áp lực lên nguồn cung nhiên liệu. Giá nhiên liệu bán lẻ có thể tăng nhẹ do chi phí đầu vào tăng.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Medium-term</div>
+        <p>Nếu tình trạng cước vận tải cao kéo dài, có thể dẫn đến sự tái cấu trúc trong ngành lọc dầu, với các nhà máy kém hiệu quả hơn có thể phải đóng cửa. Điều này sẽ ảnh hưởng đến an ninh năng lượng và giá cả dài hạn.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span class="entity-tag" data-entity="Các nhà máy lọc dầu tại châu Á và châu Âu" onclick="handleEntityTag(event, this)">Các nhà máy lọc dầu tại châu Á và châu Âu</span><span class="entity-tag" data-entity="Các công ty vận tải biển" onclick="handleEntityTag(event, this)">Các công ty vận tải biển</span><span class="entity-tag" data-entity="Người tiêu dùng (qua giá nhiên liệu)" onclick="handleEntityTag(event, this)">Người tiêu dùng (qua giá nhiên liệu)</span><span class="entity-tag" data-entity="Các ngành công nghiệp phụ thuộc vào nhiên liệu (hàng không, vận tải đường bộ)" onclick="handleEntityTag(event, this)">Các ngành công nghiệp phụ thuộc vào nhiên liệu (hàng không, vận tải đường bộ)</span><span class="entity-tag" data-entity="Các chính phủ (về chính sách năng lượng)" onclick="handleEntityTag(event, this)">Các chính phủ (về chính sách năng lượng)</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">&#9888;</span>
+        <span><strong>Risk:</strong> Rủi ro chính là tình trạng cước vận tải cao kéo dài, gây ra lạm phát chi phí đẩy và suy giảm tăng trưởng kinh tế. Ngoài ra, việc cắt giảm sản lượng lọc dầu có thể dẫn đến thiếu hụt nguồn cung nhiên liệu.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">&#128065;</span>
+        <span><strong>Watch:</strong> Theo dõi chỉ số cước vận tải biển (ví dụ: Baltic Dry Index), giá dầu thô, và các báo cáo tài chính của các công ty lọc dầu. Quan sát các động thái chính sách của các chính phủ liên quan đến năng lượng và vận tải.</span></div>
+      <div class="rec-row"><span class="rec-icon action">&#8594;</span>
+        <span><strong>Note:</strong> Các doanh nghiệp trong ngành năng lượng và vận tải cần đánh giá lại chiến lược chuỗi cung ứng và quản lý rủi ro chi phí. Người tiêu dùng nên chuẩn bị cho khả năng giá nhiên liệu tiếp tục biến động.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="8" data-cat="Tài chính quốc tế"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#EEF2FF;color:#3730A3;
+        border:1px solid #C7D2FE;">Tài chính quốc tế</span>
+      <span class="badge source-badge">🇻🇳 VnEconomy Tài Chính</span>
+      <span class="badge time-badge"></span>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-title-row">
+      <h2 class="card-title">
+        <a href="https://vneconomy.vn/gioi-dau-tu-o-at-mua-hop-dong-bao-hiem-rui-ro-vo-no-trai-phieu-ai.htm" target="_blank" rel="noopener">
+          Giới đầu tư ồ ạt mua hợp đồng bảo hiểm rủi ro vỡ nợ trái phiếu AI
+        </a>
+      </h2>
+      <span class="card-score-badge"
+        style="background:#FEF2F2;color:#C0392B;border:1px solid #FECACA;">
+        8<span style="font-size:11px;opacity:.6">/10</span>
+      </span>
+    </div>
+    <p class="card-summary"><span>Trong bối cảnh cơn sốt trí tuệ nhân tạo (AI) đang bùng nổ và thu hút dòng vốn khổng lồ, việc giới đầu tư ồ ạt mua hợp đồng hoán đổi rủi ro tín dụng (CDS) để bảo vệ danh mục khỏi nguy cơ vỡ nợ trái phiếu AI là một tín hiệu đáng chú ý. Điều này phản ánh sự thận trọng ngày càng tăng và nhận thức về rủi ro tiềm ẩn trong một lĩnh vực đang phát triển quá nóng. Mặc dù AI mang lại tiềm năng tăng trưởng vượt trội, nhưng cũng đi kèm với những</span><span class="summary-rest" id="rest-c4" style="display:none"> rủi ro về định giá quá cao, cạnh tranh gay gắt, và sự không chắc chắn về khả năng sinh lời bền vững của nhiều công ty. Việc mua CDS cho thấy nhà đầu tư đang tìm cách phòng ngừa rủi ro, đặc biệt là trong trường hợp &quot;bong bóng&quot; AI có thể hạ nhiệt đột ngột, gây ra sự sụt giảm giá trị tài sản và khả năng vỡ nợ của các doanh nghiệp liên quan. Đây là một động thái quản lý rủi ro hợp lý, tương tự như cách nhà đầu tư đã từng phòng ngừa rủi ro trong các bong bóng công nghệ trước đây. Tuy nhiên, việc mua CDS ồ ạt cũng có thể là dấu hiệu của sự lo ngại lan rộng, có khả năng gây áp lực lên các cổ phiếu và trái phiếu AI nếu tâm lý thị trường chuyển biến tiêu cực.</span> <a class="expand-btn" onclick="toggleSummary('c4')" id="btn-c4">Đọc thêm ▸</a></p>
+    <div class="impact-toggle" onclick="toggleImpact('c4')">
+      <span class="impact-arrow" id="arr-c4">&#9658;</span>
+      &nbsp;Short &amp; Medium-term Impact
+    </div>
+    <div class="impact-grid" id="imp-c4">
+      <div class="impact-box short">
+        <div class="impact-label">Short-term</div>
+        <p>Áp lực bán có thể gia tăng đối với các trái phiếu và cổ phiếu liên quan đến AI nếu tâm lý lo ngại tiếp tục lan rộng. Các công ty bảo hiểm rủi ro tín dụng có thể chứng kiến nhu cầu tăng cao.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Medium-term</div>
+        <p>Trong vài tháng tới, nếu có dấu hiệu &quot;hạ nhiệt&quot; của cơn sốt AI, việc mua CDS có thể trở thành một yếu tố đẩy nhanh quá trình điều chỉnh của thị trường. Các nhà đầu tư sẽ thận trọng hơn khi rót vốn vào các dự án AI mới.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span class="entity-tag" data-entity="Các công ty công nghệ AI" onclick="handleEntityTag(event, this)">Các công ty công nghệ AI</span><span class="entity-tag" data-entity="Các nhà phát hành trái phiếu AI" onclick="handleEntityTag(event, this)">Các nhà phát hành trái phiếu AI</span><span class="entity-tag" data-entity="Các quỹ đầu tư và nhà đầu tư cá nhân nắm giữ cổ phiếu/trái phiếu AI" onclick="handleEntityTag(event, this)">Các quỹ đầu tư và nhà đầu tư cá nhân nắm giữ cổ phiếu/trái phiếu AI</span><span class="entity-tag" data-entity="Các tổ chức cung cấp hợp đồng CDS" onclick="handleEntityTag(event, this)">Các tổ chức cung cấp hợp đồng CDS</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">&#9888;</span>
+        <span><strong>Risk:</strong> Rủi ro chính là sự điều chỉnh mạnh của thị trường AI nếu &quot;bong bóng&quot; vỡ, gây ra thua lỗ lớn cho các nhà đầu tư không phòng ngừa. Ngoài ra, chi phí mua CDS cũng là một yếu tố cần cân nhắc.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">&#128065;</span>
+        <span><strong>Watch:</strong> Theo dõi diễn biến giá cổ phiếu các công ty AI lớn, các báo cáo về định giá và khả năng sinh lời của ngành AI, cũng như các chỉ số về tâm lý thị trường và dòng vốn đầu tư vào AI.</span></div>
+      <div class="rec-row"><span class="rec-icon action">&#8594;</span>
+        <span><strong>Note:</strong> Nhà đầu tư nên đánh giá lại danh mục đầu tư vào AI, cân nhắc việc phòng ngừa rủi ro bằng các công cụ phái sinh như CDS nếu cảm thấy lo ngại. Tránh đầu tư theo phong trào mà không có phân tích kỹ lưỡng.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="7" data-cat="Ngân hàng"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#EFF6FF;color:#1E40AF;
+        border:1px solid #BFDBFE;">Ngân hàng</span>
+      <span class="badge source-badge">🇻🇳 VnExpress Kinh Doanh</span>
+      <span class="badge time-badge"></span>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-title-row">
+      <h2 class="card-title">
+        <a href="https://vnexpress.net/nhieu-ngan-hang-cho-vay-binh-quan-tren-11-truoc-dot-ha-lai-suat-5135336.html" target="_blank" rel="noopener">
+          Nhiều ngân hàng cho vay bình quân trên 11% trước đợt hạ lãi suất
+        </a>
+      </h2>
+      <span class="card-score-badge"
+        style="background:#FFFBEB;color:#B8620A;border:1px solid #FDE68A;">
+        7<span style="font-size:11px;opacity:.6">/10</span>
+      </span>
+    </div>
+    <p class="card-summary"><span>Trong bối cảnh Ngân hàng Nhà nước (NHNN) đang nỗ lực điều hành chính sách tiền tệ theo hướng nới lỏng để hỗ trợ tăng trưởng kinh tế, thông tin về việc nhiều ngân hàng thương mại vẫn duy trì mức lãi suất cho vay cá nhân bình quân trên 11% trước đợt điều chỉnh theo yêu cầu của NHNN là một điểm đáng chú ý. Điều này cho thấy sự chậm trễ trong việc truyền tải chính sách từ cấp vĩ mô xuống thực tế thị trường, đặc biệt là đối với các khoản vay tiêu dùng và sản</span><span class="summary-rest" id="rest-c5" style="display:none"> xuất kinh doanh của cá nhân và doanh nghiệp nhỏ. Mặc dù NHNN đã có nhiều động thái hạ lãi suất điều hành, nhưng áp lực chi phí vốn và rủi ro tín dụng vẫn khiến các ngân hàng thận trọng trong việc giảm lãi suất cho vay. Sự chênh lệch giữa lãi suất huy động và cho vay, cùng với khả năng hấp thụ vốn của nền kinh tế, đang là những yếu tố cần được theo dõi sát sao. Việc giảm lãi suất cho vay là cần thiết để kích thích tổng cầu, hỗ trợ doanh nghiệp phục hồi sản xuất kinh doanh và thúc đẩy tiêu dùng, qua đó đóng góp vào mục tiêu tăng trưởng GDP của Việt Nam trong bối cảnh kinh tế toàn cầu còn nhiều bất ổn.</span> <a class="expand-btn" onclick="toggleSummary('c5')" id="btn-c5">Đọc thêm ▸</a></p>
+    <div class="impact-toggle" onclick="toggleImpact('c5')">
+      <span class="impact-arrow" id="arr-c5">&#9658;</span>
+      &nbsp;Short &amp; Medium-term Impact
+    </div>
+    <div class="impact-grid" id="imp-c5">
+      <div class="impact-box short">
+        <div class="impact-label">Short-term</div>
+        <p>Các ngân hàng có thể sẽ chịu áp lực lớn hơn từ NHNN để giảm lãi suất cho vay, đặc biệt là đối với các lĩnh vực ưu tiên. Lãi suất cho vay cá nhân có thể bắt đầu giảm nhẹ, tạo điều kiện thuận lợi hơn cho người vay.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Medium-term</div>
+        <p>Nếu lãi suất cho vay giảm bền vững, hoạt động sản xuất kinh doanh và tiêu dùng sẽ được kích thích, hỗ trợ tăng trưởng kinh tế. Biên lợi nhuận (NIM) của một số ngân hàng có thể bị ảnh hưởng nếu chi phí vốn không giảm tương ứng.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span class="entity-tag" data-entity="Techcombank" onclick="handleEntityTag(event, this)">Techcombank</span><span class="entity-tag" data-entity="OCB" onclick="handleEntityTag(event, this)">OCB</span><span class="entity-tag" data-entity="TPBank" onclick="handleEntityTag(event, this)">TPBank</span><span class="entity-tag" data-entity="BVBank" onclick="handleEntityTag(event, this)">BVBank</span><span class="entity-tag" data-entity="Các ngân hàng thương mại" onclick="handleEntityTag(event, this)">Các ngân hàng thương mại</span><span class="entity-tag" data-entity="Người vay cá nhân" onclick="handleEntityTag(event, this)">Người vay cá nhân</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">&#9888;</span>
+        <span><strong>Risk:</strong> Rủi ro tín dụng vẫn là mối lo ngại, khiến ngân hàng khó giảm lãi suất mạnh. Khả năng hấp thụ vốn của nền kinh tế còn yếu có thể làm giảm hiệu quả của chính sách nới lỏng tiền tệ.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">&#128065;</span>
+        <span><strong>Watch:</strong> Các động thái tiếp theo của NHNN về chính sách tiền tệ, diễn biến lãi suất cho vay thực tế tại các ngân hàng, và tốc độ tăng trưởng tín dụng.</span></div>
+      <div class="rec-row"><span class="rec-icon action">&#8594;</span>
+        <span><strong>Note:</strong> Thị trường cần theo dõi sát sao các thông báo và chỉ đạo từ NHNN cũng như phản ứng của các ngân hàng thương mại để đánh giá mức độ truyền tải chính sách.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="7" data-cat="Địa chính trị"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#FFF1F2;color:#9F1239;
+        border:1px solid #FECDD3;">Địa chính trị</span>
+      <span class="badge source-badge">🇻🇳 VnExpress Kinh Doanh</span>
+      <span class="badge time-badge"></span>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-title-row">
+      <h2 class="card-title">
+        <a href="https://vnexpress.net/lien-hop-quoc-nang-du-bao-nong-len-toan-cau-5135280.html" target="_blank" rel="noopener">
+          Liên Hợp Quốc nâng dự báo nóng lên toàn cầu
+        </a>
+      </h2>
+      <span class="card-score-badge"
+        style="background:#FFFBEB;color:#B8620A;border:1px solid #FDE68A;">
+        7<span style="font-size:11px;opacity:.6">/10</span>
+      </span>
+    </div>
+    <p class="card-summary"><span>Trong bối cảnh biến đổi khí hậu ngày càng trở thành mối đe dọa hiện hữu đối với nền kinh tế toàn cầu, việc Liên Hợp Quốc nâng dự báo nóng lên toàn cầu thêm 0,1 độ C, một phần do Mỹ gia tăng phát thải, là một tín hiệu đáng báo động. Sự kiện này không chỉ nhấn mạnh tính cấp bách của hành động khí hậu mà còn cho thấy những thách thức trong việc đạt được các mục tiêu giảm phát thải đã cam kết. Chuỗi tác động sẽ rất rộng: các ngành kinh tế phụ thuộc</span><span class="summary-rest" id="rest-c6" style="display:none"> vào tài nguyên thiên nhiên như nông nghiệp, thủy sản sẽ chịu ảnh hưởng trực tiếp từ thời tiết cực đoan; ngành bảo hiểm sẽ đối mặt với chi phí bồi thường tăng cao; và các chuỗi cung ứng toàn cầu có thể bị gián đoạn. Về mặt địa chính trị, việc Mỹ gia tăng phát thải có thể làm suy yếu vai trò lãnh đạo của nước này trong các nỗ lực khí hậu quốc tế và gây căng thẳng trong quan hệ với các quốc gia khác. Sự kiện này cũng thúc đẩy các chính phủ và doanh nghiệp đẩy nhanh quá trình chuyển đổi sang nền kinh tế xanh, đầu tư vào năng lượng tái tạo và công nghệ giảm phát thải, tạo ra cả cơ hội và thách thức cho các ngành công nghiệp liên quan.</span> <a class="expand-btn" onclick="toggleSummary('c6')" id="btn-c6">Đọc thêm ▸</a></p>
+    <div class="impact-toggle" onclick="toggleImpact('c6')">
+      <span class="impact-arrow" id="arr-c6">&#9658;</span>
+      &nbsp;Short &amp; Medium-term Impact
+    </div>
+    <div class="impact-grid" id="imp-c6">
+      <div class="impact-box short">
+        <div class="impact-label">Short-term</div>
+        <p>Không có tác động trực tiếp đến thị trường tài chính trong ngắn hạn. Tuy nhiên, có thể gia tăng áp lực lên các chính phủ và doanh nghiệp để đẩy nhanh các cam kết về khí hậu.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Medium-term</div>
+        <p>Thúc đẩy đầu tư vào năng lượng tái tạo và công nghệ xanh. Các ngành như nông nghiệp, bảo hiểm, du lịch có thể đối mặt với rủi ro lớn hơn từ biến đổi khí hậu. Các chính sách về thuế carbon và quy định môi trường có thể trở nên chặt chẽ hơn.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span class="entity-tag" data-entity="Các quốc gia phát thải lớn (đặc biệt là Mỹ)" onclick="handleEntityTag(event, this)">Các quốc gia phát thải lớn (đặc biệt là Mỹ)</span><span class="entity-tag" data-entity="Ngành năng lượng hóa thạch" onclick="handleEntityTag(event, this)">Ngành năng lượng hóa thạch</span><span class="entity-tag" data-entity="Ngành năng lượng tái tạo" onclick="handleEntityTag(event, this)">Ngành năng lượng tái tạo</span><span class="entity-tag" data-entity="Ngành nông nghiệp" onclick="handleEntityTag(event, this)">Ngành nông nghiệp</span><span class="entity-tag" data-entity="Ngành bảo hiểm" onclick="handleEntityTag(event, this)">Ngành bảo hiểm</span><span class="entity-tag" data-entity="Các công ty có chuỗi cung ứng toàn cầu" onclick="handleEntityTag(event, this)">Các công ty có chuỗi cung ứng toàn cầu</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">&#9888;</span>
+        <span><strong>Risk:</strong> Rủi ro về thời tiết cực đoan, gián đoạn chuỗi cung ứng, chi phí thích ứng và giảm thiểu biến đổi khí hậu tăng cao. Rủi ro về căng thẳng địa chính trị liên quan đến trách nhiệm khí hậu.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">&#128065;</span>
+        <span><strong>Watch:</strong> Các cam kết và hành động cụ thể của các quốc gia lớn về giảm phát thải, tiến độ đầu tư vào năng lượng tái tạo và công nghệ xanh, và các chính sách liên quan đến biến đổi khí hậu.</span></div>
+      <div class="rec-row"><span class="rec-icon action">&#8594;</span>
+        <span><strong>Note:</strong> Thị trường cần đánh giá lại rủi ro khí hậu trong các danh mục đầu tư và xem xét các cơ hội trong lĩnh vực năng lượng tái tạo và công nghệ xanh.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="7" data-cat="Ngân hàng"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#EFF6FF;color:#1E40AF;
+        border:1px solid #BFDBFE;">Ngân hàng</span>
+      <span class="badge source-badge">🇻🇳 CafeF</span>
+      <span class="badge time-badge"></span>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-title-row">
+      <h2 class="card-title">
+        <a href="https://cafef.vn/mot-co-phieu-ngan-hang-duoc-hon-50-quy-cung-xuong-tien-gom-hang-loi-nhuan-quy-3-du-bao-tang-vot-188261021221923114.chn" target="_blank" rel="noopener">
+          Một cổ phiếu ngân hàng được hơn 50 quỹ cùng “xuống tiền” gom hàng, lợi nhuận quý 3 dự báo tăng vọt
+        </a>
+      </h2>
+      <span class="card-score-badge"
+        style="background:#FFFBEB;color:#B8620A;border:1px solid #FDE68A;">
+        7<span style="font-size:11px;opacity:.6">/10</span>
+      </span>
+    </div>
+    <p class="card-summary"><span>Trong bối cảnh ngành ngân hàng đang đối mặt với nhiều thách thức từ nợ xấu và áp lực giảm lãi suất, thông tin về một cổ phiếu ngân hàng được hơn 50 quỹ đầu tư cùng nhau gom hàng và dự báo lợi nhuận quý 3 tăng vọt là một tín hiệu rất tích cực, cho thấy sự chọn lọc của dòng tiền thông minh. Điều này diễn ra khi các quỹ đã mua ròng cổ phiếu ngân hàng tháng thứ hai liên tiếp, phản ánh niềm tin vào khả năng phục hồi và tăng trưởng của một số</span><span class="summary-rest" id="rest-c7" style="display:none"> ngân hàng có nền tảng tốt. Sự kiện này cho thấy các nhà đầu tư tổ chức đang nhìn thấy tiềm năng ở những ngân hàng có khả năng quản lý rủi ro tốt, có lợi thế cạnh tranh và dự kiến đạt kết quả kinh doanh khả quan. Chuỗi tác động có thể lan tỏa đến các cổ phiếu ngân hàng khác, tạo hiệu ứng tích cực cho toàn ngành. Tuy nhiên, cần lưu ý rằng việc gom hàng của các quỹ có thể tạo ra biến động giá trong ngắn hạn, và nhà đầu tư cá nhân cần phân tích kỹ lưỡng các yếu tố cơ bản của ngân hàng đó, bao gồm chất lượng tài sản, tăng trưởng tín dụng, và khả năng sinh lời, thay vì chỉ chạy theo dòng tiền của các quỹ.</span> <a class="expand-btn" onclick="toggleSummary('c7')" id="btn-c7">Đọc thêm ▸</a></p>
+    <div class="impact-toggle" onclick="toggleImpact('c7')">
+      <span class="impact-arrow" id="arr-c7">&#9658;</span>
+      &nbsp;Short &amp; Medium-term Impact
+    </div>
+    <div class="impact-grid" id="imp-c7">
+      <div class="impact-box short">
+        <div class="impact-label">Short-term</div>
+        <p>Giá cổ phiếu ngân hàng được gom hàng có thể tăng mạnh trong ngắn hạn. Tâm lý tích cực có thể lan tỏa sang các cổ phiếu ngân hàng khác, tạo hiệu ứng tích cực cho toàn ngành.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Medium-term</div>
+        <p>Nếu kết quả kinh doanh quý 3 thực sự tăng vọt, niềm tin vào ngành ngân hàng sẽ được củng cố, thu hút thêm dòng tiền đầu tư. Tuy nhiên, cần theo dõi chất lượng tài sản và triển vọng tăng trưởng tín dụng trong bối cảnh kinh tế vĩ mô.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span class="entity-tag" data-entity="Cổ phiếu ngân hàng được nhắc đến (chưa rõ tên)" onclick="handleEntityTag(event, this)">Cổ phiếu ngân hàng được nhắc đến (chưa rõ tên)</span><span class="entity-tag" data-entity="Các quỹ đầu tư" onclick="handleEntityTag(event, this)">Các quỹ đầu tư</span><span class="entity-tag" data-entity="Các ngân hàng khác trên thị trường" onclick="handleEntityTag(event, this)">Các ngân hàng khác trên thị trường</span><span class="entity-tag" data-entity="Các nhà đầu tư cổ phiếu ngân hàng" onclick="handleEntityTag(event, this)">Các nhà đầu tư cổ phiếu ngân hàng</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">&#9888;</span>
+        <span><strong>Risk:</strong> Rủi ro về việc dự báo lợi nhuận không đạt kỳ vọng. Rủi ro về sự biến động giá nếu các quỹ chốt lời. Rủi ro về chất lượng tài sản của ngân hàng trong bối cảnh nợ xấu tiềm ẩn.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">&#128065;</span>
+        <span><strong>Watch:</strong> Báo cáo tài chính quý 3 của ngân hàng được nhắc đến, diễn biến dòng tiền của các quỹ đầu tư, và các thông tin về chính sách tiền tệ của NHNN.</span></div>
+      <div class="rec-row"><span class="rec-icon action">&#8594;</span>
+        <span><strong>Note:</strong> Nhà đầu tư nên nghiên cứu kỹ lưỡng các yếu tố cơ bản của ngân hàng trước khi đưa ra quyết định đầu tư, không nên chỉ dựa vào thông tin về việc các quỹ gom hàng.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="7" data-cat="Chứng khoán"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#F0FDF4;color:#166534;
+        border:1px solid #BBF7D0;">Chứng khoán</span>
+      <span class="badge source-badge">🇻🇳 CafeF</span>
+      <span class="badge time-badge"></span>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-title-row">
+      <h2 class="card-title">
+        <a href="https://cafef.vn/24-ca-map-da-am-tham-lam-dieu-nay-truoc-nhip-tang-47-diem-cua-vn-index-188261021222045899.chn" target="_blank" rel="noopener">
+          24 &quot;cá mập&quot; đã âm thầm làm điều này trước nhịp tăng 47 điểm của VN-Index
+        </a>
+      </h2>
+      <span class="card-score-badge"
+        style="background:#FFFBEB;color:#B8620A;border:1px solid #FDE68A;">
+        7<span style="font-size:11px;opacity:.6">/10</span>
+      </span>
+    </div>
+    <p class="card-summary"><span>Trong bối cảnh thị trường chứng khoán Việt Nam trải qua một nhịp tăng điểm đáng kể của VN-Index, thông tin về việc 24 quỹ đầu tư lớn (được ví như &#x27;cá mập&#x27;) đã có những động thái nhất định trước đó, cụ thể là tăng tỷ trọng tiền mặt trong tháng 9, là một tín hiệu quan trọng. Điều này cho thấy sự thận trọng của các nhà đầu tư tổ chức lớn khi họ chuẩn bị cho những biến động của thị trường, hoặc đang chờ đợi cơ hội giải ngân vào các thời điểm thích hợp. Việc</span><span class="summary-rest" id="rest-c8" style="display:none"> tăng tỷ trọng tiền mặt trước một nhịp tăng điểm có thể được giải thích là họ đã chốt lời ở giai đoạn trước đó, hoặc dự báo một đợt điều chỉnh để có thể mua vào ở mức giá tốt hơn. Các quỹ như DCDS, VLGF và EVESG được nhắc đến là những cái tên đáng chú ý. Sự kiện này phản ánh chiến lược quản lý rủi ro và tìm kiếm cơ hội của các quỹ lớn, đồng thời cho thấy tầm quan trọng của việc theo dõi dòng tiền của các tổ chức để hiểu rõ hơn về tâm lý và xu hướng thị trường. Nó cũng ngụ ý rằng, ngay cả trong một nhịp tăng, sự thận trọng vẫn là yếu tố được ưu tiên bởi các nhà đầu tư chuyên nghiệp.</span> <a class="expand-btn" onclick="toggleSummary('c8')" id="btn-c8">Đọc thêm ▸</a></p>
+    <div class="impact-toggle" onclick="toggleImpact('c8')">
+      <span class="impact-arrow" id="arr-c8">&#9658;</span>
+      &nbsp;Short &amp; Medium-term Impact
+    </div>
+    <div class="impact-grid" id="imp-c8">
+      <div class="impact-box short">
+        <div class="impact-label">Short-term</div>
+        <p>Thông tin này có thể khiến nhà đầu tư cá nhân thận trọng hơn, đặc biệt nếu họ nhận thấy các quỹ lớn đang có động thái chốt lời hoặc chờ đợi cơ hội mới. Dòng tiền có thể có sự dịch chuyển.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Medium-term</div>
+        <p>Nếu các quỹ này tiếp tục duy trì tỷ trọng tiền mặt cao hoặc có động thái giải ngân mạnh mẽ, điều đó sẽ ảnh hưởng đến xu hướng chung của thị trường. Nó cũng cho thấy sự chuyên nghiệp trong việc quản lý danh mục của các quỹ.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span class="entity-tag" data-entity="Thị trường chứng khoán Việt Nam" onclick="handleEntityTag(event, this)">Thị trường chứng khoán Việt Nam</span><span class="entity-tag" data-entity="VN-Index" onclick="handleEntityTag(event, this)">VN-Index</span><span class="entity-tag" data-entity="Các quỹ đầu tư (DCDS, VLGF, EVESG)" onclick="handleEntityTag(event, this)">Các quỹ đầu tư (DCDS, VLGF, EVESG)</span><span class="entity-tag" data-entity="Các nhà đầu tư cá nhân" onclick="handleEntityTag(event, this)">Các nhà đầu tư cá nhân</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">&#9888;</span>
+        <span><strong>Risk:</strong> Rủi ro về việc nhà đầu tư cá nhân có thể hiểu sai động thái của các quỹ, dẫn đến quyết định đầu tư không phù hợp. Rủi ro về sự biến động của thị trường nếu các quỹ lớn đồng loạt thay đổi chiến lược.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">&#128065;</span>
+        <span><strong>Watch:</strong> Diễn biến tỷ trọng tiền mặt của các quỹ đầu tư lớn, các báo cáo phân tích từ FiinGroup hoặc các tổ chức tương tự, và các chỉ số thanh khoản của thị trường.</span></div>
+      <div class="rec-row"><span class="rec-icon action">&#8594;</span>
+        <span><strong>Note:</strong> Nhà đầu tư nên theo dõi sát sao dòng tiền của các tổ chức lớn nhưng không nên sao chép một cách máy móc. Cần kết hợp với phân tích cá nhân và quản lý rủi ro phù hợp.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="7" data-cat="Doanh nghiệp"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#F0F9FF;color:#0C4A6E;
+        border:1px solid #BAE6FD;">Doanh nghiệp</span>
+      <span class="badge source-badge">🇻🇳 CafeF Vĩ Mô</span>
+      <span class="badge time-badge"></span>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-title-row">
+      <h2 class="card-title">
+        <a href="https://cafef.vn/vinfast-da-tim-thay-con-ga-roi-sao-nua-188261022065628805.chn" target="_blank" rel="noopener">
+          VinFast đã tìm thấy “con gà”, rồi sao nữa?
+        </a>
+      </h2>
+      <span class="card-score-badge"
+        style="background:#FFFBEB;color:#B8620A;border:1px solid #FDE68A;">
+        7<span style="font-size:11px;opacity:.6">/10</span>
+      </span>
+    </div>
+    <p class="card-summary"><span>Trong bối cảnh Việt Nam đang nỗ lực phát triển ngành công nghiệp hỗ trợ và tham gia sâu hơn vào chuỗi cung ứng toàn cầu, sự phát triển của VinFast, đặc biệt là việc tìm thấy &#x27;con gà&#x27; (ám chỉ một đối tác hoặc cơ hội lớn), đang mở ra những cơ hội đáng kể. Tuy nhiên, bài báo nhấn mạnh rằng để cơ hội thị trường chuyển thành năng lực công nghiệp thực sự, VinFast cần làm nhiều hơn việc chỉ tạo đơn hàng. Điều này phản ánh một thách thức lớn của nền kinh tế Việt Nam:</span><span class="summary-rest" id="rest-c9" style="display:none"> làm thế nào để các doanh nghiệp đầu tàu không chỉ là người lắp ráp mà còn là động lực thúc đẩy sự phát triển của toàn bộ hệ sinh thái công nghiệp. Chuỗi tác động sẽ rất rộng: nếu VinFast thành công trong việc phát triển chuỗi cung ứng nội địa, nó sẽ tạo ra hàng ngàn việc làm, thúc đẩy chuyển giao công nghệ và nâng cao năng lực sản xuất của các doanh nghiệp công nghiệp hỗ trợ Việt Nam. Ngược lại, nếu VinFast chỉ tập trung vào việc nhập khẩu linh kiện, cơ hội này sẽ bị bỏ lỡ. Sự kiện này đặt ra câu hỏi về vai trò của các tập đoàn lớn trong việc dẫn dắt sự phát triển của ngành công nghiệp quốc gia và tầm quan trọng của chính sách hỗ trợ từ phía chính phủ.</span> <a class="expand-btn" onclick="toggleSummary('c9')" id="btn-c9">Đọc thêm ▸</a></p>
+    <div class="impact-toggle" onclick="toggleImpact('c9')">
+      <span class="impact-arrow" id="arr-c9">&#9658;</span>
+      &nbsp;Short &amp; Medium-term Impact
+    </div>
+    <div class="impact-grid" id="imp-c9">
+      <div class="impact-box short">
+        <div class="impact-label">Short-term</div>
+        <p>VinFast có thể công bố các hợp tác mới hoặc kế hoạch mở rộng sản xuất, tạo ra kỳ vọng tích cực cho các nhà cung cấp và đối tác tiềm năng. Cổ phiếu VFS có thể có biến động.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Medium-term</div>
+        <p>Nếu VinFast thành công trong việc phát triển chuỗi cung ứng nội địa, các doanh nghiệp công nghiệp hỗ trợ Việt Nam sẽ có cơ hội lớn để tham gia sâu hơn vào chuỗi giá trị toàn cầu. Điều này sẽ thúc đẩy tăng trưởng kinh tế và tạo việc làm.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span class="entity-tag" data-entity="VinFast (VFS)" onclick="handleEntityTag(event, this)">VinFast (VFS)</span><span class="entity-tag" data-entity="Các doanh nghiệp công nghiệp hỗ trợ Việt Nam" onclick="handleEntityTag(event, this)">Các doanh nghiệp công nghiệp hỗ trợ Việt Nam</span><span class="entity-tag" data-entity="Ngành công nghiệp ô tô Việt Nam" onclick="handleEntityTag(event, this)">Ngành công nghiệp ô tô Việt Nam</span><span class="entity-tag" data-entity="Các nhà đầu tư của VinFast" onclick="handleEntityTag(event, this)">Các nhà đầu tư của VinFast</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">&#9888;</span>
+        <span><strong>Risk:</strong> Rủi ro về khả năng VinFast không thể phát triển chuỗi cung ứng nội địa đủ mạnh. Rủi ro về sự cạnh tranh gay gắt trên thị trường ô tô điện toàn cầu. Rủi ro về sự phụ thuộc vào các đối tác nước ngoài.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">&#128065;</span>
+        <span><strong>Watch:</strong> Các thông báo từ VinFast về chiến lược phát triển chuỗi cung ứng, các hợp tác mới, và kết quả kinh doanh của công ty. Các chính sách hỗ trợ ngành công nghiệp ô tô từ Chính phủ.</span></div>
+      <div class="rec-row"><span class="rec-icon action">&#8594;</span>
+        <span><strong>Note:</strong> Nhà đầu tư cần đánh giá kỹ lưỡng chiến lược phát triển dài hạn của VinFast và khả năng thực hiện các cam kết về chuỗi cung ứng nội địa.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="7" data-cat="Kinh tế vĩ mô"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#FFF7ED;color:#9A3412;
+        border:1px solid #FED7AA;">Kinh tế vĩ mô</span>
+      <span class="badge source-badge">🇻🇳 CafeF Vĩ Mô</span>
+      <span class="badge time-badge"></span>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-title-row">
+      <h2 class="card-title">
+        <a href="https://cafef.vn/tu-nay-so-bhxh-cua-hon-100-trieu-nguoi-dan-chinh-thuc-co-thay-doi-quan-trong-toan-bo-nguoi-lao-dong-kiem-tra-ngay-thong-tin-sau-188261022002547343.chn" target="_blank" rel="noopener">
+          Từ nay, sổ BHXH của hơn 100 triệu người dân chính thức có thay đổi quan trọng: Toàn bộ người lao động kiểm tra ngay thông tin sau
+        </a>
+      </h2>
+      <span class="card-score-badge"
+        style="background:#FFFBEB;color:#B8620A;border:1px solid #FDE68A;">
+        7<span style="font-size:11px;opacity:.6">/10</span>
+      </span>
+    </div>
+    <p class="card-summary"><span>Trong bối cảnh Chính phủ Việt Nam đang đẩy mạnh chuyển đổi số và cải cách hành chính, việc Bảo hiểm xã hội (BHXH) Việt Nam hoàn thành chuyển đổi mã số BHXH sang số định danh cá nhân/CCCD cho hơn 101,49 triệu người, đạt tỷ lệ thành công 99,17%, là một bước tiến quan trọng. Sự kiện này không chỉ đơn thuần là một thay đổi về mặt kỹ thuật mà còn có ý nghĩa sâu rộng đối với toàn bộ hệ thống an sinh xã hội và người lao động. Chuỗi tác động bao gồm việc đơn giản</span><span class="summary-rest" id="rest-c10" style="display:none"> hóa các thủ tục hành chính liên quan đến BHXH, BHYT, giảm thiểu sai sót và tạo điều kiện thuận lợi hơn cho người dân trong việc tra cứu thông tin và thực hiện các giao dịch. Nó cũng là một phần của nỗ lực xây dựng cơ sở dữ liệu quốc gia về dân cư, góp phần vào việc quản lý xã hội hiệu quả hơn. Tuy nhiên, người lao động cần chủ động kiểm tra thông tin để đảm bảo tính chính xác và kịp thời điều chỉnh nếu có sai sót. Sự kiện này thể hiện cam kết của Chính phủ trong việc hiện đại hóa hệ thống an sinh xã hội và mang lại lợi ích thiết thực cho người dân.</span> <a class="expand-btn" onclick="toggleSummary('c10')" id="btn-c10">Đọc thêm ▸</a></p>
+    <div class="impact-toggle" onclick="toggleImpact('c10')">
+      <span class="impact-arrow" id="arr-c10">&#9658;</span>
+      &nbsp;Short &amp; Medium-term Impact
+    </div>
+    <div class="impact-grid" id="imp-c10">
+      <div class="impact-box short">
+        <div class="impact-label">Short-term</div>
+        <p>Người lao động cần kiểm tra ngay thông tin trên sổ BHXH để đảm bảo tính chính xác. Các cơ quan BHXH sẽ tiếp tục hỗ trợ người dân trong việc cập nhật và điều chỉnh thông tin.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Medium-term</div>
+        <p>Hệ thống BHXH sẽ hoạt động hiệu quả hơn, giảm thiểu thủ tục hành chính và sai sót. Người dân sẽ dễ dàng hơn trong việc tiếp cận các dịch vụ BHXH, BHYT. Góp phần vào việc xây dựng cơ sở dữ liệu quốc gia.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span class="entity-tag" data-entity="Hơn 100 triệu người dân tham gia BHXH, BHYT" onclick="handleEntityTag(event, this)">Hơn 100 triệu người dân tham gia BHXH, BHYT</span><span class="entity-tag" data-entity="Bảo hiểm xã hội Việt Nam" onclick="handleEntityTag(event, this)">Bảo hiểm xã hội Việt Nam</span><span class="entity-tag" data-entity="Các doanh nghiệp sử dụng lao động" onclick="handleEntityTag(event, this)">Các doanh nghiệp sử dụng lao động</span><span class="entity-tag" data-entity="Các cơ quan quản lý nhà nước" onclick="handleEntityTag(event, this)">Các cơ quan quản lý nhà nước</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">&#9888;</span>
+        <span><strong>Risk:</strong> Rủi ro về sai sót thông tin nếu người dân không kiểm tra và cập nhật kịp thời. Rủi ro về an ninh thông tin cá nhân nếu hệ thống không được bảo mật tốt.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">&#128065;</span>
+        <span><strong>Watch:</strong> Các hướng dẫn chi tiết từ BHXH Việt Nam về cách kiểm tra và điều chỉnh thông tin. Phản hồi của người dân và doanh nghiệp về sự thay đổi này.</span></div>
+      <div class="rec-row"><span class="rec-icon action">&#8594;</span>
+        <span><strong>Note:</strong> Người lao động cần chủ động truy cập các kênh thông tin chính thức của BHXH Việt Nam để kiểm tra và cập nhật thông tin cá nhân.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="7" data-cat="Bất động sản"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#FDF4FF;color:#7E22CE;
+        border:1px solid #E9D5FF;">Bất động sản</span>
+      <span class="badge source-badge">🇻🇳 CafeF Vĩ Mô</span>
+      <span class="badge time-badge"></span>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-title-row">
+      <h2 class="card-title">
+        <a href="https://cafef.vn/danh-sach-quy-hoach-6-tuyen-duong-sat-moi-tai-ha-noi-188261021231900853.chn" target="_blank" rel="noopener">
+          Danh sách quy hoạch 6 tuyến đường sắt mới tại Hà Nội
+        </a>
+      </h2>
+      <span class="card-score-badge"
+        style="background:#FFFBEB;color:#B8620A;border:1px solid #FDE68A;">
+        7<span style="font-size:11px;opacity:.6">/10</span>
+      </span>
+    </div>
+    <p class="card-summary"><span>Trong bối cảnh Hà Nội đang đối mặt với áp lực đô thị hóa và nhu cầu phát triển hạ tầng giao thông, việc Bộ Xây dựng thẩm định và xem xét phê duyệt Quy hoạch các tuyến, ga đường sắt khu vực đầu mối thành phố, bao gồm 6 tuyến xây mới, là một sự kiện có ý nghĩa chiến lược. Điều này không chỉ nhằm mục đích hiện đại hóa hệ thống giao thông công cộng mà còn có tác động sâu rộng đến thị trường bất động sản và phát triển kinh tế - xã hội của</span><span class="summary-rest" id="rest-c11" style="display:none"> thủ đô. Chuỗi tác động bao gồm việc tạo ra các khu vực đô thị mới dọc theo các tuyến đường sắt, thúc đẩy giá trị bất động sản tại các khu vực này, và thu hút đầu tư vào các dự án phát triển đô thị. Việc đề xuất tiêu chuẩn kỹ thuật hiện đại cũng cho thấy tầm nhìn dài hạn về một hệ thống giao thông bền vững. Tuy nhiên, quá trình triển khai các dự án đường sắt thường kéo dài, đòi hỏi nguồn vốn lớn và có thể gây ra những thách thức về giải phóng mặt bằng, ảnh hưởng đến đời sống của người dân trong vùng quy hoạch. Sự kiện này là một phần quan trọng trong chiến lược phát triển đô thị của Hà Nội, hướng tới một thành phố hiện đại và kết nối hơn.</span> <a class="expand-btn" onclick="toggleSummary('c11')" id="btn-c11">Đọc thêm ▸</a></p>
+    <div class="impact-toggle" onclick="toggleImpact('c11')">
+      <span class="impact-arrow" id="arr-c11">&#9658;</span>
+      &nbsp;Short &amp; Medium-term Impact
+    </div>
+    <div class="impact-grid" id="imp-c11">
+      <div class="impact-box short">
+        <div class="impact-label">Short-term</div>
+        <p>Thông tin quy hoạch có thể tạo ra sự quan tâm và kỳ vọng đối với thị trường bất động sản tại các khu vực dự kiến có tuyến đường sắt đi qua. Giá đất có thể có biến động cục bộ.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Medium-term</div>
+        <p>Nếu các dự án được triển khai, sẽ thúc đẩy phát triển đô thị và giá trị bất động sản dọc theo các tuyến đường sắt. Cải thiện hệ thống giao thông công cộng, giảm ùn tắc và ô nhiễm. Tuy nhiên, quá trình xây dựng có thể kéo dài và gây ảnh hưởng đến giao thông.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span class="entity-tag" data-entity="Thị trường bất động sản Hà Nội" onclick="handleEntityTag(event, this)">Thị trường bất động sản Hà Nội</span><span class="entity-tag" data-entity="Các nhà đầu tư bất động sản" onclick="handleEntityTag(event, this)">Các nhà đầu tư bất động sản</span><span class="entity-tag" data-entity="Người dân sống trong khu vực quy hoạch" onclick="handleEntityTag(event, this)">Người dân sống trong khu vực quy hoạch</span><span class="entity-tag" data-entity="Các công ty xây dựng và hạ tầng" onclick="handleEntityTag(event, this)">Các công ty xây dựng và hạ tầng</span><span class="entity-tag" data-entity="Chính quyền thành phố Hà Nội" onclick="handleEntityTag(event, this)">Chính quyền thành phố Hà Nội</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">&#9888;</span>
+        <span><strong>Risk:</strong> Rủi ro về tiến độ triển khai dự án chậm trễ, đội vốn. Rủi ro về giải phóng mặt bằng và các vấn đề xã hội liên quan. Rủi ro về đầu cơ bất động sản tại các khu vực quy hoạch.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">&#128065;</span>
+        <span><strong>Watch:</strong> Quyết định phê duyệt cuối cùng của Bộ Xây dựng, kế hoạch triển khai chi tiết của thành phố Hà Nội, và các thông tin về tiến độ giải phóng mặt bằng và huy động vốn.</span></div>
+      <div class="rec-row"><span class="rec-icon action">&#8594;</span>
+        <span><strong>Note:</strong> Nhà đầu tư bất động sản cần nghiên cứu kỹ lưỡng quy hoạch và tiềm năng phát triển của từng khu vực, tránh đầu tư theo tin đồn hoặc kỳ vọng quá mức.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="7" data-cat="Chứng khoán"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#F0FDF4;color:#166534;
+        border:1px solid #BBF7D0;">Chứng khoán</span>
+      <span class="badge source-badge">🇻🇳 VnEconomy</span>
+      <span class="badge time-badge"></span>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-title-row">
+      <h2 class="card-title">
+        <a href="https://vneconomy.vn/tao-dieu-kien-de-doanh-nghiep-fdi-chat-luong-tot-niem-yet-len-san-chung-khoan.htm" target="_blank" rel="noopener">
+          Tạo điều kiện để doanh nghiệp FDI chất lượng tốt niêm yết lên sàn chứng khoán
+        </a>
+      </h2>
+      <span class="card-score-badge"
+        style="background:#FFFBEB;color:#B8620A;border:1px solid #FDE68A;">
+        7<span style="font-size:11px;opacity:.6">/10</span>
+      </span>
+    </div>
+    <p class="card-summary"><span>Trong bối cảnh thị trường chứng khoán Việt Nam đang nỗ lực nâng hạng và tăng cường tính minh bạch, việc tạo điều kiện cho các doanh nghiệp FDI chất lượng cao niêm yết là một bước đi chiến lược quan trọng. Động thái này không chỉ giúp đa dạng hóa nguồn cung hàng hóa chất lượng trên sàn, mà còn thu hút thêm dòng vốn đầu tư nước ngoài gián tiếp, góp phần cải thiện thanh khoản và độ sâu của thị trường. Việc khuyến khích các doanh nghiệp FDI có tiềm lực tài chính và quản trị tốt</span><span class="summary-rest" id="rest-c12" style="display:none"> tham gia niêm yết sẽ nâng cao chuẩn mực quản trị doanh nghiệp chung, tạo ra một môi trường đầu tư lành mạnh và hấp dẫn hơn. Điều này cũng có thể thúc đẩy sự cạnh tranh và đổi mới trong các doanh nghiệp nội địa, khi họ phải đối mặt với các đối thủ có tiêu chuẩn cao hơn. Tuy nhiên, thách thức đặt ra là làm thế nào để hài hòa các quy định hiện hành với yêu cầu của doanh nghiệp FDI, đồng thời đảm bảo kiểm soát rủi ro và bảo vệ quyền lợi nhà đầu tư. Nếu thành công, đây sẽ là một yếu tố tích cực hỗ trợ quá trình nâng hạng thị trường, nhưng cần có lộ trình rõ ràng và sự phối hợp chặt chẽ giữa các cơ quan quản lý.</span> <a class="expand-btn" onclick="toggleSummary('c12')" id="btn-c12">Đọc thêm ▸</a></p>
+    <div class="impact-toggle" onclick="toggleImpact('c12')">
+      <span class="impact-arrow" id="arr-c12">&#9658;</span>
+      &nbsp;Short &amp; Medium-term Impact
+    </div>
+    <div class="impact-grid" id="imp-c12">
+      <div class="impact-box short">
+        <div class="impact-label">Short-term</div>
+        <p>Thông tin này có thể tạo tâm lý tích cực cho thị trường, đặc biệt là các nhà đầu tư nước ngoài, kỳ vọng vào sự cải thiện chất lượng hàng hóa niêm yết. Các nhóm cổ phiếu liên quan đến dịch vụ tư vấn niêm yết có thể hưởng lợi.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Medium-term</div>
+        <p>Trong vài tháng tới, nếu các chính sách cụ thể được ban hành, có thể thu hút sự quan tâm của một số doanh nghiệp FDI lớn. Điều này sẽ dần cải thiện chất lượng và quy mô của thị trường chứng khoán Việt Nam.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span class="entity-tag" data-entity="Sở Giao dịch Chứng khoán Việt Nam" onclick="handleEntityTag(event, this)">Sở Giao dịch Chứng khoán Việt Nam</span><span class="entity-tag" data-entity="Ủy ban Chứng khoán Nhà nước" onclick="handleEntityTag(event, this)">Ủy ban Chứng khoán Nhà nước</span><span class="entity-tag" data-entity="Các công ty chứng khoán" onclick="handleEntityTag(event, this)">Các công ty chứng khoán</span><span class="entity-tag" data-entity="Các quỹ đầu tư nước ngoài" onclick="handleEntityTag(event, this)">Các quỹ đầu tư nước ngoài</span><span class="entity-tag" data-entity="Các doanh nghiệp FDI tiềm năng" onclick="handleEntityTag(event, this)">Các doanh nghiệp FDI tiềm năng</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">&#9888;</span>
+        <span><strong>Risk:</strong> Rủi ro nằm ở việc triển khai chính sách không hiệu quả, hoặc các quy định chưa đủ hấp dẫn để thu hút FDI niêm yết. Ngoài ra, việc kiểm soát chất lượng doanh nghiệp niêm yết cũng là một thách thức.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">&#128065;</span>
+        <span><strong>Watch:</strong> Theo dõi các văn bản pháp lý hướng dẫn cụ thể, số lượng và chất lượng các doanh nghiệp FDI nộp hồ sơ niêm yết, cũng như phản ứng của các nhà đầu tư nước ngoài.</span></div>
+      <div class="rec-row"><span class="rec-icon action">&#8594;</span>
+        <span><strong>Note:</strong> Nhà đầu tư nên theo dõi sát sao các động thái chính sách và tìm hiểu kỹ về các doanh nghiệp FDI tiềm năng khi có thông tin cụ thể. Đây là một yếu tố hỗ trợ dài hạn cho thị trường.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="7" data-cat="Chứng khoán"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#F0FDF4;color:#166534;
+        border:1px solid #BBF7D0;">Chứng khoán</span>
+      <span class="badge source-badge">🇻🇳 VnEconomy</span>
+      <span class="badge time-badge"></span>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-title-row">
+      <h2 class="card-title">
+        <a href="https://vneconomy.vn/tien-lon-da-tro-lai.htm" target="_blank" rel="noopener">
+          Tiền lớn đã trở lại
+        </a>
+      </h2>
+      <span class="card-score-badge"
+        style="background:#FFFBEB;color:#B8620A;border:1px solid #FDE68A;">
+        7<span style="font-size:11px;opacity:.6">/10</span>
+      </span>
+    </div>
+    <p class="card-summary"><span>Trong bối cảnh thị trường chứng khoán Việt Nam đang tìm kiếm động lực sau giai đoạn điều chỉnh, việc tổng giá trị khớp lệnh hai sàn niêm yết đạt gần 18.200 tỷ đồng, tăng đột biến 43% so với mức trung bình 20 phiên trước đó, là một tín hiệu cực kỳ quan trọng. Sự bùng nổ thanh khoản này, đi kèm với việc cổ phiếu tăng mạnh trên diện rộng và nhiều mã kịch trần, cho thấy “cơn khát” thanh khoản đã được giải tỏa đáng kể và dòng tiền lớn đã quay trở lại thị trường. Đây</span><span class="summary-rest" id="rest-c13" style="display:none"> là một dấu hiệu tích cực, thường là tiền đề cho sự phục hồi hoặc khởi đầu một xu hướng tăng mới, phản ánh niềm tin của nhà đầu tư đang dần được củng cố. Trong lịch sử thị trường, những phiên giao dịch với thanh khoản và độ rộng tăng mạnh thường báo hiệu sự thay đổi tâm lý và xu hướng. Tuy nhiên, cần thận trọng để xác định liệu đây có phải là một sự đảo chiều bền vững hay chỉ là một nhịp hồi phục kỹ thuật. Sự lan tỏa của dòng tiền và mức độ duy trì thanh khoản trong các phiên tới sẽ là yếu tố then chốt để đánh giá sức mạnh của đà tăng này, đồng thời cần xem xét các yếu tố vĩ mô hỗ trợ.</span> <a class="expand-btn" onclick="toggleSummary('c13')" id="btn-c13">Đọc thêm ▸</a></p>
+    <div class="impact-toggle" onclick="toggleImpact('c13')">
+      <span class="impact-arrow" id="arr-c13">&#9658;</span>
+      &nbsp;Short &amp; Medium-term Impact
+    </div>
+    <div class="impact-grid" id="imp-c13">
+      <div class="impact-box short">
+        <div class="impact-label">Short-term</div>
+        <p>Thị trường có khả năng tiếp tục đà tăng trong vài phiên tới, với tâm lý nhà đầu tư lạc quan hơn. Các cổ phiếu vốn hóa lớn và các nhóm ngành dẫn dắt có thể tiếp tục thu hút dòng tiền.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Medium-term</div>
+        <p>Nếu dòng tiền lớn duy trì và các yếu tố vĩ mô không có biến động tiêu cực, thị trường có thể hình thành một xu hướng tăng trung hạn. Tuy nhiên, sự bền vững của đà tăng cần được kiểm chứng qua thời gian.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span class="entity-tag" data-entity="VN-Index" onclick="handleEntityTag(event, this)">VN-Index</span><span class="entity-tag" data-entity="HNX-Index" onclick="handleEntityTag(event, this)">HNX-Index</span><span class="entity-tag" data-entity="Các cổ phiếu vốn hóa lớn và vừa" onclick="handleEntityTag(event, this)">Các cổ phiếu vốn hóa lớn và vừa</span><span class="entity-tag" data-entity="Các công ty chứng khoán" onclick="handleEntityTag(event, this)">Các công ty chứng khoán</span><span class="entity-tag" data-entity="Các nhà đầu tư cá nhân và tổ chức" onclick="handleEntityTag(event, this)">Các nhà đầu tư cá nhân và tổ chức</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">&#9888;</span>
+        <span><strong>Risk:</strong> Rủi ro chính là sự bùng nổ thanh khoản và giá chỉ mang tính chất ngắn hạn, có thể là một &quot;bull trap&quot; nếu không có sự xác nhận từ các phiên tiếp theo. Dòng tiền có thể rút ra nhanh chóng nếu có tin tức tiêu cực.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">&#128065;</span>
+        <span><strong>Watch:</strong> Theo dõi sự duy trì của thanh khoản và độ rộng thị trường trong các phiên tới. Quan sát động thái của khối ngoại và các yếu tố vĩ mô như lãi suất, tỷ giá.</span></div>
+      <div class="rec-row"><span class="rec-icon action">&#8594;</span>
+        <span><strong>Note:</strong> Nhà đầu tư nên thận trọng, không nên quá hưng phấn mua đuổi. Cần quan sát thêm để xác nhận xu hướng, ưu tiên các cổ phiếu có nền tảng cơ bản tốt và dòng tiền vào ổn định.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="7" data-cat="Hàng hóa"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#FFFBEB;color:#92400E;
+        border:1px solid #FDE68A;">Hàng hóa</span>
+      <span class="badge source-badge">🇻🇳 VnEconomy Tài Chính</span>
+      <span class="badge time-badge"></span>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-title-row">
+      <h2 class="card-title">
+        <a href="https://vneconomy.vn/gia-vang-mieng-sjc-va-vang-nhan-4-so-9-giam-4-phien-lien-tiep.htm" target="_blank" rel="noopener">
+          Giá vàng miếng SJC và vàng nhẫn “4 số 9” giảm 4 phiên liên tiếp
+        </a>
+      </h2>
+      <span class="card-score-badge"
+        style="background:#FFFBEB;color:#B8620A;border:1px solid #FDE68A;">
+        7<span style="font-size:11px;opacity:.6">/10</span>
+      </span>
+    </div>
+    <p class="card-summary"><span>Trong bối cảnh thị trường tài chính toàn cầu đang có những biến động phức tạp, việc giá vàng miếng SJC và vàng nhẫn 9999 tại Việt Nam giảm liên tiếp 4 phiên, với mức sụt giảm đáng kể từ 1,6 triệu đến 3 triệu đồng/lượng, là một diễn biến đáng chú ý. Sự sụt giảm này diễn ra sau một giai đoạn giá vàng tăng nóng, phản ánh sự điều chỉnh của thị trường và có thể liên quan đến các yếu tố như sự phục hồi của đồng USD, kỳ vọng về chính sách tiền tệ của các</span><span class="summary-rest" id="rest-c14" style="display:none"> ngân hàng trung ương lớn, hoặc áp lực chốt lời từ nhà đầu tư. Vàng, vốn được coi là tài sản trú ẩn an toàn, thường biến động ngược chiều với đồng USD và lãi suất thực. Do đó, sự giảm giá này có thể cho thấy tâm lý thị trường đang chuyển dịch, có thể là do kỳ vọng về một môi trường lãi suất cao hơn hoặc rủi ro địa chính trị giảm bớt. Trong quá khứ, những đợt điều chỉnh giá vàng thường là cơ hội để đánh giá lại vị thế đầu tư. Tuy nhiên, sự chênh lệch lớn giữa giá vàng trong nước và quốc tế vẫn là một rủi ro tiềm ẩn, khiến thị trường vàng Việt Nam có những đặc thù riêng. Nhà đầu tư cần theo dõi sát sao các yếu tố vĩ mô và chính sách để đưa ra quyết định phù hợp.</span> <a class="expand-btn" onclick="toggleSummary('c14')" id="btn-c14">Đọc thêm ▸</a></p>
+    <div class="impact-toggle" onclick="toggleImpact('c14')">
+      <span class="impact-arrow" id="arr-c14">&#9658;</span>
+      &nbsp;Short &amp; Medium-term Impact
+    </div>
+    <div class="impact-grid" id="imp-c14">
+      <div class="impact-box short">
+        <div class="impact-label">Short-term</div>
+        <p>Giá vàng có thể tiếp tục chịu áp lực giảm trong ngắn hạn nếu các yếu tố hỗ trợ đồng USD và lãi suất tiếp tục duy trì. Nhà đầu tư có thể có xu hướng chốt lời hoặc chờ đợi mức giá thấp hơn để mua vào.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Medium-term</div>
+        <p>Trong vài tháng tới, giá vàng có thể ổn định hơn nếu các yếu tố vĩ mô trở nên rõ ràng hơn. Tuy nhiên, sự chênh lệch giữa giá vàng trong nước và quốc tế vẫn là một yếu tố cần theo dõi, có thể ảnh hưởng đến quyết định đầu tư.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span class="entity-tag" data-entity="Các nhà đầu tư vàng cá nhân" onclick="handleEntityTag(event, this)">Các nhà đầu tư vàng cá nhân</span><span class="entity-tag" data-entity="Các doanh nghiệp kinh doanh vàng (SJC, PNJ, DOJI)" onclick="handleEntityTag(event, this)">Các doanh nghiệp kinh doanh vàng (SJC, PNJ, DOJI)</span><span class="entity-tag" data-entity="Ngân hàng Nhà nước Việt Nam (trong quản lý thị trường vàng)" onclick="handleEntityTag(event, this)">Ngân hàng Nhà nước Việt Nam (trong quản lý thị trường vàng)</span><span class="entity-tag" data-entity="Thị trường ngoại hối (USD/VND)" onclick="handleEntityTag(event, this)">Thị trường ngoại hối (USD/VND)</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">&#9888;</span>
+        <span><strong>Risk:</strong> Rủi ro chính là sự biến động khó lường của giá vàng toàn cầu, cùng với sự chênh lệch lớn giữa giá vàng trong nước và quốc tế. Chính sách quản lý thị trường vàng của NHNN cũng là một yếu tố rủi ro.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">&#128065;</span>
+        <span><strong>Watch:</strong> Theo dõi diễn biến giá vàng thế giới, chỉ số DXY (sức mạnh đồng USD), lãi suất trái phiếu chính phủ Mỹ, và các thông tin về chính sách tiền tệ của Fed và NHNN.</span></div>
+      <div class="rec-row"><span class="rec-icon action">&#8594;</span>
+        <span><strong>Note:</strong> Nhà đầu tư nên thận trọng, không nên mua đuổi hoặc bán tháo theo cảm tính. Cần phân tích kỹ các yếu tố vĩ mô và cân nhắc tỷ trọng vàng trong danh mục đầu tư. Tránh giao dịch lướt sóng trong bối cảnh biến động mạnh.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="7" data-cat="Ngân hàng"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#EFF6FF;color:#1E40AF;
+        border:1px solid #BFDBFE;">Ngân hàng</span>
+      <span class="badge source-badge">🇻🇳 VnEconomy Tài Chính</span>
+      <span class="badge time-badge"></span>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-title-row">
+      <h2 class="card-title">
+        <a href="https://vneconomy.vn/vib-giam-lai-suat-cho-vay-dong-hanh-cung-doanh-nghiep-va-khach-hang-ca-nhan.htm" target="_blank" rel="noopener">
+          VIB giảm lãi suất cho vay, đồng hành cùng doanh nghiệp và khách hàng cá nhân
+        </a>
+      </h2>
+      <span class="card-score-badge"
+        style="background:#FFFBEB;color:#B8620A;border:1px solid #FDE68A;">
+        7<span style="font-size:11px;opacity:.6">/10</span>
+      </span>
+    </div>
+    <p class="card-summary"><span>Trong bối cảnh Chính phủ và Ngân hàng Nhà nước đang nỗ lực giảm mặt bằng lãi suất để hỗ trợ tăng trưởng kinh tế, việc Ngân hàng Quốc Tế (VIB) chủ động giảm lãi suất cho vay là một động thái tích cực và đáng hoan nghênh. Quyết định này không chỉ thể hiện sự đồng hành của VIB với doanh nghiệp và khách hàng cá nhân trong giai đoạn khó khăn, mà còn góp phần thúc đẩy tổng cầu và hoạt động sản xuất kinh doanh. Việc giảm lãi suất cho vay sẽ giúp giảm gánh nặng chi</span><span class="summary-rest" id="rest-c15" style="display:none"> phí tài chính cho các doanh nghiệp, đặc biệt là doanh nghiệp vừa và nhỏ, từ đó khuyến khích đầu tư và mở rộng sản xuất. Đối với khách hàng cá nhân, lãi suất thấp hơn sẽ kích thích tiêu dùng và đầu tư vào bất động sản hoặc các tài sản khác. Đây là một yếu tố quan trọng để phục hồi kinh tế sau những tác động của đại dịch và các biến động toàn cầu. Tuy nhiên, việc giảm lãi suất cũng đặt ra thách thức cho biên lợi nhuận của ngân hàng, đòi hỏi họ phải tối ưu hóa hoạt động và quản lý rủi ro tín dụng hiệu quả hơn. Nếu các ngân hàng khác cũng theo chân VIB, mặt bằng lãi suất chung sẽ giảm, tạo động lực mạnh mẽ hơn cho nền kinh tế.</span> <a class="expand-btn" onclick="toggleSummary('c15')" id="btn-c15">Đọc thêm ▸</a></p>
+    <div class="impact-toggle" onclick="toggleImpact('c15')">
+      <span class="impact-arrow" id="arr-c15">&#9658;</span>
+      &nbsp;Short &amp; Medium-term Impact
+    </div>
+    <div class="impact-grid" id="imp-c15">
+      <div class="impact-box short">
+        <div class="impact-label">Short-term</div>
+        <p>Các doanh nghiệp và khách hàng cá nhân của VIB sẽ được hưởng lợi ngay lập tức từ chi phí vay thấp hơn, giúp cải thiện dòng tiền. Điều này có thể tạo áp lực cạnh tranh lên các ngân hàng khác để giảm lãi suất.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Medium-term</div>
+        <p>Trong vài tháng tới, nếu nhiều ngân hàng cùng giảm lãi suất, mặt bằng lãi suất chung sẽ hạ nhiệt, hỗ trợ mạnh mẽ cho hoạt động sản xuất kinh doanh và tiêu dùng. Tuy nhiên, biên lợi nhuận của các ngân hàng có thể bị ảnh hưởng.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span class="entity-tag" data-entity="Ngân hàng Quốc Tế (VIB)" onclick="handleEntityTag(event, this)">Ngân hàng Quốc Tế (VIB)</span><span class="entity-tag" data-entity="Các doanh nghiệp vay vốn tại VIB" onclick="handleEntityTag(event, this)">Các doanh nghiệp vay vốn tại VIB</span><span class="entity-tag" data-entity="Khách hàng cá nhân vay vốn tại VIB" onclick="handleEntityTag(event, this)">Khách hàng cá nhân vay vốn tại VIB</span><span class="entity-tag" data-entity="Các ngân hàng thương mại khác" onclick="handleEntityTag(event, this)">Các ngân hàng thương mại khác</span><span class="entity-tag" data-entity="Nền kinh tế Việt Nam" onclick="handleEntityTag(event, this)">Nền kinh tế Việt Nam</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">&#9888;</span>
+        <span><strong>Risk:</strong> Rủi ro chính là việc giảm lãi suất có thể ảnh hưởng đến biên lợi nhuận của ngân hàng nếu chi phí huy động không giảm tương ứng. Ngoài ra, rủi ro tín dụng có thể tăng nếu việc cho vay được nới lỏng quá mức.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">&#128065;</span>
+        <span><strong>Watch:</strong> Theo dõi động thái giảm lãi suất của các ngân hàng khác, diễn biến tăng trưởng tín dụng, và các chỉ số vĩ mô như lạm phát và GDP để đánh giá hiệu quả của chính sách tiền tệ.</span></div>
+      <div class="rec-row"><span class="rec-icon action">&#8594;</span>
+        <span><strong>Note:</strong> Các doanh nghiệp và cá nhân có nhu cầu vay vốn nên chủ động liên hệ với ngân hàng để tìm hiểu các gói vay ưu đãi. Các ngân hàng cần cân bằng giữa việc hỗ trợ khách hàng và quản lý rủi ro lợi nhuận.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="6" data-cat="Chứng khoán"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#F0FDF4;color:#166534;
+        border:1px solid #BBF7D0;">Chứng khoán</span>
+      <span class="badge source-badge">🇻🇳 VnExpress Kinh Doanh</span>
+      <span class="badge time-badge"></span>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-title-row">
+      <h2 class="card-title">
+        <a href="https://vnexpress.net/vo-ong-bui-thanh-nhon-dang-ky-ban-hon-6-trieu-co-phieu-novaland-5135318.html" target="_blank" rel="noopener">
+          Vợ ông Bùi Thành Nhơn đăng ký bán hơn 6 triệu cổ phiếu Novaland
+        </a>
+      </h2>
+      <span class="card-score-badge"
+        style="background:#FFFBEB;color:#B8620A;border:1px solid #FDE68A;">
+        6<span style="font-size:11px;opacity:.6">/10</span>
+      </span>
+    </div>
+    <p class="card-summary"><span>Trong bối cảnh thị trường bất động sản vẫn đang đối mặt với nhiều thách thức và Novaland (NVL) đang trong quá trình tái cấu trúc nợ, thông tin bà Cao Thị Ngọc Sương, vợ Chủ tịch Bùi Thành Nhơn, đăng ký bán hơn 6 triệu cổ phiếu NVL đã thu hút sự chú ý. Động thái này diễn ra song song với việc cổ đông lớn Diamond Properties đăng ký mua thêm cổ phiếu, tạo nên một bức tranh phức tạp về dòng tiền và niềm tin của các nhà đầu tư nội bộ. Việc người thân lãnh đạo</span><span class="summary-rest" id="rest-c16" style="display:none"> cấp cao bán ra cổ phiếu thường được thị trường diễn giải theo nhiều hướng, từ nhu cầu tài chính cá nhân đến tín hiệu về triển vọng công ty. Tuy nhiên, việc một cổ đông lớn khác lại đăng ký mua vào có thể cho thấy sự phân hóa trong đánh giá về giá trị và tiềm năng phục hồi của NVL. Sự kiện này cần được đặt trong bối cảnh rộng hơn về nỗ lực giải quyết khó khăn của Novaland, bao gồm việc tái cơ cấu các khoản nợ và dự án, cũng như kỳ vọng vào sự hỗ trợ từ chính sách vĩ mô để tháo gỡ vướng mắc cho thị trường bất động sản.</span> <a class="expand-btn" onclick="toggleSummary('c16')" id="btn-c16">Đọc thêm ▸</a></p>
+    <div class="impact-toggle" onclick="toggleImpact('c16')">
+      <span class="impact-arrow" id="arr-c16">&#9658;</span>
+      &nbsp;Short &amp; Medium-term Impact
+    </div>
+    <div class="impact-grid" id="imp-c16">
+      <div class="impact-box short">
+        <div class="impact-label">Short-term</div>
+        <p>Giá cổ phiếu NVL có thể chịu áp lực giảm trong ngắn hạn do tâm lý lo ngại từ việc người thân lãnh đạo bán ra. Tuy nhiên, động thái mua vào của cổ đông lớn có thể phần nào cân bằng áp lực này.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Medium-term</div>
+        <p>Diễn biến giá NVL sẽ phụ thuộc nhiều vào tiến độ tái cấu trúc nợ, triển vọng kinh doanh của công ty và tình hình chung của thị trường bất động sản. Sự ổn định về cơ cấu cổ đông và niềm tin của nhà đầu tư sẽ là yếu tố quan trọng.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span class="entity-tag" data-entity="Novaland (NVL)" onclick="handleEntityTag(event, this)">Novaland (NVL)</span><span class="entity-tag" data-entity="Bà Cao Thị Ngọc Sương" onclick="handleEntityTag(event, this)">Bà Cao Thị Ngọc Sương</span><span class="entity-tag" data-entity="Diamond Properties" onclick="handleEntityTag(event, this)">Diamond Properties</span><span class="entity-tag" data-entity="Các nhà đầu tư cổ phiếu NVL" onclick="handleEntityTag(event, this)">Các nhà đầu tư cổ phiếu NVL</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">&#9888;</span>
+        <span><strong>Risk:</strong> Rủi ro về tâm lý thị trường tiêu cực, áp lực bán có thể gia tăng nếu không có thông tin hỗ trợ tích cực. Rủi ro liên quan đến tiến độ tái cấu trúc và khả năng phục hồi của Novaland.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">&#128065;</span>
+        <span><strong>Watch:</strong> Kết quả giao dịch của bà Cao Thị Ngọc Sương và Diamond Properties, các thông tin mới về kế hoạch tái cấu trúc của Novaland, và diễn biến chung của thị trường bất động sản.</span></div>
+      <div class="rec-row"><span class="rec-icon action">&#8594;</span>
+        <span><strong>Note:</strong> Nhà đầu tư cần theo dõi sát sao các thông tin công bố từ Novaland và diễn biến giao dịch cổ phiếu để đưa ra quyết định phù hợp, tránh hành động theo tin đồn.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="6" data-cat="Chứng khoán"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#F0FDF4;color:#166534;
+        border:1px solid #BBF7D0;">Chứng khoán</span>
+      <span class="badge source-badge">🇻🇳 CafeF</span>
+      <span class="badge time-badge"></span>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-title-row">
+      <h2 class="card-title">
+        <a href="https://cafef.vn/mot-hien-tuong-la-vua-xay-ra-tren-thi-truong-chung-khoan-viet-nam-188261021232824511.chn" target="_blank" rel="noopener">
+          Một hiện tượng lạ vừa xảy ra trên thị trường chứng khoán Việt Nam
+        </a>
+      </h2>
+      <span class="card-score-badge"
+        style="background:#FFFBEB;color:#B8620A;border:1px solid #FDE68A;">
+        6<span style="font-size:11px;opacity:.6">/10</span>
+      </span>
+    </div>
+    <p class="card-summary"><span>Trong bối cảnh thị trường chứng khoán Việt Nam đang tìm kiếm những tín hiệu tích cực để củng cố đà phục hồi, việc xuất hiện một &#x27;hiện tượng lạ&#x27; được đánh giá là tích cực đã thu hút sự chú ý của giới đầu tư. Mặc dù bài báo không đi sâu vào chi tiết cụ thể của hiện tượng này, nhưng việc nó được nhấn mạnh là một tín hiệu tốt cho thấy có thể có sự thay đổi trong cấu trúc dòng tiền, tâm lý nhà đầu tư hoặc các yếu tố kỹ thuật thị trường. Điều</span><span class="summary-rest" id="rest-c17" style="display:none"> này có thể liên quan đến sự gia tăng thanh khoản, sự trở lại của dòng vốn ngoại, hoặc sự dịch chuyển của dòng tiền nội vào các nhóm ngành cụ thể. Trong lịch sử, những &#x27;hiện tượng lạ&#x27; đôi khi là dấu hiệu sớm cho một xu hướng mới của thị trường, dù là tích cực hay tiêu cực. Hiện tại, nó mang lại kỳ vọng về một giai đoạn tăng trưởng ổn định hơn sau những biến động gần đây. Tuy nhiên, nhà đầu tư cần thận trọng và không nên chỉ dựa vào một tín hiệu đơn lẻ mà cần kết hợp với phân tích vĩ mô, kết quả kinh doanh doanh nghiệp và các yếu tố kỹ thuật khác để đưa ra quyết định đầu tư.</span> <a class="expand-btn" onclick="toggleSummary('c17')" id="btn-c17">Đọc thêm ▸</a></p>
+    <div class="impact-toggle" onclick="toggleImpact('c17')">
+      <span class="impact-arrow" id="arr-c17">&#9658;</span>
+      &nbsp;Short &amp; Medium-term Impact
+    </div>
+    <div class="impact-grid" id="imp-c17">
+      <div class="impact-box short">
+        <div class="impact-label">Short-term</div>
+        <p>Tâm lý thị trường có thể được cải thiện, tạo động lực cho các phiên giao dịch tích cực hơn trong ngắn hạn. Dòng tiền có thể tìm đến các cổ phiếu hoặc nhóm ngành được hưởng lợi từ hiện tượng này.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Medium-term</div>
+        <p>Nếu hiện tượng này duy trì và phát triển thành một xu hướng, thị trường chứng khoán có thể bước vào giai đoạn tăng trưởng bền vững hơn. Tuy nhiên, cần theo dõi để xác định liệu đây có phải là một tín hiệu bền vững hay chỉ là nhất thời.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span class="entity-tag" data-entity="Thị trường chứng khoán Việt Nam" onclick="handleEntityTag(event, this)">Thị trường chứng khoán Việt Nam</span><span class="entity-tag" data-entity="Các nhà đầu tư" onclick="handleEntityTag(event, this)">Các nhà đầu tư</span><span class="entity-tag" data-entity="Các công ty chứng khoán" onclick="handleEntityTag(event, this)">Các công ty chứng khoán</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">&#9888;</span>
+        <span><strong>Risk:</strong> Rủi ro về việc hiện tượng này chỉ là nhất thời và không đủ mạnh để tạo ra một xu hướng bền vững. Rủi ro về sự biến động của thị trường nếu các yếu tố vĩ mô không hỗ trợ.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">&#128065;</span>
+        <span><strong>Watch:</strong> Các chỉ số thanh khoản, diễn biến dòng tiền của nhà đầu tư cá nhân và tổ chức, và các yếu tố kỹ thuật thị trường để xác định bản chất và độ bền vững của &#x27;hiện tượng lạ&#x27; này.</span></div>
+      <div class="rec-row"><span class="rec-icon action">&#8594;</span>
+        <span><strong>Note:</strong> Nhà đầu tư nên thận trọng, không nên quá lạc quan dựa trên một tín hiệu đơn lẻ. Cần kết hợp phân tích kỹ thuật và cơ bản để đưa ra quyết định đầu tư.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="6" data-cat="Doanh nghiệp"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#F0F9FF;color:#0C4A6E;
+        border:1px solid #BAE6FD;">Doanh nghiệp</span>
+      <span class="badge source-badge">🇻🇳 CafeF</span>
+      <span class="badge time-badge"></span>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-title-row">
+      <h2 class="card-title">
+        <a href="https://cafef.vn/lanh-dao-coteccons-noi-gi-khi-ty-le-nghi-viec-tai-ctd-tang-manh-nhan-su-duoc-moi-chao-muc-luong-gap-2-3-lan-188261021164933948.chn" target="_blank" rel="noopener">
+          Lãnh đạo Coteccons nói gì khi tỷ lệ nghỉ việc tại CTD tăng mạnh, nhân sự được mời chào mức lương gấp 2-3 lần?
+        </a>
+      </h2>
+      <span class="card-score-badge"
+        style="background:#FFFBEB;color:#B8620A;border:1px solid #FDE68A;">
+        6<span style="font-size:11px;opacity:.6">/10</span>
+      </span>
+    </div>
+    <p class="card-summary"><span>Trong bối cảnh thị trường lao động ngành xây dựng đang có sự cạnh tranh gay gắt về nhân sự chất lượng cao, việc Coteccons (CTD) đối mặt với tỷ lệ nghỉ việc tăng mạnh và nhân sự bị mời chào mức lương gấp 2-3 lần là một thách thức lớn. Điều này không chỉ ảnh hưởng đến hoạt động sản xuất kinh doanh của công ty mà còn phản ánh áp lực chung về chi phí nhân sự trong ngành. Lãnh đạo Coteccons đã phải lên tiếng về vấn đề này, đồng thời công bố kế hoạch kinh doanh</span><span class="summary-rest" id="rest-c18" style="display:none"> đầy tham vọng cho năm tài chính 2027 với mục tiêu doanh thu hợp nhất đạt 42.000 tỷ đồng, tăng 22% so với cùng kỳ. Sự kiện này cho thấy một mặt, thị trường lao động đang sôi động, đặc biệt đối với các vị trí có chuyên môn cao; mặt khác, các doanh nghiệp lớn như CTD phải đối mặt với bài toán giữ chân nhân tài và tối ưu hóa chi phí. Chuỗi tác động có thể bao gồm việc CTD phải điều chỉnh chính sách lương thưởng, phúc lợi để cạnh tranh, hoặc đầu tư vào đào tạo và phát triển nhân sự nội bộ. Kế hoạch kinh doanh đầy tham vọng của CTD trong bối cảnh này cũng đặt ra câu hỏi về khả năng thực hiện nếu vấn đề nhân sự không được giải quyết hiệu quả.</span> <a class="expand-btn" onclick="toggleSummary('c18')" id="btn-c18">Đọc thêm ▸</a></p>
+    <div class="impact-toggle" onclick="toggleImpact('c18')">
+      <span class="impact-arrow" id="arr-c18">&#9658;</span>
+      &nbsp;Short &amp; Medium-term Impact
+    </div>
+    <div class="impact-grid" id="imp-c18">
+      <div class="impact-box short">
+        <div class="impact-label">Short-term</div>
+        <p>Coteccons có thể phải đối mặt với chi phí nhân sự tăng cao trong ngắn hạn để giữ chân nhân tài. Hiệu suất hoạt động có thể bị ảnh hưởng nếu tỷ lệ nghỉ việc tiếp tục tăng.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Medium-term</div>
+        <p>Nếu vấn đề nhân sự không được giải quyết triệt để, có thể ảnh hưởng đến khả năng thực hiện các dự án và đạt được mục tiêu doanh thu dài hạn của Coteccons. Công ty có thể phải thay đổi chiến lược quản lý nhân sự và đầu tư vào tự động hóa.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span class="entity-tag" data-entity="Coteccons (CTD)" onclick="handleEntityTag(event, this)">Coteccons (CTD)</span><span class="entity-tag" data-entity="Các công ty xây dựng khác" onclick="handleEntityTag(event, this)">Các công ty xây dựng khác</span><span class="entity-tag" data-entity="Nhân sự ngành xây dựng" onclick="handleEntityTag(event, this)">Nhân sự ngành xây dựng</span><span class="entity-tag" data-entity="Các nhà đầu tư cổ phiếu CTD" onclick="handleEntityTag(event, this)">Các nhà đầu tư cổ phiếu CTD</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">&#9888;</span>
+        <span><strong>Risk:</strong> Rủi ro về chi phí nhân sự tăng cao, ảnh hưởng đến biên lợi nhuận. Rủi ro về việc thiếu hụt nhân sự chất lượng cao, ảnh hưởng đến tiến độ và chất lượng dự án. Rủi ro về khả năng đạt được mục tiêu kinh doanh đầy tham vọng.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">&#128065;</span>
+        <span><strong>Watch:</strong> Các chính sách quản lý nhân sự mới của Coteccons, diễn biến tỷ lệ nghỉ việc, và kết quả kinh doanh của công ty trong các quý tới.</span></div>
+      <div class="rec-row"><span class="rec-icon action">&#8594;</span>
+        <span><strong>Note:</strong> Nhà đầu tư cần đánh giá kỹ lưỡng khả năng quản lý nhân sự và chiến lược kinh doanh của Coteccons trong bối cảnh cạnh tranh lao động gay gắt.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="6" data-cat="Chứng khoán"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#F0FDF4;color:#166534;
+        border:1px solid #BBF7D0;">Chứng khoán</span>
+      <span class="badge source-badge">🇻🇳 VnEconomy</span>
+      <span class="badge time-badge"></span>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-title-row">
+      <h2 class="card-title">
+        <a href="https://vneconomy.vn/blog-chung-khoan-nhip-giam-da-ket-thuc.htm" target="_blank" rel="noopener">
+          Blog chứng khoán: Nhịp giảm đã kết thúc?
+        </a>
+      </h2>
+      <span class="card-score-badge"
+        style="background:#FFFBEB;color:#B8620A;border:1px solid #FDE68A;">
+        6<span style="font-size:11px;opacity:.6">/10</span>
+      </span>
+    </div>
+    <p class="card-summary"><span>Trong bối cảnh thị trường chứng khoán Việt Nam trải qua giai đoạn điều chỉnh, sự xuất hiện của một phiên giao dịch với thanh khoản đột biến gần 18.200 tỷ đồng trên hai sàn, cùng với hiệu ứng tăng giá mạnh và lan tỏa rộng, đang đặt ra câu hỏi về khả năng kết thúc nhịp giảm. Đây là một tín hiệu tích cực đáng chú ý, cho thấy dòng tiền lớn đã quay trở lại, giải tỏa phần nào “cơn khát” thanh khoản và tâm lý thận trọng của nhà đầu tư. Sự tăng trưởng mạnh mẽ và</span><span class="summary-rest" id="rest-c19" style="display:none"> đồng loạt của nhiều mã cổ phiếu, thậm chí kịch trần, phản ánh niềm tin được củng cố và có thể là dấu hiệu của một sự đảo chiều xu hướng. Tuy nhiên, cần thận trọng đánh giá liệu đây chỉ là một phiên hồi phục kỹ thuật hay thực sự là khởi đầu cho một xu hướng tăng bền vững. Trong quá khứ, những phiên bùng nổ thanh khoản và giá thường là tiền đề cho các nhịp tăng mới, nhưng cũng có thể là bẫy tăng giá nếu không có sự xác nhận từ các phiên tiếp theo. Việc theo dõi sự duy trì của dòng tiền và mức độ lan tỏa trong các phiên tới là rất quan trọng để xác định rõ hơn xu hướng thị trường.</span> <a class="expand-btn" onclick="toggleSummary('c19')" id="btn-c19">Đọc thêm ▸</a></p>
+    <div class="impact-toggle" onclick="toggleImpact('c19')">
+      <span class="impact-arrow" id="arr-c19">&#9658;</span>
+      &nbsp;Short &amp; Medium-term Impact
+    </div>
+    <div class="impact-grid" id="imp-c19">
+      <div class="impact-box short">
+        <div class="impact-label">Short-term</div>
+        <p>Thị trường có thể tiếp tục duy trì đà tăng trong vài phiên tới với tâm lý lạc quan được củng cố. Dòng tiền có thể tiếp tục tìm đến các nhóm cổ phiếu đã tăng mạnh trong phiên này.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Medium-term</div>
+        <p>Nếu đà tăng được duy trì và thanh khoản ổn định, thị trường có thể hình thành một xu hướng tăng mới trong vài tháng tới. Tuy nhiên, cần theo dõi các yếu tố vĩ mô và động thái của dòng tiền lớn.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span class="entity-tag" data-entity="VN-Index" onclick="handleEntityTag(event, this)">VN-Index</span><span class="entity-tag" data-entity="HNX-Index" onclick="handleEntityTag(event, this)">HNX-Index</span><span class="entity-tag" data-entity="Các cổ phiếu vốn hóa lớn và vừa" onclick="handleEntityTag(event, this)">Các cổ phiếu vốn hóa lớn và vừa</span><span class="entity-tag" data-entity="Các nhà đầu tư cá nhân và tổ chức" onclick="handleEntityTag(event, this)">Các nhà đầu tư cá nhân và tổ chức</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">&#9888;</span>
+        <span><strong>Risk:</strong> Rủi ro chính là đây chỉ là một phiên hồi phục kỹ thuật (bull trap) và thị trường có thể quay đầu giảm trở lại nếu không có yếu tố hỗ trợ bền vững. Thanh khoản có thể không duy trì được mức cao.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">&#128065;</span>
+        <span><strong>Watch:</strong> Theo dõi diễn biến thanh khoản và độ rộng thị trường trong các phiên tiếp theo, đặc biệt là sự tham gia của dòng tiền khối ngoại và các yếu tố vĩ mô có thể ảnh hưởng đến tâm lý thị trường.</span></div>
+      <div class="rec-row"><span class="rec-icon action">&#8594;</span>
+        <span><strong>Note:</strong> Nhà đầu tư nên thận trọng, không nên quá hưng phấn mua đuổi. Cần quan sát thêm để xác nhận xu hướng, ưu tiên các cổ phiếu có nền tảng cơ bản tốt và dòng tiền vào ổn định.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="6" data-cat="Ngân hàng"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#EFF6FF;color:#1E40AF;
+        border:1px solid #BFDBFE;">Ngân hàng</span>
+      <span class="badge source-badge">🇻🇳 VnEconomy Tài Chính</span>
+      <span class="badge time-badge"></span>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-title-row">
+      <h2 class="card-title">
+        <a href="https://vneconomy.vn/cac-dau-hieu-de-nhan-dien-to-chuc-tham-gia-bao-hiem-tien-gui.htm" target="_blank" rel="noopener">
+          Các dấu hiệu để nhận diện tổ chức tham gia bảo hiểm tiền gửi
+        </a>
+      </h2>
+      <span class="card-score-badge"
+        style="background:#FFFBEB;color:#B8620A;border:1px solid #FDE68A;">
+        6<span style="font-size:11px;opacity:.6">/10</span>
+      </span>
+    </div>
+    <p class="card-summary"><span>Trong bối cảnh hệ thống tài chính ngày càng phức tạp và rủi ro tiềm ẩn, việc nhận diện các tổ chức tham gia bảo hiểm tiền gửi là một kỹ năng tài chính thiết yếu cho người dân. Bài viết này nhấn mạnh tầm quan trọng của việc không chỉ quan tâm đến lãi suất, kỳ hạn hay chất lượng dịch vụ khi gửi tiền, mà còn phải xem xét yếu tố an toàn thông qua bảo hiểm tiền gửi. Đây là một cơ chế bảo vệ người gửi tiền trong trường hợp tổ chức tín dụng gặp khó</span><span class="summary-rest" id="rest-c20" style="display:none"> khăn hoặc phá sản, góp phần duy trì sự ổn định của hệ thống ngân hàng. Việc người dân chủ động tìm hiểu thông tin này sẽ nâng cao ý thức về quản lý rủi ro cá nhân và tăng cường niềm tin vào hệ thống tài chính. Trong lịch sử, các cuộc khủng hoảng tài chính thường đi kèm với sự mất niềm tin của công chúng vào ngân hàng, và bảo hiểm tiền gửi là một công cụ quan trọng để ngăn chặn tình trạng rút tiền ồ ạt. Tuy nhiên, cần lưu ý rằng bảo hiểm tiền gửi có giới hạn bồi thường, do đó, việc đa dạng hóa nơi gửi tiền cũng là một chiến lược quản lý rủi ro hiệu quả. Việc phổ biến kiến thức này là cần thiết để xây dựng một cộng đồng nhà đầu tư và người gửi tiền thông thái hơn.</span> <a class="expand-btn" onclick="toggleSummary('c20')" id="btn-c20">Đọc thêm ▸</a></p>
+    <div class="impact-toggle" onclick="toggleImpact('c20')">
+      <span class="impact-arrow" id="arr-c20">&#9658;</span>
+      &nbsp;Short &amp; Medium-term Impact
+    </div>
+    <div class="impact-grid" id="imp-c20">
+      <div class="impact-box short">
+        <div class="impact-label">Short-term</div>
+        <p>Người dân có thể sẽ quan tâm và tìm hiểu kỹ hơn về việc các ngân hàng có tham gia bảo hiểm tiền gửi hay không khi lựa chọn nơi gửi tiền. Điều này có thể ảnh hưởng nhẹ đến dòng tiền gửi giữa các tổ chức tín dụng.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Medium-term</div>
+        <p>Trong vài tháng tới, nhận thức về bảo hiểm tiền gửi có thể tăng lên, góp phần củng cố niềm tin của công chúng vào hệ thống ngân hàng. Các ngân hàng cần đảm bảo thông tin về bảo hiểm tiền gửi được công khai và dễ tiếp cận.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span class="entity-tag" data-entity="Người gửi tiền cá nhân" onclick="handleEntityTag(event, this)">Người gửi tiền cá nhân</span><span class="entity-tag" data-entity="Các tổ chức tín dụng (ngân hàng, quỹ tín dụng)" onclick="handleEntityTag(event, this)">Các tổ chức tín dụng (ngân hàng, quỹ tín dụng)</span><span class="entity-tag" data-entity="Bảo hiểm Tiền gửi Việt Nam" onclick="handleEntityTag(event, this)">Bảo hiểm Tiền gửi Việt Nam</span><span class="entity-tag" data-entity="Ngân hàng Nhà nước Việt Nam" onclick="handleEntityTag(event, this)">Ngân hàng Nhà nước Việt Nam</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">&#9888;</span>
+        <span><strong>Risk:</strong> Rủi ro chính là người dân có thể hiểu sai hoặc không đầy đủ về giới hạn bồi thường của bảo hiểm tiền gửi. Ngoài ra, việc thiếu thông tin minh bạch từ một số tổ chức tín dụng cũng là một thách thức.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">&#128065;</span>
+        <span><strong>Watch:</strong> Theo dõi các chiến dịch truyền thông của Bảo hiểm Tiền gửi Việt Nam và Ngân hàng Nhà nước về quyền lợi người gửi tiền. Quan sát sự minh bạch thông tin từ các tổ chức tín dụng.</span></div>
+      <div class="rec-row"><span class="rec-icon action">&#8594;</span>
+        <span><strong>Note:</strong> Người gửi tiền nên chủ động tìm hiểu các dấu hiệu nhận biết tổ chức tham gia bảo hiểm tiền gửi và giới hạn bồi thường. Nên đa dạng hóa nơi gửi tiền để phân tán rủi ro.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="6" data-cat="Ngân hàng"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#EFF6FF;color:#1E40AF;
+        border:1px solid #BFDBFE;">Ngân hàng</span>
+      <span class="badge source-badge">🇻🇳 VnEconomy Tài Chính</span>
+      <span class="badge time-badge"></span>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-title-row">
+      <h2 class="card-title">
+        <a href="https://vneconomy.vn/nam-a-bank-thuc-day-dong-von-tai-tro-chuyen-doi-nang-luong.htm" target="_blank" rel="noopener">
+          Nam A Bank thúc đẩy dòng vốn tài trợ chuyển đổi năng lượng
+        </a>
+      </h2>
+      <span class="card-score-badge"
+        style="background:#FFFBEB;color:#B8620A;border:1px solid #FDE68A;">
+        6<span style="font-size:11px;opacity:.6">/10</span>
+      </span>
+    </div>
+    <p class="card-summary"><span>Trong bối cảnh Việt Nam đang đẩy mạnh cam kết về phát triển bền vững và ứng phó biến đổi khí hậu, việc Nam A Bank khẳng định vai trò tiên phong trong lĩnh vực tài chính xanh thông qua các đề xuất chiến lược nhằm khơi thông nguồn vốn chuyển đổi năng lượng là một bước đi chiến lược quan trọng. Động thái này không chỉ phù hợp với xu hướng toàn cầu về ESG (Môi trường, Xã hội và Quản trị), mà còn góp phần hiện thực hóa các mục tiêu về năng lượng sạch của quốc gia.</span><span class="summary-rest" id="rest-c21" style="display:none"> Việc tài trợ cho các dự án chuyển đổi năng lượng, đặc biệt trong bối cảnh Hiệp định FTA Việt Nam - EFTA được công bố, sẽ mở ra cơ hội lớn cho các doanh nghiệp trong nước tiếp cận nguồn vốn và công nghệ xanh từ các đối tác quốc tế. Điều này không chỉ mang lại lợi ích về môi trường mà còn tạo ra động lực tăng trưởng kinh tế mới, thúc đẩy đổi mới công nghệ và nâng cao năng lực cạnh tranh của doanh nghiệp Việt Nam. Tuy nhiên, thách thức đặt ra là làm thế nào để đánh giá và quản lý rủi ro hiệu quả cho các dự án năng lượng tái tạo, cũng như xây dựng khung pháp lý và chính sách hỗ trợ đồng bộ. Sự tham gia của các ngân hàng như Nam A Bank là yếu tố then chốt để huy động và phân bổ nguồn vốn cần thiết cho quá trình chuyển đổi này.</span> <a class="expand-btn" onclick="toggleSummary('c21')" id="btn-c21">Đọc thêm ▸</a></p>
+    <div class="impact-toggle" onclick="toggleImpact('c21')">
+      <span class="impact-arrow" id="arr-c21">&#9658;</span>
+      &nbsp;Short &amp; Medium-term Impact
+    </div>
+    <div class="impact-grid" id="imp-c21">
+      <div class="impact-box short">
+        <div class="impact-label">Short-term</div>
+        <p>Thông tin này có thể tạo tâm lý tích cực cho các doanh nghiệp trong lĩnh vực năng lượng tái tạo và các nhà đầu tư quan tâm đến tài chính xanh. Nam A Bank có thể thu hút thêm khách hàng và đối tác trong lĩnh vực này.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Medium-term</div>
+        <p>Trong vài tháng tới, nếu các đề xuất chiến lược được triển khai, có thể thúc đẩy sự phát triển của các dự án năng lượng tái tạo và thu hút thêm dòng vốn đầu tư xanh. Điều này sẽ góp phần vào mục tiêu phát triển bền vững của Việt Nam.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span class="entity-tag" data-entity="Nam A Bank" onclick="handleEntityTag(event, this)">Nam A Bank</span><span class="entity-tag" data-entity="Các doanh nghiệp năng lượng tái tạo" onclick="handleEntityTag(event, this)">Các doanh nghiệp năng lượng tái tạo</span><span class="entity-tag" data-entity="Các nhà đầu tư trong và ngoài nước quan tâm đến tài chính xanh" onclick="handleEntityTag(event, this)">Các nhà đầu tư trong và ngoài nước quan tâm đến tài chính xanh</span><span class="entity-tag" data-entity="Chính phủ Việt Nam (trong việc thực hiện cam kết khí hậu)" onclick="handleEntityTag(event, this)">Chính phủ Việt Nam (trong việc thực hiện cam kết khí hậu)</span><span class="entity-tag" data-entity="Các tổ chức tài chính quốc tế" onclick="handleEntityTag(event, this)">Các tổ chức tài chính quốc tế</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">&#9888;</span>
+        <span><strong>Risk:</strong> Rủi ro chính là việc đánh giá và quản lý rủi ro cho các dự án năng lượng tái tạo còn nhiều thách thức. Ngoài ra, khung pháp lý và chính sách hỗ trợ có thể chưa đủ mạnh để thúc đẩy quá trình chuyển đổi năng lượng.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">&#128065;</span>
+        <span><strong>Watch:</strong> Theo dõi các chính sách mới của Chính phủ về năng lượng tái tạo, các dự án tài trợ của Nam A Bank và các ngân hàng khác trong lĩnh vực này, cũng như sự phát triển của thị trường tài chính xanh.</span></div>
+      <div class="rec-row"><span class="rec-icon action">&#8594;</span>
+        <span><strong>Note:</strong> Các doanh nghiệp trong lĩnh vực năng lượng nên chủ động tìm hiểu các nguồn vốn tài trợ xanh. Các nhà đầu tư có thể xem xét các cơ hội đầu tư vào các dự án và doanh nghiệp năng lượng tái tạo.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="5" data-cat="Kinh tế vĩ mô"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#FFF7ED;color:#9A3412;
+        border:1px solid #FED7AA;">Kinh tế vĩ mô</span>
+      <span class="badge source-badge">🇻🇳 VnExpress Kinh Doanh</span>
+      <span class="badge time-badge"></span>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-title-row">
+      <h2 class="card-title">
+        <a href="https://vnexpress.net/jensen-huang-khong-so-dong-thue-chi-so-ngheo-5134984.html" target="_blank" rel="noopener">
+          Jensen Huang &#x27;không sợ đóng thuế, chỉ sợ nghèo&#x27;
+        </a>
+      </h2>
+      <span class="card-score-badge"
+        style="background:#F0FDF4;color:#1A7A4A;border:1px solid #BBF7D0;">
+        5<span style="font-size:11px;opacity:.6">/10</span>
+      </span>
+    </div>
+    <p class="card-summary"><span>Trong bối cảnh các chính phủ trên thế giới đang tìm cách tăng nguồn thu ngân sách và giải quyết vấn đề bất bình đẳng thu nhập, phát biểu của CEO Nvidia, Jensen Huang, về việc coi đóng thuế 8 tỷ USD là một &#x27;đặc quyền&#x27; đã gây chú ý. Quan điểm này không chỉ phản ánh sự thành công vượt bậc của Nvidia trong kỷ nguyên AI mà còn chạm đến một vấn đề kinh tế vĩ mô lớn: vai trò của thuế đối với người giàu và tác động của nó đến nền kinh tế. Phát biểu của</span><span class="summary-rest" id="rest-c22" style="display:none"> Huang có thể được hiểu là sự chấp nhận trách nhiệm xã hội của doanh nghiệp và cá nhân siêu giàu, đồng thời ngụ ý rằng sự thịnh vượng cá nhân và doanh nghiệp là nền tảng để đóng góp cho xã hội thông qua thuế. Điều này có thể tạo ra một cuộc tranh luận về chính sách thuế lũy tiến và cách thức phân phối lại của cải. Tuy nhiên, nó cũng có thể bị chỉ trích là một cách để hợp lý hóa sự giàu có khổng lồ trong khi nhiều người vẫn đang vật lộn với gánh nặng kinh tế. Sự kiện này không trực tiếp gây ra biến động thị trường nhưng góp phần vào cuộc thảo luận rộng hơn về chính sách tài khóa và vai trò của các tập đoàn công nghệ lớn trong xã hội.</span> <a class="expand-btn" onclick="toggleSummary('c22')" id="btn-c22">Đọc thêm ▸</a></p>
+    <div class="impact-toggle" onclick="toggleImpact('c22')">
+      <span class="impact-arrow" id="arr-c22">&#9658;</span>
+      &nbsp;Short &amp; Medium-term Impact
+    </div>
+    <div class="impact-grid" id="imp-c22">
+      <div class="impact-box short">
+        <div class="impact-label">Short-term</div>
+        <p>Không có tác động trực tiếp đến thị trường tài chính. Có thể gây ra các cuộc thảo luận công khai về chính sách thuế và trách nhiệm xã hội của người giàu.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Medium-term</div>
+        <p>Có thể ảnh hưởng đến quan điểm của công chúng và các nhà hoạch định chính sách về việc đánh thuế người giàu và các tập đoàn công nghệ. Điều này có thể dẫn đến các đề xuất chính sách thuế mới trong tương lai.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span class="entity-tag" data-entity="Nvidia" onclick="handleEntityTag(event, this)">Nvidia</span><span class="entity-tag" data-entity="Các cá nhân siêu giàu" onclick="handleEntityTag(event, this)">Các cá nhân siêu giàu</span><span class="entity-tag" data-entity="Chính phủ bang California" onclick="handleEntityTag(event, this)">Chính phủ bang California</span><span class="entity-tag" data-entity="Các nhà hoạch định chính sách thuế" onclick="handleEntityTag(event, this)">Các nhà hoạch định chính sách thuế</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">&#9888;</span>
+        <span><strong>Risk:</strong> Rủi ro về sự phân hóa xã hội nếu các chính sách thuế không được thiết kế công bằng và hiệu quả. Rủi ro về việc các doanh nghiệp lớn có thể tìm cách chuyển trụ sở để tránh thuế cao.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">&#128065;</span>
+        <span><strong>Watch:</strong> Các đề xuất chính sách thuế mới từ các bang hoặc chính phủ liên bang, cũng như phản ứng của các tập đoàn công nghệ và giới siêu giàu.</span></div>
+      <div class="rec-row"><span class="rec-icon action">&#8594;</span>
+        <span><strong>Note:</strong> Thị trường cần theo dõi các cuộc thảo luận về chính sách thuế để đánh giá tiềm năng ảnh hưởng đến môi trường kinh doanh và đầu tư trong dài hạn.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="5" data-cat="Kinh tế vĩ mô"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#FFF7ED;color:#9A3412;
+        border:1px solid #FED7AA;">Kinh tế vĩ mô</span>
+      <span class="badge source-badge">🇻🇳 CafeF Vĩ Mô</span>
+      <span class="badge time-badge"></span>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-title-row">
+      <h2 class="card-title">
+        <a href="https://cafef.vn/de-xuat-nghi-huong-nguyen-luong-ngay-27-7-dip-toan-xa-hoi-tri-an-nguoi-co-cong-188261021231202261.chn" target="_blank" rel="noopener">
+          Đề xuất nghỉ hưởng nguyên lương ngày 27/7: Dịp toàn xã hội tri ân người có công
+        </a>
+      </h2>
+      <span class="card-score-badge"
+        style="background:#F0FDF4;color:#1A7A4A;border:1px solid #BBF7D0;">
+        5<span style="font-size:11px;opacity:.6">/10</span>
+      </span>
+    </div>
+    <p class="card-summary"><span>Trong bối cảnh Việt Nam luôn đề cao truyền thống &#x27;uống nước nhớ nguồn&#x27; và tri ân những người có công với cách mạng, đề xuất bổ sung Ngày Thương binh - Liệt sĩ (27/7) vào danh sách ngày nghỉ hưởng nguyên lương là một vấn đề mang ý nghĩa xã hội và chính trị sâu sắc. Đại biểu Nguyễn Thị Kim Thoa đã bày tỏ sự đồng tình, nhấn mạnh tầm quan trọng của ngày này trong việc giáo dục truyền thống yêu nước cho thế hệ trẻ. Về mặt kinh tế, việc bổ sung một ngày nghỉ lễ</span><span class="summary-rest" id="rest-c23" style="display:none"> có thể có những tác động nhất định. Một mặt, nó có thể làm giảm năng suất lao động trong ngắn hạn do doanh nghiệp phải trả lương nhưng không có sản xuất. Mặt khác, nó có thể kích thích tiêu dùng và du lịch nếu người dân có thêm thời gian nghỉ ngơi, qua đó gián tiếp hỗ trợ một số ngành dịch vụ. Tuy nhiên, tác động kinh tế tổng thể thường không quá lớn đối với một ngày nghỉ lễ đơn lẻ. Điều quan trọng hơn là ý nghĩa nhân văn và xã hội mà nó mang lại, góp phần củng cố khối đại đoàn kết dân tộc và giáo dục thế hệ trẻ về lịch sử hào hùng của đất nước.</span> <a class="expand-btn" onclick="toggleSummary('c23')" id="btn-c23">Đọc thêm ▸</a></p>
+    <div class="impact-toggle" onclick="toggleImpact('c23')">
+      <span class="impact-arrow" id="arr-c23">&#9658;</span>
+      &nbsp;Short &amp; Medium-term Impact
+    </div>
+    <div class="impact-grid" id="imp-c23">
+      <div class="impact-box short">
+        <div class="impact-label">Short-term</div>
+        <p>Nếu được thông qua, các doanh nghiệp sẽ phải điều chỉnh lịch làm việc và tính toán chi phí nhân sự cho ngày nghỉ lễ. Có thể có sự gia tăng nhẹ trong hoạt động tiêu dùng và du lịch.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Medium-term</div>
+        <p>Không có tác động kinh tế vĩ mô đáng kể trong trung hạn. Chủ yếu là tác động về mặt xã hội và văn hóa, củng cố truyền thống tri ân người có công.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span class="entity-tag" data-entity="Các doanh nghiệp" onclick="handleEntityTag(event, this)">Các doanh nghiệp</span><span class="entity-tag" data-entity="Người lao động" onclick="handleEntityTag(event, this)">Người lao động</span><span class="entity-tag" data-entity="Ngành du lịch và dịch vụ" onclick="handleEntityTag(event, this)">Ngành du lịch và dịch vụ</span><span class="entity-tag" data-entity="Chính phủ và các cơ quan quản lý" onclick="handleEntityTag(event, this)">Chính phủ và các cơ quan quản lý</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">&#9888;</span>
+        <span><strong>Risk:</strong> Rủi ro về việc tăng chi phí lao động cho doanh nghiệp, đặc biệt là các doanh nghiệp nhỏ và vừa. Tuy nhiên, tác động này thường không đáng kể.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">&#128065;</span>
+        <span><strong>Watch:</strong> Quyết định cuối cùng của Quốc hội hoặc các cơ quan có thẩm quyền về việc bổ sung ngày 27/7 vào danh sách ngày nghỉ lễ hưởng nguyên lương.</span></div>
+      <div class="rec-row"><span class="rec-icon action">&#8594;</span>
+        <span><strong>Note:</strong> Các doanh nghiệp cần theo dõi thông tin để có kế hoạch điều chỉnh lịch làm việc và chi phí nhân sự nếu đề xuất được thông qua.</span></div>
+    </div>
+  </div>
+</div>
+<div class="card" data-score="5" data-cat="Chứng khoán"
+     data-lang="vi" data-critical="no"
+     style="">
+  <div class="card-header">
+    <div class="badges">
+      
+      <span class="badge" style="background:#F0FDF4;color:#166534;
+        border:1px solid #BBF7D0;">Chứng khoán</span>
+      <span class="badge source-badge">🇻🇳 VnEconomy</span>
+      <span class="badge time-badge"></span>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-title-row">
+      <h2 class="card-title">
+        <a href="https://vneconomy.vn/giam-doc-cua-vps-co-hoi-tren-thi-truong-van-hien-huu-du-dong-tien-chua-lan-toa-rong.htm" target="_blank" rel="noopener">
+          Giám đốc của VPS: Cơ hội trên thị trường vẫn hiện hữu dù dòng tiên chưa lan tỏa rộng
+        </a>
+      </h2>
+      <span class="card-score-badge"
+        style="background:#F0FDF4;color:#1A7A4A;border:1px solid #BBF7D0;">
+        5<span style="font-size:11px;opacity:.6">/10</span>
+      </span>
+    </div>
+    <p class="card-summary"><span>Trong bối cảnh thị trường chứng khoán Việt Nam đang có những tín hiệu phục hồi nhưng dòng tiền chưa thực sự lan tỏa rộng khắp, nhận định từ Giám đốc của VPS cho thấy một góc nhìn chiến lược quan trọng. Điều này phản ánh thực tế rằng, ngay cả khi thị trường chung còn nhiều biến động, vẫn có những cơ hội đầu tư cụ thể nếu nhà đầu tư biết cách chọn lọc. Bối cảnh hiện tại đòi hỏi sự phân tích kỹ lưỡng hơn về triển vọng hoạt động của từng doanh nghiệp và khả năng</span><span class="summary-rest" id="rest-c24" style="display:none"> thu hút dòng vốn trong từng ngành, thay vì chỉ dựa vào diễn biến chung của chỉ số. Điều này đặc biệt đúng trong giai đoạn mà các yếu tố vĩ mô còn nhiều bất định, khiến dòng tiền có xu hướng tập trung vào các nhóm ngành hoặc cổ phiếu có câu chuyện tăng trưởng rõ ràng và khả năng chống chịu tốt hơn. Lời khuyên này nhấn mạnh tầm quan trọng của việc đầu tư theo phương pháp từ dưới lên (bottom-up), tập trung vào chất lượng doanh nghiệp thay vì chỉ chạy theo xu hướng thị trường. Tuy nhiên, việc lựa chọn đúng doanh nghiệp trong bối cảnh dòng tiền chưa lan tỏa rộng cũng đòi hỏi kinh nghiệm và khả năng phân tích sâu sắc.</span> <a class="expand-btn" onclick="toggleSummary('c24')" id="btn-c24">Đọc thêm ▸</a></p>
+    <div class="impact-toggle" onclick="toggleImpact('c24')">
+      <span class="impact-arrow" id="arr-c24">&#9658;</span>
+      &nbsp;Short &amp; Medium-term Impact
+    </div>
+    <div class="impact-grid" id="imp-c24">
+      <div class="impact-box short">
+        <div class="impact-label">Short-term</div>
+        <p>Nhà đầu tư có thể sẽ tập trung hơn vào việc nghiên cứu các doanh nghiệp cụ thể và các ngành có triển vọng rõ ràng, thay vì đầu tư dàn trải. Điều này có thể tạo ra sự phân hóa mạnh mẽ hơn giữa các cổ phiếu.</p>
+      </div>
+      <div class="impact-box medium">
+        <div class="impact-label">Medium-term</div>
+        <p>Trong vài tháng tới, các cổ phiếu có câu chuyện tăng trưởng tốt và khả năng thu hút dòng vốn sẽ có hiệu suất vượt trội. Dòng tiền có thể tiếp tục tập trung vào các nhóm ngành dẫn dắt, tạo ra sự chênh lệch về định giá.</p>
+      </div>
+    </div>
+    <div class="entity-tags"><span class="entity-tag" data-entity="Các nhà đầu tư cá nhân và tổ chức" onclick="handleEntityTag(event, this)">Các nhà đầu tư cá nhân và tổ chức</span><span class="entity-tag" data-entity="Các công ty chứng khoán" onclick="handleEntityTag(event, this)">Các công ty chứng khoán</span><span class="entity-tag" data-entity="Các doanh nghiệp có triển vọng tăng trưởng tốt" onclick="handleEntityTag(event, this)">Các doanh nghiệp có triển vọng tăng trưởng tốt</span><span class="entity-tag" data-entity="Các ngành kinh tế có khả năng thu hút vốn" onclick="handleEntityTag(event, this)">Các ngành kinh tế có khả năng thu hút vốn</span></div>
+    <div class="rec-section">
+      <div class="rec-row"><span class="rec-icon risk">&#9888;</span>
+        <span><strong>Risk:</strong> Rủi ro chính là việc lựa chọn sai doanh nghiệp hoặc ngành, dẫn đến bỏ lỡ cơ hội hoặc thua lỗ. Ngoài ra, dòng tiền chưa lan tỏa rộng có thể khiến thị trường chung khó có đà tăng mạnh và bền vững.</span></div>
+      <div class="rec-row"><span class="rec-icon watch">&#128065;</span>
+        <span><strong>Watch:</strong> Theo dõi báo cáo tài chính của các doanh nghiệp, các thông tin về dòng vốn đầu tư vào từng ngành, và các yếu tố vĩ mô có thể ảnh hưởng đến triển vọng của các ngành cụ thể.</span></div>
+      <div class="rec-row"><span class="rec-icon action">&#8594;</span>
+        <span><strong>Note:</strong> Nhà đầu tư nên tập trung vào phân tích cơ bản, lựa chọn các doanh nghiệp có nền tảng tốt, triển vọng tăng trưởng rõ ràng và khả năng thu hút dòng tiền. Tránh đầu tư theo tin đồn hoặc theo phong trào.</span></div>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="sidebar">
+    <div class="sidebar-section">
+      <div class="sidebar-title">Top 5 quan trọng nhất</div>
+      
+        <div class="top-story">
+          <div class="top-num">1</div>
+          <div>
+            <div class="top-text">
+              <a href="https://vnexpress.net/chuyen-gi-xay-ra-neu-spacex-va-tesla-sap-nhap-5135170.html" target="_blank" rel="noopener"
+                 style="color:var(--ink2);text-decoration:none">
+                Chuyện gì xảy ra nếu SpaceX và Tesla sáp nhập?
+              </a>
+            </div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;
+              color:#C0392B;margin-top:3px;">
+              Score: 8 · VnExpress Kinh Doanh
+            </div>
+          </div>
+        </div>
+        <div class="top-story">
+          <div class="top-num">2</div>
+          <div>
+            <div class="top-text">
+              <a href="https://cafef.vn/chung-khoan-sau-nang-hang-ipo-tang-toc-giao-dich-xuyen-trua-co-kha-thi-18826102120575641.chn" target="_blank" rel="noopener"
+                 style="color:var(--ink2);text-decoration:none">
+                Chứng khoán sau nâng hạng: IPO tăng tốc, giao dịch xuyên trưa có khả thi?
+              </a>
+            </div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;
+              color:#C0392B;margin-top:3px;">
+              Score: 8 · CafeF
+            </div>
+          </div>
+        </div>
+        <div class="top-story">
+          <div class="top-num">3</div>
+          <div>
+            <div class="top-text">
+              <a href="https://cafef.vn/se-trinh-trung-uong-nghi-quyet-moi-ve-chinh-sach-tien-luong-188261021230950174.chn" target="_blank" rel="noopener"
+                 style="color:var(--ink2);text-decoration:none">
+                Sẽ trình Trung ương nghị quyết mới về chính sách tiền lương
+              </a>
+            </div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;
+              color:#C0392B;margin-top:3px;">
+              Score: 8 · CafeF Vĩ Mô
+            </div>
+          </div>
+        </div>
+        <div class="top-story">
+          <div class="top-num">4</div>
+          <div>
+            <div class="top-text">
+              <a href="https://vneconomy.vn/cuoc-van-tai-tang-vot-cac-nha-may-loc-dau-chau-a-va-chau-au-roi-vao-canh-thua-lo.htm" target="_blank" rel="noopener"
+                 style="color:var(--ink2);text-decoration:none">
+                Cước vận tải tăng vọt, các nhà máy lọc dầu châu Á và châu Âu rơi vào cảnh thua l…
+              </a>
+            </div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;
+              color:#C0392B;margin-top:3px;">
+              Score: 8 · VnEconomy
+            </div>
+          </div>
+        </div>
+        <div class="top-story">
+          <div class="top-num">5</div>
+          <div>
+            <div class="top-text">
+              <a href="https://vneconomy.vn/gioi-dau-tu-o-at-mua-hop-dong-bao-hiem-rui-ro-vo-no-trai-phieu-ai.htm" target="_blank" rel="noopener"
+                 style="color:var(--ink2);text-decoration:none">
+                Giới đầu tư ồ ạt mua hợp đồng bảo hiểm rủi ro vỡ nợ trái phiếu AI
+              </a>
+            </div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;
+              color:#C0392B;margin-top:3px;">
+              Score: 8 · VnEconomy Tài Chính
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-title">Nguồn tin hôm nay</div>
+      
+        <div class="source-row">
+          <div>
+            <div style="font-weight:500;font-size:12px">VnExpress Kinh Doanh</div>
+            <div class="src-bar-wrap"><div class="src-bar" style="width:100%"></div></div>
+          </div>
+          <span class="src-count">5</span>
+        </div>
+        <div class="source-row">
+          <div>
+            <div style="font-weight:500;font-size:12px">CafeF</div>
+            <div class="src-bar-wrap"><div class="src-bar" style="width:100%"></div></div>
+          </div>
+          <span class="src-count">5</span>
+        </div>
+        <div class="source-row">
+          <div>
+            <div style="font-weight:500;font-size:12px">CafeF Vĩ Mô</div>
+            <div class="src-bar-wrap"><div class="src-bar" style="width:100%"></div></div>
+          </div>
+          <span class="src-count">5</span>
+        </div>
+        <div class="source-row">
+          <div>
+            <div style="font-weight:500;font-size:12px">VnEconomy</div>
+            <div class="src-bar-wrap"><div class="src-bar" style="width:100%"></div></div>
+          </div>
+          <span class="src-count">5</span>
+        </div>
+        <div class="source-row">
+          <div>
+            <div style="font-weight:500;font-size:12px">VnEconomy Tài Chính</div>
+            <div class="src-bar-wrap"><div class="src-bar" style="width:100%"></div></div>
+          </div>
+          <span class="src-count">5</span>
+        </div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-title">Phân bổ lĩnh vực</div>
+      <div class="cat-row"><span>Chứng khoán</span><span class="cat-count">8</span></div><div class="cat-row"><span>Ngân hàng</span><span class="cat-count">5</span></div><div class="cat-row"><span>Kinh tế vĩ mô</span><span class="cat-count">4</span></div><div class="cat-row"><span>Doanh nghiệp</span><span class="cat-count">3</span></div><div class="cat-row"><span>Hàng hóa</span><span class="cat-count">2</span></div><div class="cat-row"><span>Tài chính quốc tế</span><span class="cat-count">1</span></div><div class="cat-row"><span>Địa chính trị</span><span class="cat-count">1</span></div><div class="cat-row"><span>Bất động sản</span><span class="cat-count">1</span></div>
+    </div>
+    
+    <div class="sidebar-section">
+      <div class="sidebar-title">Lưu trữ báo cáo</div>
+      <div id="cal-mini"></div>
+    </div>
+    <script>
+    (function(){
+      const dates=["2026-08-03", "2026-06-09", "2026-08-25", "2026-05-14", "2026-07-14", "2026-05-13", "2026-09-11", "2026-05-08", "2026-04-08", "2026-09-02", "2026-05-02", "2026-07-04", "2026-05-09", "2026-04-24", "2026-04-12", "2026-09-16", "2026-09-07", "2026-07-17", "2026-06-30", "2026-03-29", "2026-05-20", "2026-06-18", "2026-03-31", "2026-05-29", "2026-07-13", "2026-07-15", "2026-08-05", "2026-07-28", "2026-06-04", "2026-04-27", "2026-09-14", "2026-05-18", "2026-07-07", "2026-05-06", "2026-08-20", "2026-06-11", "2026-09-23", "2026-06-02", "2026-08-08", "2026-06-29", "2026-06-22", "2026-04-14", "2026-06-19", "2026-03-30", "2026-08-27", "2026-08-22", "2026-08-19", "2026-07-21", "2026-08-17", "2026-06-10", "2026-07-10", "2026-09-17", "2026-06-06", "2026-09-10", "2026-04-05", "2026-09-21", "2026-05-15", "2026-06-08", "2026-07-08", "2026-08-10", "2026-04-15", "2026-08-01", "2026-08-31", "2026-04-20", "2026-04-25", "2026-06-03", "2026-09-22", "2026-08-18", "2026-04-29", "2026-05-21", "2026-06-05", "2026-04-13", "2026-07-23", "2026-07-29", "2026-08-11", "2026-04-03", "2026-07-20", "2026-07-30", "2026-08-29", "2026-04-04", "2026-05-16", "2026-09-01", "2026-07-16", "2026-06-16", "2026-08-13", "2026-05-26", "2026-05-19", "2026-07-03", "2026-08-06", "2026-04-18", "2026-05-07", "2026-10-21", "2026-05-03", "2026-05-27", "2026-04-23", "2026-07-06", "2026-05-12", "2026-04-10", "2026-06-15", "2026-05-28", "2026-04-07", "2026-08-24", "2026-06-27", "2026-07-02", "2026-09-08", "2026-06-25", "2026-09-19", "2026-07-18", "2026-05-22", "2026-07-11", "2026-08-07", "2026-04-01", "2026-05-05", "2026-04-02", "2026-07-31", "2026-04-17", "2026-05-30", "2026-04-11", "2026-04-09", "2026-06-13", "2026-09-04", "2026-08-28", "2026-04-16", "2026-05-11", "2026-08-26", "2026-09-09", "2026-09-05", "2026-04-21", "2026-06-26", "2026-04-06", "2026-07-24", "2026-06-12", "2026-06-20", "2026-09-15", "2026-04-19", "2026-07-22", "2026-08-14", "2026-05-04", "2026-04-22", "2026-08-21", "2026-07-27", "2026-04-26", "2026-04-30", "2026-06-23", "2026-07-09", "2026-05-01", "2026-05-25", "2026-06-24", "2026-04-28", "2026-08-12", "2026-09-24", "2026-05-23", "2026-06-17", "2026-06-01", "2026-07-01", "2026-08-04", "2026-07-25", "2026-08-15", "2026-09-12", "2026-03-28", "2026-09-03", "2026-09-18"];
+      const pagesUrl="https://ericstudio14.github.io/economic-intelligence-report";
+      const dset=new Set(dates);
+      let cy=2026,cm=10;
+      function render(){
+        const days=['T2','T3','T4','T5','T6','T7','CN'];
+        const first=new Date(cy,cm-1,1);
+        const last=new Date(cy,cm,0).getDate();
+        let dow=first.getDay();dow=dow===0?6:dow-1;
+        const mn=['Th1','Th2','Th3','Th4','Th5','Th6','Th7','Th8','Th9','Th10','Th11','Th12'];
+        let h='<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">';
+        h+='<span onclick="calNav(-1)" style="cursor:pointer;font-size:14px;color:var(--ink3)">◂</span>';
+        h+='<span style="font-family:monospace;font-size:12px;font-weight:600">'+mn[cm-1]+' '+cy+'</span>';
+        h+='<span onclick="calNav(1)" style="cursor:pointer;font-size:14px;color:var(--ink3)">▸</span></div>';
+        h+='<div style="display:grid;grid-template-columns:repeat(7,1fr);gap:1px;text-align:center;font-family:monospace;font-size:9px">';
+        days.forEach(d=>h+='<div style="color:var(--ink3);padding:2px">'+d+'</div>');
+        for(let i=0;i<dow;i++)h+='<div></div>';
+        for(let d=1;d<=last;d++){
+          const ds=cy+'-'+String(cm).padStart(2,'0')+'-'+String(d).padStart(2,'0');
+          const has=dset.has(ds);
+          const isToday=(d===22&&cm===10&&cy===2026);
+          let st='padding:3px 0;border-radius:2px;font-size:10px;';
+          if(has)st+='background:var(--blue);color:#fff;cursor:pointer;font-weight:700;';
+          else st+='color:var(--ink3);';
+          if(isToday)st+='outline:2px solid var(--red);outline-offset:-1px;';
+          if(has)h+='<div style="'+st+'" onclick="window.open(\''+pagesUrl+'/'+ds+'.html\',\'_blank\')">'+d+'</div>';
+          else h+='<div style="'+st+'">'+d+'</div>';
+        }
+        h+='</div>';
+        document.getElementById('cal-mini').innerHTML=h;
+      }
+      window.calNav=function(dir){cm+=dir;if(cm>12){cm=1;cy++}if(cm<1){cm=12;cy--}render()};
+      render();
+    })();
+    </script>
+  </div>
+</div>
+
+<div class="footer">
+  AI Economic Intelligence Engine v2.4 · 22/10/2026 · 25 bài từ 10 nguồn<br>
+  Không phải tư vấn tài chính · Powered by Google Gemini (free)
+  · <a href="https://ericstudio14.github.io/economic-intelligence-report" style="color:#3B82F6">https://ericstudio14.github.io/economic-intelligence-report</a>
+</div>
+
+<script>
+function doFilter(f, btn) {
+  document.querySelectorAll('.fbtn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  clearEntityFilter();
+  document.querySelectorAll('.card').forEach(c => {
+    let show = false;
+    if      (f==='all')     show = true;
+    else if (f==='critical')show = c.dataset.critical==='yes';
+    else if (f==='lang-vi') show = c.dataset.lang==='vi';
+    else if (f==='lang-en') show = c.dataset.lang==='en';
+    else                    show = c.dataset.cat===f;
+    c.classList.toggle('hidden',!show);
+  });
+}
+function handleEntityTag(e, el) {
+  const entity = el.dataset.entity || el.textContent.trim();
+  if (e.ctrlKey || e.metaKey) {
+    e.preventDefault();
+    filterByEntity(entity, el);
+  } else {
+    const q = encodeURIComponent(entity + ' tài chính kinh tế');
+    window.open('https://www.google.com/search?q=' + q, '_blank', 'noopener');
+  }
+}
+function filterByEntity(entity, clickedEl) {
+  document.querySelectorAll('.entity-tag.entity-active').forEach(t => t.classList.remove('entity-active'));
+  clickedEl.classList.add('entity-active');
+  let matchCount = 0;
+  document.querySelectorAll('.card').forEach(c => {
+    const tags = Array.from(c.querySelectorAll('.entity-tag')).map(t => t.dataset.entity || t.textContent.trim());
+    const match = tags.some(t => t === entity);
+    c.classList.toggle('hidden', !match);
+    if (match) matchCount++;
+  });
+  const bar = document.getElementById('entity-filter-bar');
+  document.getElementById('entity-filter-label').textContent = entity;
+  document.getElementById('entity-match-count').textContent = matchCount;
+  bar.classList.add('visible');
+  bar.scrollIntoView({behavior:'smooth', block:'nearest'});
+  document.querySelectorAll('.fbtn').forEach(b => b.classList.remove('active'));
+}
+function clearEntityFilter() {
+  document.querySelectorAll('.entity-tag.entity-active').forEach(t => t.classList.remove('entity-active'));
+  const bar = document.getElementById('entity-filter-bar');
+  if (bar) bar.classList.remove('visible');
+  document.querySelectorAll('.card').forEach(c => c.classList.remove('hidden'));
+  const allBtn = document.querySelector('.fbtn');
+  if (allBtn) {
+    document.querySelectorAll('.fbtn').forEach(b => b.classList.remove('active'));
+    allBtn.classList.add('active');
+  }
+}
+function toggleImpact(id) {
+  const grid = document.getElementById('imp-' + id);
+  const arr  = document.getElementById('arr-' + id);
+  if (!grid) return;
+  grid.classList.toggle('expanded');
+  arr.classList.toggle('open');
+}
+function toggleSummary(id) {
+  const rest = document.getElementById('rest-' + id);
+  const btn  = document.getElementById('btn-' + id);
+  if (!rest) return;
+  if (rest.style.display === 'none') {
+    rest.style.display = 'inline';
+    btn.textContent = '◂ Thu gọn';
+  } else {
+    rest.style.display = 'none';
+    btn.textContent = 'Đọc thêm ▸';
+  }
+}
+function toggleDark() {
+  document.documentElement.classList.toggle('dark');
+  try { localStorage.setItem('dark', document.documentElement.classList.contains('dark') ? '1' : '0'); } catch(e) {}
+}
+try { if (localStorage.getItem('dark') === '1') document.documentElement.classList.add('dark'); } catch(e) {}
+</script>
+</body>
+</html>
