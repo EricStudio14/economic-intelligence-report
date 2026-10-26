@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Báo cáo ngành và vĩ mô · Economic Intelligence</title>
+<meta property="og:title" content="Báo cáo ngành và vĩ mô · Economic Intelligence">
+<meta property="og:type" content="website"><meta property="og:locale" content="vi_VN">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='8' fill='%230D5F52'/%3E%3Cpath d='M9 24l6-7 5 4 7-10' fill='none' stroke='white' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F4F5F2;--card:#FFFFFF;--ink:#16201D;--ink2:#2C3833;--muted:#55605B;--line:#D9DDD8;--line2:#E6E9E5;
+  --accent:#0D5F52;--accent-bg:#E3EFEC;--up:#16703F;--up-bg:#E4F2E9;--dn:#B3261E;--crit:#8C1D18;--crit-bg:#FBEDEB;
+  --warn:#7A4B00;--warn-bg:#FFF4DB;--dark:#16201D;--maxw:1160px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Be Vietnam Pro',system-ui,-apple-system,'Segoe UI',sans-serif;
+  font-size:16px;line-height:1.55;font-variant-numeric:tabular-nums}
+a{color:var(--accent)} a:hover{color:#09463D}
+:focus-visible{outline:3px solid #0D5F52;outline-offset:2px;border-radius:4px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:8px;background:#fff;padding:8px 12px;z-index:10}
+header.top{background:var(--card);border-bottom:1px solid var(--line)}
+.top-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding-top:18px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--ink);text-decoration:none}
+.brand-name{font-family:'Newsreader',Georgia,serif;font-size:26px;font-weight:600;letter-spacing:-.01em;line-height:1.05}
+.brand-sub{font-size:13px;color:var(--muted)}
+.top-meta{display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-size:14px;color:var(--muted)}
+.btn{min-height:44px;padding:0 16px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;
+  font-size:14px;font-weight:500;cursor:pointer;display:inline-flex;align-items:center;gap:8px;text-decoration:none}
+.btn:hover{border-color:#B9C0BB;color:var(--ink)}
+.btn-dark{background:var(--dark);color:#fff;border-color:var(--dark)}.btn-dark:hover{color:#fff;background:#24322E}
+nav.toc{display:flex;flex-wrap:wrap;gap:4px 24px;margin-top:12px;font-size:15px}
+nav.toc a{padding:10px 0;color:var(--muted);text-decoration:none}nav.toc a:hover{color:var(--ink)}
+main.wrap{padding-top:28px;padding-bottom:48px;display:flex;flex-direction:column;gap:36px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:16px}
+.overview{padding:24px 28px;display:flex;flex-wrap:wrap;gap:24px 40px}
+.ov-main{flex:1 1 380px;min-width:0}
+.ov-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.pill{display:inline-block;padding:2px 10px;border-radius:12px;font-size:13px;font-weight:600}
+.pill-up{background:var(--up-bg);color:var(--up)}.pill-dn{background:var(--crit-bg);color:var(--dn)}.pill-neu{background:#EDEFEC;color:#3A4540}
+.big{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-top:4px}
+.big-num{font-size:46px;font-weight:700;letter-spacing:-.02em;line-height:1.1}
+.big-chg{font-size:22px;font-weight:600}
+.up{color:var(--up)}.dn{color:var(--dn)}.neu{color:var(--muted)}
+.chart{margin-top:16px;max-width:520px}
+.chart-cap,.legend{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 16px;font-size:13px;color:var(--muted)}
+.legend{justify-content:flex-start}
+.chart svg{display:block;width:100%;height:auto;margin:6px 0 4px}
+.chart svg text{font-size:13px;fill:#55605B;font-family:inherit}
+.sw{display:inline-block;width:10px;height:10px;border-radius:2px;vertical-align:middle;margin-right:6px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1px;background:var(--line2);border:1px solid var(--line2);border-radius:12px;overflow:hidden}
+.tile{background:var(--card);padding:14px 16px}
+.tile-l{font-size:13px;color:var(--muted)}.tile-v{font-size:20px;font-weight:700}.tile-c{font-size:14px;font-weight:600}
+.ts-note{font-size:12px;color:var(--muted);margin-top:8px}
+.bluf{display:flex;flex-wrap:wrap;gap:20px 40px;align-items:flex-start}
+.bluf h1{margin:0;font-family:'Newsreader',Georgia,serif;font-size:36px;font-weight:600;line-height:1.12;letter-spacing:-.015em;text-wrap:balance}
+.bluf ol{flex:999 1 560px;margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:14px}
+.bluf li{display:flex;gap:16px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.bluf li:last-child{border-bottom:0;padding-bottom:0}
+.bluf .n{flex:0 0 28px;font-family:'Newsreader',Georgia,serif;font-size:26px;font-weight:600;color:var(--accent);line-height:1}
+.bluf p{margin:0;max-width:72ch}
+.note{font-size:13px;color:var(--muted);margin:0}
+.alerts{background:var(--crit-bg);border-radius:14px;padding:18px 22px}
+.alerts h2{margin:0 0 8px;font-size:16px;color:var(--crit)}
+.alerts ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+.alerts a{color:var(--ink)}
+.hero{display:flex;flex-wrap:wrap;overflow:hidden}
+.media{position:relative;background:#22302B;overflow:hidden}
+.media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-media{flex:1 1 460px;min-height:320px}
+.hero-body{flex:1 1 420px;min-width:0;padding:28px;display:flex;flex-direction:column;gap:12px}
+.meta-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13px}
+.tag{padding:3px 10px;border-radius:6px;font-weight:600;font-size:13px}
+.tag-crit{background:var(--crit);color:#fff;font-weight:700}.tag-cat{background:var(--accent-bg);color:var(--accent)}
+.tag-warn{background:var(--warn-bg);color:var(--warn)}
+.senti{padding:2px 8px;border-radius:6px;font-size:12px;font-weight:700}
+.senti-pos{background:var(--up-bg);color:var(--up)}.senti-neu{background:#EDEFEC;color:#3A4540}.senti-neg{background:var(--crit-bg);color:var(--crit)}
+.media .senti{position:absolute;left:12px;bottom:12px}
+.credit{position:absolute;right:10px;bottom:10px;font-size:11px;color:#fff;background:rgba(14,20,18,.6);padding:2px 6px;border-radius:4px}
+.muted{color:var(--muted)}
+.hero-title{margin:0;font-family:'Newsreader',Georgia,serif;font-size:30px;font-weight:600;line-height:1.2;text-wrap:balance}
+.hero-title a,.feat-title{color:var(--ink);text-decoration:none}
+.hero-title a:hover,.feat-title:hover{color:var(--ink);text-decoration:underline;text-decoration-color:var(--accent)}
+.lead{font-size:17px;font-weight:600;margin:0}
+.hero-body p{margin:0;color:var(--ink2)}
+dl.kv{margin:0;display:grid;grid-template-columns:max-content 1fr;gap:8px 14px;font-size:14px}
+dl.kv dt{font-weight:600}dl.kv dd{margin:0}
+.k-risk{color:var(--crit)}.k-watch{color:var(--accent)}.k-imp{color:var(--muted)}
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 16px;margin-bottom:14px}
+.sec-head h2{margin:0;font-family:'Newsreader',Georgia,serif;font-size:26px;font-weight:600}
+.feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.feat article{display:flex;flex-direction:column;gap:10px}
+.feat-media{aspect-ratio:16/10;border-radius:12px}
+.feat-title{font-weight:600;font-size:17px;line-height:1.35}
+.cols{display:flex;flex-wrap:wrap;gap:32px;align-items:flex-start}
+.list{flex:999 1 560px;min-width:0}
+aside{flex:1 1 300px;min-width:0;display:flex;flex-direction:column;gap:16px}
+.toolbar{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;justify-content:space-between;margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:40px;padding:0 14px;border-radius:20px;border:1px solid #B9C0BB;background:var(--card);color:var(--ink);font:inherit;font-size:14px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--dark);color:#fff;border-color:var(--dark)}
+.search{display:flex;flex-direction:column;gap:4px;flex:0 1 260px}
+.search label{font-size:13px;color:var(--muted)}
+.search input{min-height:44px;padding:0 14px;border-radius:8px;border:1px solid #B9C0BB;background:var(--card);font:inherit;font-size:15px;color:var(--ink)}
+.rows{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.row{border-bottom:1px solid var(--line2)}.row:last-child{border-bottom:0}.row[hidden]{display:none}
+.row>summary{list-style:none;display:flex;gap:14px;align-items:center;padding:14px 20px;cursor:pointer}
+.row>summary::-webkit-details-marker{display:none}
+.row>summary:hover{background:#F8F9F7}
+.thumb{flex:0 0 96px;height:64px;border-radius:8px;overflow:hidden;background:#E6E9E5;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--muted)}
+.thumb img{width:100%;height:100%;object-fit:cover}
+.row-main{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:4px}
+.row-title{font-weight:600;line-height:1.35}
+.row-meta{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;font-size:13px;color:var(--muted)}
+.chev{flex:0 0 auto;transition:transform .2s;color:var(--muted)}
+.row[open] .chev{transform:rotate(180deg)}
+.row-body{padding:0 20px 18px 130px;display:flex;flex-direction:column;gap:12px;font-size:15px}
+.row-body p{margin:0;max-width:72ch;color:var(--ink2)}
+.imp{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.imp div{background:var(--bg);border-radius:10px;padding:12px;font-size:14px}
+.imp strong{display:block;font-size:13px;color:var(--muted)}
+.ents{display:flex;flex-wrap:wrap;gap:6px}
+.ents span{padding:2px 8px;border-radius:6px;border:1px solid var(--line);font-size:13px}
+.side{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.side h2{margin:0 0 12px;font-size:16px;font-weight:600}
+.sbar{display:flex;height:10px;border-radius:5px;overflow:hidden;gap:2px;background:var(--line2)}
+.slist{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;font-size:14px}
+.slist li{display:flex;justify-content:space-between;gap:8px}
+.alist{list-style:none;margin:0;padding:0}
+.alist a{display:flex;justify-content:space-between;align-items:center;gap:8px;min-height:44px;border-bottom:1px solid var(--line2);color:var(--ink);text-decoration:none;font-size:15px}
+.alist li:last-child a{border-bottom:0}
+.alist a:hover .ad-day{text-decoration:underline;text-decoration-color:var(--accent)}
+.alist a[aria-current] .ad-day{font-weight:700;color:var(--accent)}
+.ad-wd{color:var(--muted);font-size:13px}
+.more{display:inline-block;margin-top:12px;font-weight:600;font-size:14px}
+footer{border-top:1px solid var(--line);background:var(--card)}
+footer .wrap{padding-top:24px;padding-bottom:24px;display:flex;flex-wrap:wrap;gap:12px 32px;font-size:13px;color:var(--muted)}
+@media (max-width:640px){.chips{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin}.chip{flex:0 0 auto}.search{flex:1 1 100%}.row-body{padding:0 16px 16px}.row>summary{padding:12px 16px}.thumb{flex-basis:72px;height:52px}
+  .big-num{font-size:38px}.bluf h1{font-size:30px}.hero-title{font-size:25px}.hero-media{min-height:220px}.overview,.hero-body{padding:20px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{nav.toc,.toolbar,#copy-link{display:none}}
+
+.rp-dark{background:#16201D;color:#F1F4F2;border-radius:16px;padding:28px}
+.rp-dark .sec-head h2{color:#F1F4F2}
+.rp-mini-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.rp-mini{display:flex;gap:14px;padding:14px;border-radius:12px;background:#22302B;color:#F1F4F2;text-decoration:none}
+.rp-mini:hover{background:#2A3A34;color:#F1F4F2}
+.rp-mini-cover{flex:0 0 72px;height:96px;border-radius:4px;background:#E9ECE8;overflow:hidden}
+.rp-mini-cover img,.rp-cover img,.rp-cover-lg img{width:100%;height:100%;object-fit:cover;display:block}
+.rp-mini-type{font-size:12px;font-weight:600}
+.rp-dark .rp-mo{color:#B9CBF2}.rp-dark .rp-ng{color:#8FD3C2}
+.rp-mini-title{font-weight:600;line-height:1.35}
+.rp-mini-meta{font-size:13px;color:#B7C4BE}
+.rp-top{display:flex;flex-wrap:wrap;gap:20px}
+.rp-big{flex:999 1 560px;min-width:0;display:flex;flex-wrap:wrap;gap:24px;padding:28px;border-radius:16px;background:#16201D;color:#F1F4F2;text-decoration:none}
+.rp-big:hover{color:#F1F4F2;background:#1C2925}
+.rp-cover-lg{flex:0 0 160px;height:213px;border-radius:4px;background:#E9ECE8;overflow:hidden}
+.rp-big-body{flex:1 1 280px;display:flex;flex-direction:column;gap:10px;justify-content:flex-end}
+.rp-big-title{font-family:'Newsreader',Georgia,serif;font-size:30px;font-weight:600;line-height:1.18;text-wrap:balance}
+.rp-side{flex:1 1 300px;min-width:0;display:flex;flex-direction:column;gap:20px}
+.rp-card{display:flex;flex-direction:column;gap:8px;color:var(--ink);text-decoration:none}
+.rp-card:hover .rp-title{text-decoration:underline;text-decoration-color:var(--accent)}
+.rp-card:hover{color:var(--ink)}
+.rp-card[hidden]{display:none}
+.rp-cover{aspect-ratio:4/3;border-radius:10px;background:#E6EBE8;border:1px solid var(--line);overflow:hidden}
+.rp-meta{display:flex;justify-content:space-between;gap:8px;font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.02em}
+.rp-mo{color:#3B5BA5}.rp-ng{color:var(--accent)}
+.rp-big .rp-mo{color:#B9CBF2}.rp-big .rp-ng{color:#8FD3C2}
+.rp-title{font-weight:600;line-height:1.35}
+.rp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:28px 20px}
+.rp-filters{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end}
+.rp-filters label{display:block;font-size:13px;color:var(--muted);margin-bottom:4px}
+.rp-filters select{min-height:44px;padding:0 12px;border-radius:8px;border:1px solid #B9C0BB;background:var(--card);font:inherit;font-size:15px;color:var(--ink)}
+.arc-month{margin:0 0 8px;font-size:18px;font-weight:600}
+.arc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px 24px;margin:0 0 28px;padding:0;list-style:none}
+nav.toc a[aria-current]{color:var(--ink);font-weight:600;box-shadow:inset 0 -2px 0 var(--accent)}</style>
+</head>
+<body>
+<a class="skip" href="#noi-dung">Bỏ qua, tới nội dung</a>
+<header class="top">
+  <div class="wrap">
+    <div class="top-row">
+      <a class="brand" href="index.html"><svg width="34" height="34" viewBox="0 0 36 36" aria-hidden="true"><rect width="36" height="36" rx="8" fill="#0D5F52"></rect><path d="M9 24l6-7 5 4 7-10" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        <span><span class="brand-name" style="display:block">Economic Intelligence</span>
+        <span class="brand-sub">Bản tin kinh tế tài chính Việt Nam và quốc tế</span></span></a>
+      <div class="top-meta"><span>Cập nhật 26/10/2026 13:44 ICT</span></div>
+    </div>
+    <nav class="toc" aria-label="Điều hướng"><a href="index.html">Bản tin hôm nay</a><a href="reports.html" aria-current="page">Báo cáo ngành và vĩ mô</a><a href="archive.html">Lưu trữ</a></nav>
+  </div>
+</header>
+<main id="noi-dung" class="wrap">
+
+  <section class="rp-top" aria-label="Báo cáo mới nhất">
+      <a class="rp-big" href="https://cafef.vn/du-lieu/report/bao-cao-tai-san-thi-truong-viet-nam-q32026-6adb285ca11a124e2de68f6a.chn" target="_blank" rel="noopener">
+        <span class="rp-cover-lg"><img src="https://cafefnew.mediacdn.vn/BCPT/drop_select_text.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-big-body">
+          <span class="rp-mini-type rp-mo" style="font-size:13px">Vĩ mô · chiến lược · PHS · 23/10/2026</span>
+          <span class="rp-big-title">Báo cáo tài sản thị trường Việt Nam Q3.2026</span>
+          <span style="font-size:14px;color:#B7C4BE">Xem và tải báo cáo tại CafeF</span>
+        </span>
+      </a><div class="rp-side">
+      <a class="rp-card" href="https://cafef.vn/du-lieu/report/nganh-dau-khi-viet-nam-khoi-thong-mach-khi-noi-dia-6adb2ca3a11a124e2de68f78.chn" target="_blank" rel="noopener"
+         data-type="Ngành" data-month="10/2026">
+        <span class="rp-cover"><img src="https://cafefnew.mediacdn.vn/BCPT/iconDownload-mobile.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-ng">Báo cáo ngành</span><span>23/10/2026</span></span>
+        <span class="rp-title">Ngành dầu khí Việt Nam - Khơi thông mạch khí nội địa</span>
+        <span class="muted" style="font-size:13px">CafeF</span>
+      </a>
+      <a class="rp-card" href="https://finance.vietstock.vn/bao-cao-phan-tich/22600/bao-cao-vi-mo-gdp-quy-3-ap-sat-10-tao-da-tang-toc-cuoi-nam.htm" target="_blank" rel="noopener"
+         data-type="Vĩ mô" data-month="10/2026">
+        <span class="rp-cover"><img src="https://static1.vietstock.vn/edocs/22600/22600.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-mo">Vĩ mô · chiến lược</span><span>22/10/2026</span></span>
+        <span class="rp-title">Báo cáo Vĩ mô: GDP quý 3 áp sát 10%, tạo đà tăng tốc cuối năm</span>
+        <span class="muted" style="font-size:13px">Vietstock</span>
+      </a></div></section>
+  <section aria-labelledby="lib-t">
+    <div class="sec-head" style="align-items:flex-end">
+      <div><h1 id="lib-t" style="margin:0;font-family:'Newsreader',Georgia,serif;font-size:34px;font-weight:600">Báo cáo ngành và vĩ mô</h1>
+        <p class="muted" style="margin:4px 0 0;font-size:14px">45 báo cáo từ Vietstock và CafeF · hiển thị <span id="rp-count">45</span></p></div>
+      <div class="rp-filters">
+        <div><label for="f-type">Loại báo cáo</label><select id="f-type"><option value="">Tất cả</option>
+          <option value="Vĩ mô">Vĩ mô · chiến lược</option><option value="Ngành">Báo cáo ngành</option></select></div>
+        <div><label for="f-month">Tháng</label><select id="f-month"><option value="">Tất cả</option><option value="10/2026">Tháng 10/2026</option><option value="09/2026">Tháng 09/2026</option><option value="04/2026">Tháng 04/2026</option></select></div>
+      </div>
+    </div>
+    <div class="rp-grid">
+      <a class="rp-card" href="https://cafef.vn/du-lieu/report/bao-cao-tai-san-thi-truong-viet-nam-q32026-6adb285ca11a124e2de68f6a.chn" target="_blank" rel="noopener"
+         data-type="Vĩ mô" data-month="10/2026">
+        <span class="rp-cover"><img src="https://cafefnew.mediacdn.vn/BCPT/drop_select_text.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-mo">Vĩ mô · chiến lược</span><span>23/10/2026</span></span>
+        <span class="rp-title">Báo cáo tài sản thị trường Việt Nam Q3.2026</span>
+        <span class="muted" style="font-size:13px">PHS</span>
+      </a>
+      <a class="rp-card" href="https://cafef.vn/du-lieu/report/nganh-dau-khi-viet-nam-khoi-thong-mach-khi-noi-dia-6adb2ca3a11a124e2de68f78.chn" target="_blank" rel="noopener"
+         data-type="Ngành" data-month="10/2026">
+        <span class="rp-cover"><img src="https://cafefnew.mediacdn.vn/BCPT/iconDownload-mobile.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-ng">Báo cáo ngành</span><span>23/10/2026</span></span>
+        <span class="rp-title">Ngành dầu khí Việt Nam - Khơi thông mạch khí nội địa</span>
+        <span class="muted" style="font-size:13px">CafeF</span>
+      </a>
+      <a class="rp-card" href="https://finance.vietstock.vn/bao-cao-phan-tich/22600/bao-cao-vi-mo-gdp-quy-3-ap-sat-10-tao-da-tang-toc-cuoi-nam.htm" target="_blank" rel="noopener"
+         data-type="Vĩ mô" data-month="10/2026">
+        <span class="rp-cover"><img src="https://static1.vietstock.vn/edocs/22600/22600.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-mo">Vĩ mô · chiến lược</span><span>22/10/2026</span></span>
+        <span class="rp-title">Báo cáo Vĩ mô: GDP quý 3 áp sát 10%, tạo đà tăng tốc cuối năm</span>
+        <span class="muted" style="font-size:13px">Vietstock</span>
+      </a>
+      <a class="rp-card" href="https://finance.vietstock.vn/bao-cao-phan-tich/22601/bao-cao-vi-mo-thi-truong-lao-dong-viet-nam-cai-thien-trong-boi-canh-tang-truong-kinh-te-tich-cuc.htm" target="_blank" rel="noopener"
+         data-type="Vĩ mô" data-month="10/2026">
+        <span class="rp-cover"><img src="https://static1.vietstock.vn/edocs/22601/22601.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-mo">Vĩ mô · chiến lược</span><span>21/10/2026</span></span>
+        <span class="rp-title">Báo cáo Vĩ mô: Thị trường lao động Việt Nam cải thiện trong bối cảnh tăng trưởng kinh tế tích cực</span>
+        <span class="muted" style="font-size:13px">Vietcap</span>
+      </a>
+      <a class="rp-card" href="https://cafef.vn/du-lieu/report/trien-vong-kinh-te-4q2026-giu-nhip-tang-truong-vung-vang-ve-dich-6adb26bea11a124e2de68f69.chn" target="_blank" rel="noopener"
+         data-type="Vĩ mô" data-month="10/2026">
+        <span class="rp-cover"><img src="https://cafefnew.mediacdn.vn/BCPT/iconDownload-mobile.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-mo">Vĩ mô · chiến lược</span><span>21/10/2026</span></span>
+        <span class="rp-title">Triển vọng kinh tế 4Q2026 Giữ nhịp tăng trưởng, vững vàng về đích</span>
+        <span class="muted" style="font-size:13px">CafeF</span>
+      </a>
+      <a class="rp-card" href="https://finance.vietstock.vn/bao-cao-phan-tich/22575/bao-cao-vi-mo-viet-nam-efta-viet-nam-cat-giam-thue-efta-luat-hoa-cam-ket.htm" target="_blank" rel="noopener"
+         data-type="Vĩ mô" data-month="10/2026">
+        <span class="rp-cover"><img src="https://static1.vietstock.vn/edocs/22575/22575.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-mo">Vĩ mô · chiến lược</span><span>20/10/2026</span></span>
+        <span class="rp-title">Báo cáo Vĩ mô: Việt Nam &amp; EFTA - Việt Nam cắt giảm thuế, EFTA luật hóa cam kết</span>
+        <span class="muted" style="font-size:13px">YSVN</span>
+      </a>
+      <a class="rp-card" href="https://finance.vietstock.vn/bao-cao-phan-tich/22572/bao-cao-chien-luoc-tim-diem-can-bang-lai-suat-va-dong-von-quyet-dinh-nhip-hoi-phuc.htm" target="_blank" rel="noopener"
+         data-type="Vĩ mô" data-month="10/2026">
+        <span class="rp-cover"><img src="https://static1.vietstock.vn/edocs/22572/22572.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-mo">Vĩ mô · chiến lược</span><span>20/10/2026</span></span>
+        <span class="rp-title">Báo cáo Chiến lược: Tìm điểm cân bằng - Lãi suất và dòng vốn quyết định nhịp hồi phục</span>
+        <span class="muted" style="font-size:13px">MAS</span>
+      </a>
+      <a class="rp-card" href="https://finance.vietstock.vn/bao-cao-phan-tich/22573/bao-cao-nganh-thuc-pham-cu-soc-gia-duong-thue-tieu-thu-dac-biet-nuoc-ngot.htm" target="_blank" rel="noopener"
+         data-type="Ngành" data-month="10/2026">
+        <span class="rp-cover"><img src="https://static1.vietstock.vn/edocs/22573/22573.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-ng">Báo cáo ngành</span><span>20/10/2026</span></span>
+        <span class="rp-title">Báo cáo ngành Thực phẩm: Cú sốc giá đường, thuế tiêu thụ đặc biệt nước ngọt</span>
+        <span class="muted" style="font-size:13px">TCBS</span>
+      </a>
+      <a class="rp-card" href="https://cafef.vn/du-lieu/report/nganh-phan-bon-danh-gia-de-xuat-giam-thue-xuat-khau-phan-bon-tu-5-xuong-0-6adb28a7a11a124e2de68f6b.chn" target="_blank" rel="noopener"
+         data-type="Ngành" data-month="10/2026">
+        <span class="rp-cover"><img src="https://cafefnew.mediacdn.vn/BCPT/drop_select_text.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-ng">Báo cáo ngành</span><span>20/10/2026</span></span>
+        <span class="rp-title">Ngành Phân Bón – Đánh giá đề xuất giảm thuế xuất khẩu phân bón từ 5% xuống 0%</span>
+        <span class="muted" style="font-size:13px">MBS</span>
+      </a>
+      <a class="rp-card" href="https://finance.vietstock.vn/bao-cao-phan-tich/22546/bao-cao-vi-mo-trien-vong-kinh-te-4q2026-giu-nhip-tang-truong-vung-vang-ve-dich.htm" target="_blank" rel="noopener"
+         data-type="Vĩ mô" data-month="10/2026">
+        <span class="rp-cover"><img src="https://static1.vietstock.vn/edocs/22546/22546.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-mo">Vĩ mô · chiến lược</span><span>19/10/2026</span></span>
+        <span class="rp-title">Báo cáo Vĩ mô: Triển vọng kinh tế 4Q2026 - Giữ nhịp tăng trưởng, vững vàng về đích</span>
+        <span class="muted" style="font-size:13px">KBSV</span>
+      </a>
+      <a class="rp-card" href="https://finance.vietstock.vn/bao-cao-phan-tich/22545/bao-cao-thi-truong-trai-phieu-thang-092026-huy-dong-tang-toc-kha-nang-hap-thu-con-phan-hoa.htm" target="_blank" rel="noopener"
+         data-type="Vĩ mô" data-month="10/2026">
+        <span class="rp-cover"><img src="https://static1.vietstock.vn/edocs/22545/22545.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-mo">Vĩ mô · chiến lược</span><span>19/10/2026</span></span>
+        <span class="rp-title">Báo cáo Thị trường Trái phiếu: Tháng 09/2026 - Huy động tăng tốc, khả năng hấp thụ còn phân hóa</span>
+        <span class="muted" style="font-size:13px">VikkiBankS</span>
+      </a>
+      <a class="rp-card" href="https://finance.vietstock.vn/bao-cao-phan-tich/22541/bao-cao-chien-luoc-q42026.htm" target="_blank" rel="noopener"
+         data-type="Vĩ mô" data-month="10/2026">
+        <span class="rp-cover"><img src="https://static1.vietstock.vn/edocs/22541/22541.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-mo">Vĩ mô · chiến lược</span><span>19/10/2026</span></span>
+        <span class="rp-title">Báo cáo Chiến lược: Q4/2026</span>
+        <span class="muted" style="font-size:13px">BSC</span>
+      </a>
+      <a class="rp-card" href="https://finance.vietstock.vn/bao-cao-phan-tich/22544/bao-cao-nganh-phan-bon-danh-gia-de-xuat-giam-thue-xuat-khau-phan-bon-tu-5-xuong-0.htm" target="_blank" rel="noopener"
+         data-type="Ngành" data-month="10/2026">
+        <span class="rp-cover"><img src="https://static1.vietstock.vn/edocs/22544/22544.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-ng">Báo cáo ngành</span><span>19/10/2026</span></span>
+        <span class="rp-title">Báo cáo ngành Phân bón: Đánh giá đề xuất giảm thuế xuất khẩu phân bón từ 5% xuống 0%</span>
+        <span class="muted" style="font-size:13px">MBS</span>
+      </a>
+      <a class="rp-card" href="https://finance.vietstock.vn/bao-cao-phan-tich/22598/bao-cao-nganh-ngan-hang-cong-van-9608nhnn-cstt-.htm" target="_blank" rel="noopener"
+         data-type="Ngành" data-month="10/2026">
+        <span class="rp-cover"><img src="https://static1.vietstock.vn/edocs/22598/22598.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-ng">Báo cáo ngành</span><span>18/10/2026</span></span>
+        <span class="rp-title">Báo cáo ngành Ngân hàng: Công văn 9608/NHNN - CSTT</span>
+        <span class="muted" style="font-size:13px">Vietstock</span>
+      </a>
+      <a class="rp-card" href="https://finance.vietstock.vn/bao-cao-phan-tich/22505/bao-cao-vi-mo-khong-co-su-lua-chon-hoan-hao-cho-tang-truong.htm" target="_blank" rel="noopener"
+         data-type="Vĩ mô" data-month="10/2026">
+        <span class="rp-cover"><img src="https://static1.vietstock.vn/edocs/22505/22505.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-mo">Vĩ mô · chiến lược</span><span>16/10/2026</span></span>
+        <span class="rp-title">Báo cáo Vĩ mô: Không có sự lựa chọn hoàn hảo cho tăng trưởng</span>
+        <span class="muted" style="font-size:13px">YSVN</span>
+      </a>
+      <a class="rp-card" href="https://finance.vietstock.vn/bao-cao-phan-tich/22504/bao-cao-vi-mo-thang-092026.htm" target="_blank" rel="noopener"
+         data-type="Vĩ mô" data-month="10/2026">
+        <span class="rp-cover"><img src="https://static1.vietstock.vn/edocs/22504/22504.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-mo">Vĩ mô · chiến lược</span><span>16/10/2026</span></span>
+        <span class="rp-title">Báo cáo Vĩ mô: Tháng 09/2026</span>
+        <span class="muted" style="font-size:13px">GTJA (Vietnam)</span>
+      </a>
+      <a class="rp-card" href="https://finance.vietstock.vn/bao-cao-phan-tich/22534/bao-cao-nganh-san-xuat-phan-bon-gia-ure-tang-nhe-nho-gia-dau-cao-hon.htm" target="_blank" rel="noopener"
+         data-type="Ngành" data-month="10/2026">
+        <span class="rp-cover"><img src="https://static1.vietstock.vn/edocs/22534/22534.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-ng">Báo cáo ngành</span><span>16/10/2026</span></span>
+        <span class="rp-title">Báo cáo ngành Sản xuất phân bón: Giá urê tăng nhẹ nhờ giá dầu cao hơn</span>
+        <span class="muted" style="font-size:13px">Vietcap</span>
+      </a>
+      <a class="rp-card" href="https://finance.vietstock.vn/bao-cao-phan-tich/22533/bao-cao-nganh-ngan-hang-thong-tu-50-buoc-tiep-theo-tren-lo-trinh-basel-iii.htm" target="_blank" rel="noopener"
+         data-type="Ngành" data-month="10/2026">
+        <span class="rp-cover"><img src="https://static1.vietstock.vn/edocs/22533/22533.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-ng">Báo cáo ngành</span><span>16/10/2026</span></span>
+        <span class="rp-title">Báo cáo ngành Ngân hàng: Thông tư 50 - Bước tiếp theo trên lộ trình Basel III</span>
+        <span class="muted" style="font-size:13px">VNDS</span>
+      </a>
+      <a class="rp-card" href="https://finance.vietstock.vn/bao-cao-phan-tich/22497/bao-cao-nganh-bds-kcn-von-fdi-tang-vot-thuc-day-nhu-cau.htm" target="_blank" rel="noopener"
+         data-type="Ngành" data-month="10/2026">
+        <span class="rp-cover"><img src="https://static1.vietstock.vn/edocs/22497/22497.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-ng">Báo cáo ngành</span><span>16/10/2026</span></span>
+        <span class="rp-title">Báo cáo ngành BĐS KCN: Vốn FDI tăng vọt thúc đẩy nhu cầu</span>
+        <span class="muted" style="font-size:13px">SSV</span>
+      </a>
+      <a class="rp-card" href="https://cafef.vn/du-lieu/report/trien-vong-tin-nhiem-viet-nam-nua-cuoi-nam-2026-6ad5bb76a11a124e2de68f60.chn" target="_blank" rel="noopener"
+         data-type="Vĩ mô" data-month="10/2026">
+        <span class="rp-cover"><img src="https://cafefnew.mediacdn.vn/BCPT/iconDownload-mobile.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-mo">Vĩ mô · chiến lược</span><span>16/10/2026</span></span>
+        <span class="rp-title">Triển vọng tín nhiệm Việt Nam nửa cuối năm 2026</span>
+        <span class="muted" style="font-size:13px">CafeF</span>
+      </a>
+      <a class="rp-card" href="https://cafef.vn/du-lieu/report/khong-co-su-lua-chon-hoan-hao-cho-tang-truong-6ad59484a11a124e2de68f50.chn" target="_blank" rel="noopener"
+         data-type="Vĩ mô" data-month="10/2026">
+        <span class="rp-cover"><img src="https://cafefnew.mediacdn.vn/BCPT/iconDownload-mobile.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-mo">Vĩ mô · chiến lược</span><span>16/10/2026</span></span>
+        <span class="rp-title">Không có sự lựa chọn hoàn hảo cho tăng trưởng</span>
+        <span class="muted" style="font-size:13px">CafeF</span>
+      </a>
+      <a class="rp-card" href="https://cafef.vn/du-lieu/report/cap-nhat-vi-mo-viet-nam-thang-9--9-thang-dau-nam-2026-6ad58fb1a11a124e2de68f48.chn" target="_blank" rel="noopener"
+         data-type="Vĩ mô" data-month="10/2026">
+        <span class="rp-cover"><img src="https://cafefnew.mediacdn.vn/BCPT/iconDownload-mobile.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-mo">Vĩ mô · chiến lược</span><span>16/10/2026</span></span>
+        <span class="rp-title">Cập nhật Vĩ mô Việt Nam tháng 9 &amp; 9 tháng đầu năm 2026</span>
+        <span class="muted" style="font-size:13px">CafeF</span>
+      </a>
+      <a class="rp-card" href="https://cafef.vn/du-lieu/report/bat-dong-san-khu-cong-nghiep-von-fdi-tang-vot-thuc-day-nhu-cau-6ad59755a11a124e2de68f55.chn" target="_blank" rel="noopener"
+         data-type="Ngành" data-month="10/2026">
+        <span class="rp-cover"><img src="https://cafefnew.mediacdn.vn/BCPT/iconDownload-mobile.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-ng">Báo cáo ngành</span><span>16/10/2026</span></span>
+        <span class="rp-title">[Bất động sản khu công nghiệp] - Vốn FDI tăng vọt thúc đẩy nhu cầu</span>
+        <span class="muted" style="font-size:13px">CafeF</span>
+      </a>
+      <a class="rp-card" href="https://cafef.vn/du-lieu/report/cap-nhat-nganh-hang-tieu-dung-tang-truong-loi-nhuan-cham-lai-da-duoc-phan-anh-phan-lon-vao-gia-6ad5925ca11a124e2de68f4e.chn" target="_blank" rel="noopener"
+         data-type="Ngành" data-month="10/2026">
+        <span class="rp-cover"><img src="https://cafefnew.mediacdn.vn/BCPT/iconDownload-mobile.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-ng">Báo cáo ngành</span><span>16/10/2026</span></span>
+        <span class="rp-title">Cập nhật Ngành Hàng tiêu dùng: Tăng trưởng lợi nhuận chậm lại đã được phản ánh phần lớn vào giá</span>
+        <span class="muted" style="font-size:13px">CafeF</span>
+      </a>
+      <a class="rp-card" href="https://cafef.vn/du-lieu/report/cap-nhat-nganh-vat-lieu-xay-dung-but-pha-nho-luc-day-dau-tu-cong-6ad591f5a11a124e2de68f4c.chn" target="_blank" rel="noopener"
+         data-type="Ngành" data-month="10/2026">
+        <span class="rp-cover"><img src="https://cafefnew.mediacdn.vn/BCPT/iconDownload-mobile.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-ng">Báo cáo ngành</span><span>15/10/2026</span></span>
+        <span class="rp-title">Cập nhật Ngành Vật liệu xây dựng: Bứt phá nhờ lực đẩy đầu tư công</span>
+        <span class="muted" style="font-size:13px">CafeF</span>
+      </a>
+      <a class="rp-card" href="https://finance.vietstock.vn/bao-cao-phan-tich/22539/bao-cao-nganh-hang-tieu-dung-tang-truong-loi-nhuan-cham-lai-da-duoc-phan-anh-phan-lon-vao-gia.htm" target="_blank" rel="noopener"
+         data-type="Ngành" data-month="10/2026">
+        <span class="rp-cover"><img src="https://static1.vietstock.vn/edocs/22539/22539.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-ng">Báo cáo ngành</span><span>13/10/2026</span></span>
+        <span class="rp-title">Báo cáo ngành Hàng tiêu dùng: Tăng trưởng lợi nhuận chậm lại đã được phản ánh phần lớn vào giá</span>
+        <span class="muted" style="font-size:13px">SSI</span>
+      </a>
+      <a class="rp-card" href="https://finance.vietstock.vn/bao-cao-phan-tich/22488/bao-cao-nganh-duoc-pham-chinh-sach-dau-thau-rao-can-eu-gmp-va-nguon-goc-phan-bien-tang-them.htm" target="_blank" rel="noopener"
+         data-type="Ngành" data-month="10/2026">
+        <span class="rp-cover"><img src="https://static1.vietstock.vn/edocs/22488/22488.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-ng">Báo cáo ngành</span><span>13/10/2026</span></span>
+        <span class="rp-title">Báo cáo ngành Dược phẩm: Chính sách đấu thầu, rào cản EU-GMP và nguồn gốc phần biên tăng thêm</span>
+        <span class="muted" style="font-size:13px">TCBS</span>
+      </a>
+      <a class="rp-card" href="https://cafef.vn/du-lieu/report/bao-cao-vi-mo-thang-10-2026-6acf5697ac7f0be85eea5ff6.chn" target="_blank" rel="noopener"
+         data-type="Vĩ mô" data-month="10/2026">
+        <span class="rp-cover"><img src="https://cafefnew.mediacdn.vn/BCPT/iconDownload-mobile.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-mo">Vĩ mô · chiến lược</span><span>13/10/2026</span></span>
+        <span class="rp-title">Báo cáo vĩ mô tháng 10 - 2026</span>
+        <span class="muted" style="font-size:13px">CafeF</span>
+      </a>
+      <a class="rp-card" href="https://cafef.vn/du-lieu/report/bao-cao-kinh-te-vi-mo-thang-9-va-chin-thang-dau-nam-2026-6aceff68015f13a0038e2442.chn" target="_blank" rel="noopener"
+         data-type="Vĩ mô" data-month="10/2026">
+        <span class="rp-cover"><img src="https://cafefnew.mediacdn.vn/BCPT/iconDownload-mobile.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-mo">Vĩ mô · chiến lược</span><span>13/10/2026</span></span>
+        <span class="rp-title">Báo cáo Kinh tế vĩ mô tháng 9 và chín tháng đầu năm 2026</span>
+        <span class="muted" style="font-size:13px">CafeF</span>
+      </a>
+      <a class="rp-card" href="https://cafef.vn/du-lieu/report/nganh-duoc-pham-viet-nam-chinh-sach-dau-thau-rao-can-eugmp-va-nguon-goc-phan-bien-tang-them-6acf56d4ac7f0be85eea5ff7.chn" target="_blank" rel="noopener"
+         data-type="Ngành" data-month="10/2026">
+        <span class="rp-cover"><img src="https://cafefnew.mediacdn.vn/BCPT/iconDownload-mobile.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-ng">Báo cáo ngành</span><span>13/10/2026</span></span>
+        <span class="rp-title">Ngành Dược phẩm Việt Nam Chính sách đấu thầu, rào cản EU-GMP và nguồn gốc phần biên tăng thêm</span>
+        <span class="muted" style="font-size:13px">CafeF</span>
+      </a>
+      <a class="rp-card" href="https://finance.vietstock.vn/bao-cao-phan-tich/22487/bao-cao-nganh-ngan-hang-cap-nhat-thong-tu-50-huong-toi-basel-iii.htm" target="_blank" rel="noopener"
+         data-type="Ngành" data-month="10/2026">
+        <span class="rp-cover"><img src="https://static1.vietstock.vn/edocs/22487/22487.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-ng">Báo cáo ngành</span><span>12/10/2026</span></span>
+        <span class="rp-title">Báo cáo ngành Ngân hàng: Cập nhật Thông tư 50 - Hướng tới Basel III</span>
+        <span class="muted" style="font-size:13px">SSI</span>
+      </a>
+      <a class="rp-card" href="https://cafef.vn/du-lieu/report/bao-cao-vi-mo-thang-92026-6acf541fac7f0be85eea5feb.chn" target="_blank" rel="noopener"
+         data-type="Vĩ mô" data-month="10/2026">
+        <span class="rp-cover"><img src="https://cafefnew.mediacdn.vn/BCPT/iconDownload-mobile.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-mo">Vĩ mô · chiến lược</span><span>10/10/2026</span></span>
+        <span class="rp-title">Báo cáo vĩ mô tháng 9/2026</span>
+        <span class="muted" style="font-size:13px">CafeF</span>
+      </a>
+      <a class="rp-card" href="https://cafef.vn/du-lieu/report/bao-cao-vi-mo-thang-092026-6acf24f9015f13a0038e244b.chn" target="_blank" rel="noopener"
+         data-type="Vĩ mô" data-month="10/2026">
+        <span class="rp-cover"><img src="https://cafefnew.mediacdn.vn/BCPT/iconDownload-mobile.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-mo">Vĩ mô · chiến lược</span><span>09/10/2026</span></span>
+        <span class="rp-title">Báo cáo vĩ mô tháng 09/2026</span>
+        <span class="muted" style="font-size:13px">CafeF</span>
+      </a>
+      <a class="rp-card" href="https://cafef.vn/du-lieu/report/cap-nhat-nganh-ngan-hang--cap-nhat-thong-tu-50-huong-toi-basel-iii-voi-buoc-dem-noi-long-ngan-han-6aceff01015f13a0038e2440.chn" target="_blank" rel="noopener"
+         data-type="Ngành" data-month="10/2026">
+        <span class="rp-cover"><img src="https://cafefnew.mediacdn.vn/BCPT/iconDownload-mobile.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-ng">Báo cáo ngành</span><span>09/10/2026</span></span>
+        <span class="rp-title">Cập nhật ngành Ngân hàng · Cập nhật Thông tư 50: Hướng tới Basel III với bước đệm nới lỏng ngắn hạn</span>
+        <span class="muted" style="font-size:13px">CafeF</span>
+      </a>
+      <a class="rp-card" href="https://cafef.vn/du-lieu/report/bao-cao-vi-mo-thang-9-tang-truong-khoi-sac-tien-gan-hon-toi-muc-tieu-ca-nam-6acf555fac7f0be85eea5ff1.chn" target="_blank" rel="noopener"
+         data-type="Vĩ mô" data-month="10/2026">
+        <span class="rp-cover"><img src="https://cafefnew.mediacdn.vn/BCPT/iconDownload-mobile.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-mo">Vĩ mô · chiến lược</span><span>08/10/2026</span></span>
+        <span class="rp-title">Báo cáo vĩ mô tháng 9 - Tăng trưởng khởi sắc, tiến gần hơn tới mục tiêu cả năm</span>
+        <span class="muted" style="font-size:13px">CafeF</span>
+      </a>
+      <a class="rp-card" href="https://cafef.vn/du-lieu/report/cap-nhat-kinh-te-vi-mo-q32026-va-9-thang-nam-2026-6acf0451015f13a0038e2447.chn" target="_blank" rel="noopener"
+         data-type="Vĩ mô" data-month="10/2026">
+        <span class="rp-cover"><img src="https://cafefnew.mediacdn.vn/BCPT/iconDownload-mobile.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-mo">Vĩ mô · chiến lược</span><span>07/10/2026</span></span>
+        <span class="rp-title">Cập nhật kinh tế vĩ mô Q3/2026 và 9 tháng năm 2026</span>
+        <span class="muted" style="font-size:13px">CafeF</span>
+      </a>
+      <a class="rp-card" href="https://cafef.vn/du-lieu/report/trien-vong-ttck-viet-nam-4q2026-6ac74ddf015f13a0038e2425.chn" target="_blank" rel="noopener"
+         data-type="Ngành" data-month="10/2026">
+        <span class="rp-cover"><img src="https://cafefnew.mediacdn.vn/BCPT/iconDownload-mobile.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-ng">Báo cáo ngành</span><span>07/10/2026</span></span>
+        <span class="rp-title">Triển vọng TTCK Việt Nam 4Q2026</span>
+        <span class="muted" style="font-size:13px">CafeF</span>
+      </a>
+      <a class="rp-card" href="https://cafef.vn/du-lieu/report/nganh-ngan-hang-danh-gia-tac-dong-tt502026ttnhnn-6ac71576015f13a0038e2422.chn" target="_blank" rel="noopener"
+         data-type="Ngành" data-month="10/2026">
+        <span class="rp-cover"><img src="https://cafefnew.mediacdn.vn/BCPT/iconDownload-mobile.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-ng">Báo cáo ngành</span><span>06/10/2026</span></span>
+        <span class="rp-title">Ngành ngân hàng - Đánh giá tác động TT50/2026/TT-NHNN</span>
+        <span class="muted" style="font-size:13px">CafeF</span>
+      </a>
+      <a class="rp-card" href="https://cafef.vn/du-lieu/report/bao-cao-nganh-ngan-hang-t102026-6ac348d8015f13a0038e2414.chn" target="_blank" rel="noopener"
+         data-type="Ngành" data-month="10/2026">
+        <span class="rp-cover"><img src="https://cafefnew.mediacdn.vn/BCPT/iconDownload-mobile.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-ng">Báo cáo ngành</span><span>02/10/2026</span></span>
+        <span class="rp-title">Báo cáo Ngành Ngân hàng - T10/2026</span>
+        <span class="muted" style="font-size:13px">CafeF</span>
+      </a>
+      <a class="rp-card" href="https://cafef.vn/du-lieu/report/cap-nhat-nganh-dien-nhiet-dien-duy-tri-ty-trong-phat-dien-cao-nhu-cau-phat-trien-nguon-dien-van-hi-6ac31bf0015f13a0038e2402.chn" target="_blank" rel="noopener"
+         data-type="Ngành" data-month="10/2026">
+        <span class="rp-cover"><img src="https://cafefnew.mediacdn.vn/BCPT/iconDownload-mobile.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-ng">Báo cáo ngành</span><span>02/10/2026</span></span>
+        <span class="rp-title">Cập nhật ngành Điện: Nhiệt điện duy trì tỷ trọng phát điện cao, nhu cầu phát triển nguồn điện vẫn hiện hữu</span>
+        <span class="muted" style="font-size:13px">CafeF</span>
+      </a>
+      <a class="rp-card" href="https://cafef.vn/du-lieu/report/nganh-bat-dong-san-mat-bang-lai-suat-cao-khien-thi-truong-am-dam-6ac31261015f13a0038e23f4.chn" target="_blank" rel="noopener"
+         data-type="Ngành" data-month="10/2026">
+        <span class="rp-cover"><img src="https://cafefnew.mediacdn.vn/BCPT/iconDownload-mobile.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-ng">Báo cáo ngành</span><span>02/10/2026</span></span>
+        <span class="rp-title">Ngành Bất động sản: Mặt bằng lãi suất cao khiến thị trường ảm đạm</span>
+        <span class="muted" style="font-size:13px">CafeF</span>
+      </a>
+      <a class="rp-card" href="https://cafef.vn/du-lieu/report/nganh-ngan-hang-cap-nhat-thong-tu-502026-sua-doi-bo-sung-thong-tu-222019ttnhnn-6ac31228015f13a0038e23f3.chn" target="_blank" rel="noopener"
+         data-type="Ngành" data-month="10/2026">
+        <span class="rp-cover"><img src="https://cafefnew.mediacdn.vn/BCPT/iconDownload-mobile.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-ng">Báo cáo ngành</span><span>02/10/2026</span></span>
+        <span class="rp-title">Ngành Ngân hàng – Cập nhật Thông tư 50/2026 sửa đổi, bổ sung Thông tư 22/2019/TT-NHNN</span>
+        <span class="muted" style="font-size:13px">CafeF</span>
+      </a>
+      <a class="rp-card" href="https://cafef.vn/du-lieu/report/nganh-o-to-trien-vong-6-thang-cuoi-nam-2026-6ac34887015f13a0038e2413.chn" target="_blank" rel="noopener"
+         data-type="Ngành" data-month="10/2026">
+        <span class="rp-cover"><img src="https://cafefnew.mediacdn.vn/BCPT/iconDownload-mobile.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-ng">Báo cáo ngành</span><span>01/10/2026</span></span>
+        <span class="rp-title">Ngành Ô tô - Triển vọng 6 tháng cuối năm 2026</span>
+        <span class="muted" style="font-size:13px">CafeF</span>
+      </a>
+      <a class="rp-card" href="https://cafef.vn/du-lieu/report/bao-cao-vi-mo-tac-dong-cua-viec-nang-hang-thi-truong-chung-khoan-viet-nam-t92026-6ac34a35015f13a0038e2417.chn" target="_blank" rel="noopener"
+         data-type="Vĩ mô" data-month="09/2026">
+        <span class="rp-cover"><img src="https://cafefnew.mediacdn.vn/BCPT/iconDownload-mobile.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-mo">Vĩ mô · chiến lược</span><span>30/09/2026</span></span>
+        <span class="rp-title">Báo cáo vĩ mô - Tác động của việc nâng hạng thị trường chứng khoán Việt Nam (T92026)</span>
+        <span class="muted" style="font-size:13px">CafeF</span>
+      </a>
+      <a class="rp-card" href="https://cafef.vn/du-lieu/report/bao-cao-vi-mo-thang-32026-69d75450911b388b260e6580.chn" target="_blank" rel="noopener"
+         data-type="Vĩ mô" data-month="04/2026">
+        <span class="rp-cover"><img src="https://cafefnew.mediacdn.vn/BCPT/pageIndex.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>
+        <span class="rp-meta"><span class="rp-mo">Vĩ mô · chiến lược</span><span>09/04/2026</span></span>
+        <span class="rp-title">Báo cáo vĩ mô tháng 3/2026</span>
+        <span class="muted" style="font-size:13px">NSI</span>
+      </a></div>
+    <p class="muted" style="font-size:13px;margin-top:28px">Báo cáo thuộc bản quyền của công ty chứng khoán phát hành. Bấm vào báo cáo để xem và tải tại trang gốc.</p>
+  </section>
+</main>
+<footer><div class="wrap"><span style="flex:1 1 420px">Nội dung tham khảo, không phải khuyến nghị đầu tư.</span>
+<span>Economic Intelligence v2.8</span></div></footer>
+<script>
+(function(){
+  var cards=[].slice.call(document.querySelectorAll('.rp-grid .rp-card'));
+  var t=document.getElementById('f-type'), m=document.getElementById('f-month'), c=document.getElementById('rp-count');
+  function apply(){var n=0;cards.forEach(function(x){
+    var ok=(!t.value||x.dataset.type===t.value)&&(!m.value||x.dataset.month===m.value);
+    x.hidden=!ok;if(ok)n++;});if(c)c.textContent=n;}
+  if(t)t.addEventListener('change',apply); if(m)m.addEventListener('change',apply);
+})();
+</script>
+</body>
+</html>
